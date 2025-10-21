@@ -1,0 +1,1001 @@
+match_id,minute,second,type.name,team.name,player.name,location.x,location.y,obv_total_net
+3939819,0,0,Starting XI,Atlético San Luis,NA,NA,NA,NA
+3939819,0,0,Starting XI,América,NA,NA,NA,NA
+3939819,0,0,Half Start,Atlético San Luis,NA,NA,NA,NA
+3939819,0,0,Half Start,América,NA,NA,NA,NA
+3939819,0,0,Pass,América,Henry Josué Martín Mex,60,40,0.0070749437
+3939819,0,1,Ball Receipt*,América,Álvaro Fidalgo Fernández,48.8,30.8,NA
+3939819,0,1,Carry,América,Álvaro Fidalgo Fernández,48.8,30.8,-0.0010988526
+3939819,0,2,Pass,América,Álvaro Fidalgo Fernández,47.3,29.4,-2.410002e-4
+3939819,0,3,Ball Receipt*,América,Jonathan dos Santos Ramírez,41.6,30.5,NA
+3939819,0,3,Pass,América,Jonathan dos Santos Ramírez,40.2,31.6,-1.195725e-4
+3939819,0,3,Ball Receipt*,América,Álvaro Fidalgo Fernández,44.9,31.1,NA
+3939819,0,3,Carry,América,Álvaro Fidalgo Fernández,44.9,31.1,0
+3939819,0,3,Pass,América,Álvaro Fidalgo Fernández,44.9,31.1,-0.0036571734
+3939819,0,5,Ball Receipt*,América,Néstor Alejandro Araújo Razo,25.9,46.9,NA
+3939819,0,5,Carry,América,Néstor Alejandro Araújo Razo,25.9,46.9,4.9836e-5
+3939819,0,6,Pass,América,Néstor Alejandro Araújo Razo,25.8,53.1,7.57109e-5
+3939819,0,7,Ball Receipt*,América,Emilio Lara Contreras,33.6,69.3,NA
+3939819,0,7,Carry,América,Emilio Lara Contreras,33.6,69.3,-3.66038e-5
+3939819,0,8,Pass,América,Emilio Lara Contreras,33.4,69.1,-3.821654e-4
+3939819,0,9,Ball Receipt*,América,Néstor Alejandro Araújo Razo,21.2,58.5,NA
+3939819,0,9,Carry,América,Néstor Alejandro Araújo Razo,21.2,58.5,-0.0018706275
+3939819,0,12,Pass,América,Néstor Alejandro Araújo Razo,21.2,55.6,-9.853132e-4
+3939819,0,14,Ball Receipt*,América,Emilio Lara Contreras,25.2,70.7,NA
+3939819,0,14,Carry,América,Emilio Lara Contreras,25.2,70.7,2.394002e-4
+3939819,0,15,Pass,América,Emilio Lara Contreras,25.4,70.6,0.0023786863
+3939819,0,16,Ball Receipt*,América,Richard Rafael Sánchez Guerrero,30.7,65.3,NA
+3939819,0,16,Carry,América,Richard Rafael Sánchez Guerrero,30.7,65.3,-3.735637e-4
+3939819,0,17,Pass,América,Richard Rafael Sánchez Guerrero,32,69,-7.614326e-4
+3939819,0,18,Pressure,Atlético San Luis,Aldo Jafid Cruz Sánchez,73,4.2,NA
+3939819,0,18,Ball Receipt*,América,Javairô Dilrosun,42.2,75.9,NA
+3939819,0,18,Pass,América,Javairô Dilrosun,41.9,75.9,-0.0018770806
+3939819,0,22,Ball Receipt*,América,Cristian Yonathan Calderón Del Real,31.3,5.9,NA
+3939819,0,22,Carry,América,Cristian Yonathan Calderón Del Real,31.3,5.9,0.0011075586
+3939819,0,24,Pressure,Atlético San Luis,Luis Ronaldo Nájera Reyna,88,73.8,NA
+3939819,0,25,Pass,América,Cristian Yonathan Calderón Del Real,26.1,7.9,-0.002512956
+3939819,0,26,Ball Receipt*,América,Ramón Juárez Del Castillo,15.3,11.8,NA
+3939819,0,26,Carry,América,Ramón Juárez Del Castillo,15.3,11.8,-6.56974e-5
+3939819,0,29,Pass,América,Ramón Juárez Del Castillo,9.1,26.8,0.002879085
+3939819,0,30,Ball Receipt*,América,Néstor Alejandro Araújo Razo,12.4,47,NA
+3939819,0,30,Carry,América,Néstor Alejandro Araújo Razo,12.4,47,-5.23627e-5
+3939819,0,31,Pass,América,Néstor Alejandro Araújo Razo,12.3,47.7,-0.0014274968
+3939819,0,33,Ball Receipt*,América,Emilio Lara Contreras,23.5,73.2,NA
+3939819,0,33,Carry,América,Emilio Lara Contreras,23.5,73.2,0.0010394966
+3939819,0,34,Pass,América,Emilio Lara Contreras,27.6,72.8,0.0025773598
+3939819,0,35,Ball Receipt*,América,Richard Rafael Sánchez Guerrero,30.9,62.2,NA
+3939819,0,35,Pass,América,Richard Rafael Sánchez Guerrero,30.9,62.2,-0.0019826191
+3939819,0,37,Pressure,Atlético San Luis,Aldo Jafid Cruz Sánchez,72.6,5.5,NA
+3939819,0,37,Ball Receipt*,América,Javairô Dilrosun,44.8,74.6,NA
+3939819,0,37,Carry,América,Javairô Dilrosun,44.8,74.6,0.0031839814
+3939819,0,38,Pass,América,Javairô Dilrosun,41.6,75.3,-0.0032254271
+3939819,0,38,Ball Receipt*,América,Richard Rafael Sánchez Guerrero,30.9,73.9,NA
+3939819,0,38,Pass,América,Richard Rafael Sánchez Guerrero,30.9,73.9,0.0049183602
+3939819,0,39,Ball Receipt*,América,Emilio Lara Contreras,47.7,70,NA
+3939819,0,39,Carry,América,Emilio Lara Contreras,47.7,70,8.611204e-4
+3939819,0,40,Pass,América,Emilio Lara Contreras,52.6,68.7,-3.591562e-4
+3939819,0,41,Ball Receipt*,América,Henry Josué Martín Mex,57,59.1,NA
+3939819,0,41,Carry,América,Henry Josué Martín Mex,57,59.1,-0.0095540537
+3939819,0,43,Pressure,Atlético San Luis,Óscar Uriel Macías Mora,58,28.5,NA
+3939819,0,44,Pressure,Atlético San Luis,Rodrigo Dourado Cunha,53.2,26.5,NA
+3939819,0,45,Dispossessed,América,Henry Josué Martín Mex,67.2,50.5,NA
+3939819,0,45,Duel,Atlético San Luis,Rodrigo Dourado Cunha,52.9,29.6,0.0095540537
+3939819,0,47,Pass,Atlético San Luis,Luis Ronaldo Nájera Reyna,44.1,47.2,-0.0084821451
+3939819,0,50,Ball Receipt*,Atlético San Luis,Andrés Eduardo Sánchez Rodríguez,6.1,40.6,NA
+3939819,0,50,Carry,Atlético San Luis,Andrés Eduardo Sánchez Rodríguez,6.1,40.6,-0.0015662871
+3939819,0,51,Pass,Atlético San Luis,Andrés Eduardo Sánchez Rodríguez,6.8,40.2,0.0035541793
+3939819,0,53,Ball Receipt*,Atlético San Luis,Aldo Jafid Cruz Sánchez,20,22.6,NA
+3939819,0,53,Carry,Atlético San Luis,Aldo Jafid Cruz Sánchez,20,22.6,0
+3939819,0,56,Pass,Atlético San Luis,Aldo Jafid Cruz Sánchez,20,22.6,-0.0056516416
+3939819,0,57,Ball Receipt*,Atlético San Luis,Rodrigo Dourado Cunha,19,36.5,NA
+3939819,0,57,Carry,Atlético San Luis,Rodrigo Dourado Cunha,19,36.5,0.0082897563
+3939819,1,1,Pressure,América,Henry Josué Martín Mex,93.5,41,NA
+3939819,1,2,Pass,Atlético San Luis,Rodrigo Dourado Cunha,25.8,43,-0.0014668955
+3939819,1,3,Ball Receipt*,Atlético San Luis,Julio César Domínguez Juárez,28.6,62.5,NA
+3939819,1,3,Carry,Atlético San Luis,Julio César Domínguez Juárez,28.6,62.5,-0.0018626684
+3939819,1,5,Pass,Atlético San Luis,Julio César Domínguez Juárez,22.7,62.1,-0.0032277135
+3939819,1,7,Ball Receipt*,Atlético San Luis,Andrés Eduardo Sánchez Rodríguez,3.4,46.6,NA
+3939819,1,7,Carry,Atlético San Luis,Andrés Eduardo Sánchez Rodríguez,3.4,46.6,0
+3939819,1,8,Pressure,América,Henry Josué Martín Mex,108.3,32.1,NA
+3939819,1,8,Pass,Atlético San Luis,Andrés Eduardo Sánchez Rodríguez,3.8,46,0.0024787234
+3939819,1,9,Ball Receipt*,Atlético San Luis,Aldo Jafid Cruz Sánchez,7.1,25.8,NA
+3939819,1,9,Carry,Atlético San Luis,Aldo Jafid Cruz Sánchez,7.1,25.8,1.413971e-4
+3939819,1,10,Pass,Atlético San Luis,Aldo Jafid Cruz Sánchez,7.1,22.6,-0.0017376281
+3939819,1,12,Pressure,América,Emilio Lara Contreras,91.7,74,NA
+3939819,1,12,Ball Receipt*,Atlético San Luis,Juan Manuel Sanabria Magole,25.8,4.8,NA
+3939819,1,12,Carry,Atlético San Luis,Juan Manuel Sanabria Magole,25.8,4.8,-8.074092e-4
+3939819,1,12,Pass,Atlético San Luis,Juan Manuel Sanabria Magole,25.6,4,0.0015206025
+3939819,1,12,Ball Receipt*,Atlético San Luis,Mateo Klimowicz,40.4,11.5,NA
+3939819,1,12,Block,América,Emilio Lara Contreras,92.8,74.8,-0.0015206025
+3939819,1,38,Pass,Atlético San Luis,Juan Manuel Sanabria Magole,34.1,0.1,0.0041710245
+3939819,1,39,Ball Receipt*,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,35.1,9.8,NA
+3939819,1,39,Carry,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,35.1,9.8,4.303502e-4
+3939819,1,41,Pass,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,36.3,14.8,0.0021623271
+3939819,1,42,Ball Receipt*,Atlético San Luis,Óscar Uriel Macías Mora,39.7,40,NA
+3939819,1,42,Carry,Atlético San Luis,Óscar Uriel Macías Mora,39.7,40,-3.219731e-4
+3939819,1,42,Pass,Atlético San Luis,Óscar Uriel Macías Mora,36.4,42.7,4.895451e-4
+3939819,1,44,Ball Receipt*,Atlético San Luis,Ricardo Chávez Soto,47.9,75.6,NA
+3939819,1,44,Carry,Atlético San Luis,Ricardo Chávez Soto,47.9,75.6,0.0027012695
+3939819,1,49,Pass,Atlético San Luis,Ricardo Chávez Soto,68.2,77.1,-0.0017878562
+3939819,1,51,Ball Receipt*,Atlético San Luis,Julio César Domínguez Juárez,47.8,68.1,NA
+3939819,1,51,Carry,Atlético San Luis,Julio César Domínguez Juárez,47.8,68.1,7.96225e-5
+3939819,1,52,Pass,Atlético San Luis,Julio César Domínguez Juárez,47.8,64.1,2.334937e-4
+3939819,1,54,Ball Receipt*,Atlético San Luis,Aldo Jafid Cruz Sánchez,47.4,22.1,NA
+3939819,1,54,Carry,Atlético San Luis,Aldo Jafid Cruz Sánchez,47.4,22.1,2.746694e-4
+3939819,1,55,Pass,Atlético San Luis,Aldo Jafid Cruz Sánchez,48.9,18.6,0.0015386622
+3939819,1,56,Ball Receipt*,Atlético San Luis,Juan Manuel Sanabria Magole,64.4,2.8,NA
+3939819,1,56,Carry,Atlético San Luis,Juan Manuel Sanabria Magole,64.4,2.8,-2.4857e-4
+3939819,1,57,Pass,Atlético San Luis,Juan Manuel Sanabria Magole,63.7,2.8,4.833853e-4
+3939819,1,59,Ball Receipt*,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,57.4,13.4,NA
+3939819,1,59,Carry,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,57.4,13.4,-6.09867e-5
+3939819,1,59,Pass,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,58.4,13.5,0.0010013422
+3939819,2,0,Ball Receipt*,Atlético San Luis,Mateo Klimowicz,67.1,13.5,NA
+3939819,2,0,Pass,Atlético San Luis,Mateo Klimowicz,67.1,13.5,-0.0010140436
+3939819,2,1,Ball Receipt*,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,57.2,11.8,NA
+3939819,2,1,Carry,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,57.2,11.8,-2.027769e-4
+3939819,2,2,Pass,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,56.5,14.8,-0.0020803707
+3939819,2,3,Ball Receipt*,Atlético San Luis,Rodrigo Dourado Cunha,44.6,40.6,NA
+3939819,2,3,Carry,Atlético San Luis,Rodrigo Dourado Cunha,44.6,40.6,6.998498e-4
+3939819,2,5,Pass,Atlético San Luis,Rodrigo Dourado Cunha,47,38,-0.0034306636
+3939819,2,6,Ball Receipt*,Atlético San Luis,Aldo Jafid Cruz Sánchez,49.9,14.3,NA
+3939819,2,6,Carry,Atlético San Luis,Aldo Jafid Cruz Sánchez,49.9,14.3,0.0010656686
+3939819,2,7,Pressure,América,Henry Josué Martín Mex,66.9,66.2,NA
+3939819,2,7,Pass,Atlético San Luis,Aldo Jafid Cruz Sánchez,55.1,11.7,-0.0014514467
+3939819,2,8,Ball Receipt*,Atlético San Luis,Mateo Klimowicz,70,12.3,NA
+3939819,2,8,Interception,América,Néstor Alejandro Araújo Razo,51,68.7,0.0014514467
+3939819,2,14,Pass,Atlético San Luis,Juan Manuel Sanabria Magole,63.1,0.1,0.0147043397
+3939819,2,17,Pressure,Atlético San Luis,Mateo Klimowicz,104.5,7.1,NA
+3939819,2,17,Ball Receipt*,Atlético San Luis,Mateo Klimowicz,75.9,7.7,NA
+3939819,2,17,Ball Recovery,América,Alejandro Zendejas Saavedra,11.1,73.2,NA
+3939819,2,19,Pressure,América,Néstor Alejandro Araújo Razo,9.3,72.6,NA
+3939819,2,19,Ball Recovery,Atlético San Luis,Mateo Klimowicz,117.2,8.1,NA
+3939819,2,19,Carry,Atlético San Luis,Mateo Klimowicz,117.2,8.1,0.0033661029
+3939819,2,20,Dribble,Atlético San Luis,Mateo Klimowicz,117,10.8,-0.0113280676
+3939819,2,20,Duel,América,Néstor Alejandro Araújo Razo,3.1,69.3,0.0113280676
+3939819,2,21,Ball Recovery,América,Richard Rafael Sánchez Guerrero,4.6,66.4,NA
+3939819,2,21,Carry,América,Richard Rafael Sánchez Guerrero,4.6,66.4,0.0028740996
+3939819,2,23,Pass,América,Richard Rafael Sánchez Guerrero,8.7,66.7,-0.0116189383
+3939819,2,24,Interception,Atlético San Luis,Juan Manuel Sanabria Magole,99.1,6.4,0.0116189383
+3939819,2,24,Carry,Atlético San Luis,Juan Manuel Sanabria Magole,99.1,6.4,0.0014528632
+3939819,2,26,Pass,Atlético San Luis,Juan Manuel Sanabria Magole,104.4,4.5,0.0043681087
+3939819,2,26,Ball Receipt*,Atlético San Luis,Mateo Klimowicz,104.9,11.1,NA
+3939819,2,26,Pass,Atlético San Luis,Mateo Klimowicz,104.8,11.1,0.0165077429
+3939819,2,27,Ball Receipt*,Atlético San Luis,Franck Boli,104.5,20.6,NA
+3939819,2,27,Carry,Atlético San Luis,Franck Boli,104.5,20.6,0.064492214
+3939819,2,27,Pressure,América,Jonathan dos Santos Ramírez,14,55.2,NA
+3939819,2,28,Pressure,América,Ramón Juárez Del Castillo,7.7,51.6,NA
+3939819,2,29,Shot,Atlético San Luis,Franck Boli,115.3,27.8,-0.1111611128
+3939819,2,30,Goal Keeper,América,Rodolfo Cota Robles,0.9,43.6,NA
+3939819,2,45,Pass,América,Rodolfo Cota Robles,5.7,41,0.002329825
+3939819,2,47,Ball Receipt*,América,Cristian Yonathan Calderón Del Real,11.7,30.9,NA
+3939819,3,0,Pass,América,Cristian Yonathan Calderón Del Real,11.5,30.8,9.1e-5
+3939819,3,2,Ball Receipt*,América,Henry Josué Martín Mex,52.2,31.2,NA
+3939819,3,2,Pass,América,Henry Josué Martín Mex,52.6,31.2,0.0090163383
+3939819,3,4,Ball Receipt*,América,Alejandro Zendejas Saavedra,52.4,19.1,NA
+3939819,3,4,Carry,América,Alejandro Zendejas Saavedra,52.4,19.1,-3.590761e-4
+3939819,3,5,Pass,América,Alejandro Zendejas Saavedra,52.4,26.2,-0.0012000892
+3939819,3,6,Ball Receipt*,América,Richard Rafael Sánchez Guerrero,45.9,31.3,NA
+3939819,3,6,Carry,América,Richard Rafael Sánchez Guerrero,45.9,31.3,-5.918331e-4
+3939819,3,7,Pass,América,Richard Rafael Sánchez Guerrero,44.9,30.8,7.575192e-4
+3939819,3,7,Ball Receipt*,América,Álvaro Fidalgo Fernández,47.1,23.6,NA
+3939819,3,7,Carry,América,Álvaro Fidalgo Fernández,47.1,23.6,-7.36855e-4
+3939819,3,10,Pass,América,Álvaro Fidalgo Fernández,40.6,28.8,-0.0024645776
+3939819,3,12,Ball Receipt*,América,Néstor Alejandro Araújo Razo,30.3,43.4,NA
+3939819,3,12,Carry,América,Néstor Alejandro Araújo Razo,30.3,43.4,-8.64975e-5
+3939819,3,12,Pass,América,Néstor Alejandro Araújo Razo,29.6,43.6,-2.098028e-4
+3939819,3,13,Ball Receipt*,América,Álvaro Fidalgo Fernández,33.6,42,NA
+3939819,3,13,Carry,América,Álvaro Fidalgo Fernández,33.6,42,0.0015422041
+3939819,3,15,Pass,América,Álvaro Fidalgo Fernández,36.3,45.7,9.2379e-4
+3939819,3,16,Ball Receipt*,América,Richard Rafael Sánchez Guerrero,45.1,49.8,NA
+3939819,3,16,Pass,América,Richard Rafael Sánchez Guerrero,44.8,49.8,-4.432984e-4
+3939819,3,16,Ball Receipt*,América,Álvaro Fidalgo Fernández,40,49.8,NA
+3939819,3,16,Carry,América,Álvaro Fidalgo Fernández,40,49.8,0.0037339255
+3939819,3,19,Pass,América,Álvaro Fidalgo Fernández,53.9,53.5,-0.0036342489
+3939819,3,20,Pressure,Atlético San Luis,Juan Manuel Sanabria Magole,54.9,9.1,NA
+3939819,3,20,Ball Receipt*,América,Richard Rafael Sánchez Guerrero,62.9,68.7,NA
+3939819,3,20,Pass,América,Richard Rafael Sánchez Guerrero,62.7,69,0.0020742826
+3939819,3,22,Ball Receipt*,América,Javairô Dilrosun,68.2,77.3,NA
+3939819,3,22,Carry,América,Javairô Dilrosun,68.2,77.3,0
+3939819,3,23,Pass,América,Javairô Dilrosun,68.2,77.3,5.38528e-5
+3939819,3,24,Ball Receipt*,América,Richard Rafael Sánchez Guerrero,62.1,72.4,NA
+3939819,3,24,Carry,América,Richard Rafael Sánchez Guerrero,62.1,72.4,-5.592294e-4
+3939819,3,24,Pass,América,Richard Rafael Sánchez Guerrero,62.1,72.6,-0.0023089023
+3939819,3,25,Ball Receipt*,América,Emilio Lara Contreras,52.1,75.2,NA
+3939819,3,25,Carry,América,Emilio Lara Contreras,52.1,75.2,1.974646e-4
+3939819,3,26,Pass,América,Emilio Lara Contreras,51.5,75.2,-5.104579e-4
+3939819,3,26,Ball Receipt*,América,Jonathan dos Santos Ramírez,46.4,70.6,NA
+3939819,3,26,Carry,América,Jonathan dos Santos Ramírez,46.4,70.6,0
+3939819,3,29,Pass,América,Jonathan dos Santos Ramírez,46.4,70.6,7.799203e-4
+3939819,3,29,Ball Receipt*,América,Richard Rafael Sánchez Guerrero,53.4,75.6,NA
+3939819,3,29,Carry,América,Richard Rafael Sánchez Guerrero,53.4,75.6,0
+3939819,3,31,Pass,América,Richard Rafael Sánchez Guerrero,53.4,75.6,7.666489e-4
+3939819,3,31,Ball Receipt*,América,Jonathan dos Santos Ramírez,52.4,68.4,NA
+3939819,3,31,Carry,América,Jonathan dos Santos Ramírez,52.4,68.4,0
+3939819,3,33,Pass,América,Jonathan dos Santos Ramírez,52.4,68.4,0.0010371096
+3939819,3,34,Ball Receipt*,América,Javairô Dilrosun,68.2,78.1,NA
+3939819,3,34,Carry,América,Javairô Dilrosun,68.2,78.1,0.0029305303
+3939819,3,35,Pass,América,Javairô Dilrosun,72.9,74.8,0.004137517
+3939819,3,36,Ball Receipt*,América,Richard Rafael Sánchez Guerrero,78.2,66.6,NA
+3939819,3,36,Pass,América,Richard Rafael Sánchez Guerrero,78.2,66.6,-0.0135655943
+3939819,3,37,Interception,Atlético San Luis,Juan Manuel Sanabria Magole,36.3,9.1,0.0135655943
+3939819,3,37,Carry,Atlético San Luis,Juan Manuel Sanabria Magole,36.3,9.1,0.0025312919
+3939819,3,39,Pass,Atlético San Luis,Juan Manuel Sanabria Magole,36.4,24.2,-0.0028755572
+3939819,3,40,Ball Receipt*,Atlético San Luis,Luis Ronaldo Nájera Reyna,46.9,41.3,NA
+3939819,3,40,Carry,Atlético San Luis,Luis Ronaldo Nájera Reyna,46.9,41.3,0.0079033179
+3939819,3,40,Pressure,América,Alejandro Zendejas Saavedra,76,38.1,NA
+3939819,3,43,Pass,Atlético San Luis,Luis Ronaldo Nájera Reyna,54.7,35.3,-1.683654e-4
+3939819,3,44,Ball Receipt*,Atlético San Luis,Mateo Klimowicz,57.1,22.5,NA
+3939819,3,44,Carry,Atlético San Luis,Mateo Klimowicz,57.1,22.5,-1.445711e-4
+3939819,3,44,Pass,Atlético San Luis,Mateo Klimowicz,57.6,22.9,-0.001480299
+3939819,3,45,Ball Receipt*,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,51.4,17.9,NA
+3939819,3,45,Carry,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,51.4,17.9,-0.0015692469
+3939819,3,46,Pass,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,52.2,8.1,0.0068469997
+3939819,3,47,Block,América,Emilio Lara Contreras,51.7,74.6,-0.0068469997
+3939819,3,49,Ball Receipt*,Atlético San Luis,Luis Ronaldo Nájera Reyna,83.8,3.3,NA
+3939819,3,49,Carry,Atlético San Luis,Luis Ronaldo Nájera Reyna,83.8,3.3,0.0279516866
+3939819,3,52,Pass,Atlético San Luis,Luis Ronaldo Nájera Reyna,106.5,11.8,-0.0241525248
+3939819,3,54,Ball Receipt*,Atlético San Luis,Franck Boli,106.4,39,NA
+3939819,3,54,Ball Recovery,América,Rodolfo Cota Robles,2.4,40.7,NA
+3939819,3,57,Pass,América,Rodolfo Cota Robles,11.3,40.7,0.0261320183
+3939819,3,59,Ball Receipt*,América,Jonathan dos Santos Ramírez,15.2,40.7,NA
+3939819,4,1,Pass,América,Jonathan dos Santos Ramírez,31.1,31.2,-0.0015552044
+3939819,4,3,Ball Receipt*,América,Cristian Yonathan Calderón Del Real,31.1,17.6,NA
+3939819,4,4,Pass,América,Cristian Yonathan Calderón Del Real,31.4,16.9,0.001101763
+3939819,4,5,Ball Receipt*,América,Alejandro Zendejas Saavedra,41.6,3.9,NA
+3939819,4,5,Carry,América,Alejandro Zendejas Saavedra,41.6,3.9,0.0030385768
+3939819,4,12,Pass,América,Alejandro Zendejas Saavedra,52.8,4.6,-0.0029971115
+3939819,4,13,Ball Receipt*,América,Cristian Yonathan Calderón Del Real,46.4,7.1,NA
+3939819,4,13,Carry,América,Cristian Yonathan Calderón Del Real,46.4,7.1,2.208399e-4
+3939819,4,14,Pass,América,Cristian Yonathan Calderón Del Real,45.5,7.2,8.22432e-5
+3939819,4,14,Ball Receipt*,América,Jonathan dos Santos Ramírez,41.9,11.6,NA
+3939819,4,14,Pass,América,Jonathan dos Santos Ramírez,41.5,11.8,8.588256e-4
+3939819,4,15,Ball Receipt*,América,Cristian Yonathan Calderón Del Real,45.6,8.5,NA
+3939819,4,15,Carry,América,Cristian Yonathan Calderón Del Real,45.6,8.5,0
+3939819,4,15,Pass,América,Cristian Yonathan Calderón Del Real,45.6,8.5,-3.018174e-4
+3939819,4,16,Ball Receipt*,América,Jonathan dos Santos Ramírez,41.3,12,NA
+3939819,4,16,Pass,América,Jonathan dos Santos Ramírez,41.3,12,-9.444971e-4
+3939819,4,17,Ball Receipt*,América,Cristian Yonathan Calderón Del Real,44.4,6.8,NA
+3939819,4,17,Carry,América,Cristian Yonathan Calderón Del Real,44.4,6.8,0
+3939819,4,18,Pass,América,Cristian Yonathan Calderón Del Real,44.4,6.8,0.0013146503
+3939819,4,19,Ball Receipt*,América,Álvaro Fidalgo Fernández,48.4,3.2,NA
+3939819,4,19,Carry,América,Álvaro Fidalgo Fernández,48.4,3.2,-1.34306e-4
+3939819,4,19,Pass,América,Álvaro Fidalgo Fernández,47.7,4.3,0.0190835176
+3939819,4,22,Ball Receipt*,América,Henry Josué Martín Mex,88.8,30.8,NA
+3939819,4,22,Carry,América,Henry Josué Martín Mex,88.8,30.8,0.0247895727
+3939819,4,23,Pressure,Atlético San Luis,Rodrigo Dourado Cunha,26,46.9,NA
+3939819,4,23,Shot,América,Henry Josué Martín Mex,96.1,40.8,-0.0034228116
+3939819,4,25,Goal Keeper,Atlético San Luis,Andrés Eduardo Sánchez Rodríguez,15.9,39.1,-0.8262743177
+3939819,5,39,Pass,Atlético San Luis,Mateo Klimowicz,61,40.1,0.0075918818
+3939819,5,42,Ball Receipt*,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,43.9,39.1,NA
+3939819,5,42,Pass,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,43.9,39.1,0.0256423298
+3939819,5,45,Ball Receipt*,Atlético San Luis,Franck Boli,88.8,29.8,NA
+3939819,5,46,Dribble,Atlético San Luis,Franck Boli,93.8,29.2,-0.0055886563
+3939819,5,46,Duel,América,Ramón Juárez Del Castillo,26.3,50.9,0.0055886563
+3939819,5,47,Ball Recovery,Atlético San Luis,Mateo Klimowicz,88.1,33.8,NA
+3939819,5,47,Carry,Atlético San Luis,Mateo Klimowicz,88.1,33.8,0.0343118142
+3939819,5,49,Shot,Atlético San Luis,Mateo Klimowicz,93.5,37.6,-0.016873911
+3939819,5,49,Block,América,Néstor Alejandro Araújo Razo,22.9,42.4,0.0444813138
+3939819,5,49,Goal Keeper,América,Rodolfo Cota Robles,2.8,39.6,NA
+3939819,6,35,Pass,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,120,80,0.098188784
+3939819,6,37,Pressure,América,Ramón Juárez Del Castillo,10.3,45.5,NA
+3939819,6,37,Ball Receipt*,Atlético San Luis,Franck Boli,112.6,32.2,NA
+3939819,6,37,Shot,Atlético San Luis,Franck Boli,112.6,32.2,-0.1389093548
+3939819,6,37,Goal Keeper,América,Rodolfo Cota Robles,0.7,41,NA
+3939819,6,39,Clearance,América,Emilio Lara Contreras,7.8,41.7,0.0510461703
+3939819,6,40,Ball Recovery,Atlético San Luis,Rodrigo Dourado Cunha,101.6,39.1,NA
+3939819,6,40,Carry,Atlético San Luis,Rodrigo Dourado Cunha,101.6,39.1,0.0574770491
+3939819,6,41,Pass,Atlético San Luis,Rodrigo Dourado Cunha,99.5,41.8,-0.043180272
+3939819,6,43,Ball Receipt*,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,98.6,70.3,NA
+3939819,6,43,Carry,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,98.6,70.3,0.0014246525
+3939819,6,45,Pass,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,97.5,66,-0.0201559095
+3939819,6,47,Ball Receipt*,Atlético San Luis,Juan Manuel Sanabria Magole,109.1,39.3,NA
+3939819,6,47,Duel,Atlético San Luis,Juan Manuel Sanabria Magole,108.2,40.6,NA
+3939819,6,47,Clearance,América,Emilio Lara Contreras,11.9,39.5,0.0201559095
+3939819,6,50,Pass,Atlético San Luis,Aldo Jafid Cruz Sánchez,75,47.9,0.0032034479
+3939819,6,53,Pressure,América,Henry Josué Martín Mex,33.4,26.2,NA
+3939819,6,53,Ball Receipt*,Atlético San Luis,Luis Ronaldo Nájera Reyna,89.2,55.2,NA
+3939819,6,53,Pass,Atlético San Luis,Luis Ronaldo Nájera Reyna,89.8,54.6,0.0185170583
+3939819,6,54,Ball Receipt*,Atlético San Luis,Mateo Klimowicz,91.6,50,NA
+3939819,6,54,Carry,Atlético San Luis,Mateo Klimowicz,91.6,50,0.0076310011
+3939819,6,54,Miscontrol,Atlético San Luis,Mateo Klimowicz,91.6,50,NA
+3939819,6,55,Pressure,América,Néstor Alejandro Araújo Razo,23.2,33.9,NA
+3939819,6,56,Ball Recovery,Atlético San Luis,Luis Ronaldo Nájera Reyna,95.8,46.9,NA
+3939819,6,56,Carry,Atlético San Luis,Luis Ronaldo Nájera Reyna,95.8,46.9,0.0099760033
+3939819,6,56,Dribble,Atlético San Luis,Luis Ronaldo Nájera Reyna,97.6,47.9,0
+3939819,6,56,Carry,Atlético San Luis,Luis Ronaldo Nájera Reyna,97.6,47.9,0.0498177372
+3939819,6,56,Dribbled Past,América,Néstor Alejandro Araújo Razo,22.5,32.2,NA
+3939819,6,56,Pass,Atlético San Luis,Luis Ronaldo Nájera Reyna,105.1,45.9,0.036475582
+3939819,6,57,Shot,Atlético San Luis,Mateo Klimowicz,106.8,36.4,-0.0710482821
+3939819,6,57,Ball Receipt*,Atlético San Luis,Mateo Klimowicz,106.8,36.4,NA
+3939819,6,58,Goal Keeper,América,Rodolfo Cota Robles,5.2,41.1,-0.8497222644
+3939819,8,9,Pass,América,Henry Josué Martín Mex,60,40,0.0065639112
+3939819,8,11,Ball Receipt*,América,Álvaro Fidalgo Fernández,41.1,38.4,NA
+3939819,8,11,Pass,América,Álvaro Fidalgo Fernández,41.1,38.4,-0.0024567759
+3939819,8,13,Ball Receipt*,América,Emilio Lara Contreras,40.9,57.8,NA
+3939819,8,16,Pass,América,Emilio Lara Contreras,41.6,69.3,-1.009703e-4
+3939819,8,17,Ball Receipt*,América,Javairô Dilrosun,54.7,77,NA
+3939819,8,17,Pass,América,Javairô Dilrosun,54.7,77,0.0011985851
+3939819,8,19,Clearance,Atlético San Luis,Julio César Domínguez Juárez,47.4,25.6,-0.0011985851
+3939819,8,35,Pass,América,Emilio Lara Contreras,75.1,80,0.0107481396
+3939819,8,36,Ball Receipt*,América,Álvaro Fidalgo Fernández,84.4,70.3,NA
+3939819,8,36,Pass,América,Álvaro Fidalgo Fernández,85.9,70.3,-0.0037773335
+3939819,8,38,Ball Receipt*,América,Javairô Dilrosun,78.4,72.4,NA
+3939819,8,38,Carry,América,Javairô Dilrosun,78.4,72.4,0.00368925
+3939819,8,40,Pass,América,Javairô Dilrosun,86.4,69.5,-0.0107154683
+3939819,8,43,Ball Receipt*,América,Emilio Lara Contreras,93.9,77,NA
+3939819,8,52,Pass,Atlético San Luis,Andrés Eduardo Sánchez Rodríguez,7,41.3,1.12955e-5
+3939819,8,54,Ball Receipt*,Atlético San Luis,Aldo Jafid Cruz Sánchez,12.5,20.9,NA
+3939819,8,56,Pass,Atlético San Luis,Aldo Jafid Cruz Sánchez,17.6,13.1,0.0021219281
+3939819,8,56,Ball Receipt*,Atlético San Luis,Juan Manuel Sanabria Magole,26.6,5.3,NA
+3939819,8,56,Carry,Atlético San Luis,Juan Manuel Sanabria Magole,26.6,5.3,0
+3939819,8,57,Pass,Atlético San Luis,Juan Manuel Sanabria Magole,26.4,5.5,3.42953e-4
+3939819,8,58,Pressure,América,Jonathan dos Santos Ramírez,79.5,68.3,NA
+3939819,8,58,Ball Receipt*,Atlético San Luis,Mateo Klimowicz,38.3,11.7,NA
+3939819,8,58,Carry,Atlético San Luis,Mateo Klimowicz,38.3,11.7,0.0037366012
+3939819,9,0,Pass,Atlético San Luis,Mateo Klimowicz,36.4,18.4,-0.0155413235
+3939819,9,1,Ball Receipt*,Atlético San Luis,Rodrigo Dourado Cunha,46.5,21.6,NA
+3939819,9,1,Miscontrol,Atlético San Luis,Rodrigo Dourado Cunha,46.6,23.3,NA
+3939819,9,1,Ball Recovery,América,Jonathan dos Santos Ramírez,73.8,53.6,NA
+3939819,9,1,Carry,América,Jonathan dos Santos Ramírez,73.8,53.6,0.0151111921
+3939819,9,2,Pass,América,Jonathan dos Santos Ramírez,69.8,51.8,-0.0037385058
+3939819,9,4,Ball Receipt*,América,Ramón Juárez Del Castillo,55.1,40.1,NA
+3939819,9,4,Carry,América,Ramón Juárez Del Castillo,55.1,40.1,-0.0024025952
+3939819,9,5,Pass,América,Ramón Juárez Del Castillo,53.7,38.7,3.985846e-4
+3939819,9,6,Ball Receipt*,América,Cristian Yonathan Calderón Del Real,52.8,27.9,NA
+3939819,9,6,Pass,América,Cristian Yonathan Calderón Del Real,52.8,27.9,-0.0079134861
+3939819,9,8,Ball Receipt*,América,Rodolfo Cota Robles,16.3,45.6,NA
+3939819,9,8,Carry,América,Rodolfo Cota Robles,16.3,45.6,-1.216996e-4
+3939819,9,10,Pass,América,Rodolfo Cota Robles,16.3,46,0.002899969
+3939819,9,11,Ball Receipt*,América,Néstor Alejandro Araújo Razo,31.4,55.8,NA
+3939819,9,11,Carry,América,Néstor Alejandro Araújo Razo,31.4,55.8,-1.275577e-4
+3939819,9,13,Pass,América,Néstor Alejandro Araújo Razo,32.1,56.8,0.0010119295
+3939819,9,15,Ball Receipt*,América,Emilio Lara Contreras,42,74,NA
+3939819,9,16,Pass,América,Emilio Lara Contreras,43.9,74,-0.0076953508
+3939819,9,17,Pressure,Atlético San Luis,Mateo Klimowicz,66.7,14.8,NA
+3939819,9,17,Ball Receipt*,América,Álvaro Fidalgo Fernández,56.1,66.4,NA
+3939819,9,17,Miscontrol,América,Álvaro Fidalgo Fernández,56.7,64.6,NA
+3939819,9,38,Pass,América,Ramón Juárez Del Castillo,13.7,15.8,-0.0024538753
+3939819,9,39,Pressure,Atlético San Luis,Franck Boli,105.3,49.3,NA
+3939819,9,39,Ball Receipt*,América,Rodolfo Cota Robles,2.7,30.9,NA
+3939819,9,39,Pass,América,Rodolfo Cota Robles,3.3,30.6,0.0050891875
+3939819,9,43,Pass,Atlético San Luis,Ricardo Chávez Soto,87.8,77.1,-0.0066163721
+3939819,9,44,Ball Receipt*,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,79,60.3,NA
+3939819,9,44,Ball Recovery,América,Jonathan dos Santos Ramírez,31.4,15.4,NA
+3939819,9,44,Carry,América,Jonathan dos Santos Ramírez,31.4,15.4,0.0049031358
+3939819,9,45,Pass,América,Jonathan dos Santos Ramírez,33.8,23.5,0.0064255083
+3939819,9,47,Ball Receipt*,América,Henry Josué Martín Mex,57.4,25.6,NA
+3939819,9,47,Carry,América,Henry Josué Martín Mex,57.4,25.6,4.367614e-4
+3939819,9,49,Pass,América,Henry Josué Martín Mex,64.5,29.6,-0.0106919464
+3939819,9,50,Ball Receipt*,América,Javairô Dilrosun,73.2,61.7,NA
+3939819,9,50,Miscontrol,América,Javairô Dilrosun,73.1,61.5,NA
+3939819,9,51,Pressure,América,Javairô Dilrosun,73.1,60.4,NA
+3939819,9,51,Ball Recovery,Atlético San Luis,Juan Manuel Sanabria Magole,45.4,23,NA
+3939819,9,51,Carry,Atlético San Luis,Juan Manuel Sanabria Magole,45.4,23,0.0119637642
+3939819,9,52,Dribble,Atlético San Luis,Juan Manuel Sanabria Magole,50.3,17.3,0
+3939819,9,52,Carry,Atlético San Luis,Juan Manuel Sanabria Magole,50.3,17.3,0.0115681468
+3939819,9,52,Dribbled Past,América,Javairô Dilrosun,69.8,62.8,NA
+3939819,9,59,Pass,Atlético San Luis,Juan Manuel Sanabria Magole,83,12.4,-0.0011108704
+3939819,10,0,Ball Receipt*,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,73,23.6,NA
+3939819,10,0,Carry,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,73,23.6,3.850134e-4
+3939819,10,1,Pass,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,73.7,26.3,0.0048964173
+3939819,10,2,Ball Receipt*,Atlético San Luis,Luis Ronaldo Nájera Reyna,80.6,48.8,NA
+3939819,10,2,Carry,Atlético San Luis,Luis Ronaldo Nájera Reyna,80.6,48.8,-0.0039295806
+3939819,10,4,Pass,Atlético San Luis,Luis Ronaldo Nájera Reyna,73.3,49.3,-0.0058757029
+3939819,10,5,Ball Receipt*,Atlético San Luis,Julio César Domínguez Juárez,65.7,63,NA
+3939819,10,5,Carry,Atlético San Luis,Julio César Domínguez Juárez,65.7,63,0
+3939819,10,7,Pass,Atlético San Luis,Julio César Domínguez Juárez,65.7,63,0.0019767024
+3939819,10,8,Ball Receipt*,Atlético San Luis,Óscar Uriel Macías Mora,65.4,53.9,NA
+3939819,10,8,Carry,Atlético San Luis,Óscar Uriel Macías Mora,65.4,53.9,0
+3939819,10,9,Pass,Atlético San Luis,Óscar Uriel Macías Mora,65.4,53.9,-0.0014259843
+3939819,10,10,Ball Receipt*,Atlético San Luis,Julio César Domínguez Juárez,68.4,64.3,NA
+3939819,10,10,Carry,Atlético San Luis,Julio César Domínguez Juárez,68.4,64.3,9.52613e-5
+3939819,10,11,Pass,Atlético San Luis,Julio César Domínguez Juárez,68.7,67.6,5.769236e-4
+3939819,10,12,Ball Receipt*,Atlético San Luis,Ricardo Chávez Soto,79,79.1,NA
+3939819,10,12,Carry,Atlético San Luis,Ricardo Chávez Soto,79,79.1,0
+3939819,10,13,Pass,Atlético San Luis,Ricardo Chávez Soto,79,79.1,0.0015744297
+3939819,10,14,Ball Receipt*,Atlético San Luis,Óscar Uriel Macías Mora,78.8,71.3,NA
+3939819,10,14,Pass,Atlético San Luis,Óscar Uriel Macías Mora,78.8,71.3,-0.0061463313
+3939819,10,16,Ball Receipt*,Atlético San Luis,Julio César Domínguez Juárez,61.7,73.6,NA
+3939819,10,16,Carry,Atlético San Luis,Julio César Domínguez Juárez,61.7,73.6,3.566975e-4
+3939819,10,16,Pass,Atlético San Luis,Julio César Domínguez Juárez,62.4,73.8,-0.0021726331
+3939819,10,18,Ball Receipt*,Atlético San Luis,Rodrigo Dourado Cunha,52.3,53.7,NA
+3939819,10,18,Carry,Atlético San Luis,Rodrigo Dourado Cunha,52.3,53.7,0.0057668416
+3939819,10,24,Pressure,América,Henry Josué Martín Mex,57.9,27.6,NA
+3939819,10,25,Pass,Atlético San Luis,Rodrigo Dourado Cunha,62,55.2,0.0019510109
+3939819,10,26,Ball Receipt*,Atlético San Luis,Ricardo Chávez Soto,80.2,77.3,NA
+3939819,10,26,Carry,Atlético San Luis,Ricardo Chávez Soto,80.2,77.3,6.597079e-4
+3939819,10,28,Pass,Atlético San Luis,Ricardo Chávez Soto,83.9,76.3,0.0044882745
+3939819,10,29,Ball Receipt*,Atlético San Luis,Luis Ronaldo Nájera Reyna,86.3,65.7,NA
+3939819,10,29,Carry,Atlético San Luis,Luis Ronaldo Nájera Reyna,86.3,65.7,0
+3939819,10,29,Pass,Atlético San Luis,Luis Ronaldo Nájera Reyna,86.3,65.7,-0.0048929602
+3939819,10,30,Ball Receipt*,Atlético San Luis,Óscar Uriel Macías Mora,83,68.3,NA
+3939819,10,30,Carry,Atlético San Luis,Óscar Uriel Macías Mora,83,68.3,0.0021474296
+3939819,10,30,Pressure,América,Alejandro Zendejas Saavedra,38,9.1,NA
+3939819,10,30,Pass,Atlético San Luis,Óscar Uriel Macías Mora,83.2,69.8,0.0024768179
+3939819,10,32,Ball Receipt*,Atlético San Luis,Ricardo Chávez Soto,95.3,77.5,NA
+3939819,10,32,Carry,Atlético San Luis,Ricardo Chávez Soto,95.3,77.5,-0.0014437921
+3939819,10,34,Pass,Atlético San Luis,Ricardo Chávez Soto,89.6,76.5,-0.0120785106
+3939819,10,34,Ball Receipt*,Atlético San Luis,Franck Boli,100,51.9,NA
+3939819,10,34,Block,América,Cristian Yonathan Calderón Del Real,26.3,7.9,0.0120785106
+3939819,10,35,Pressure,Atlético San Luis,Ricardo Chávez Soto,88.3,75.5,NA
+3939819,10,35,Pass,América,Alejandro Zendejas Saavedra,33.3,5.8,-0.0017973008
+3939819,10,36,Ball Receipt*,América,Cristian Yonathan Calderón Del Real,26.1,6.3,NA
+3939819,10,36,Carry,América,Cristian Yonathan Calderón Del Real,26.1,6.3,-2.765693e-4
+3939819,10,37,Pressure,Atlético San Luis,Luis Ronaldo Nájera Reyna,91.7,73.6,NA
+3939819,10,37,Pass,América,Cristian Yonathan Calderón Del Real,25.8,5.6,0.0012173513
+3939819,10,37,Pressure,Atlético San Luis,Ricardo Chávez Soto,88.5,76.5,NA
+3939819,10,38,Ball Receipt*,América,Alejandro Zendejas Saavedra,31.4,1.9,NA
+3939819,10,38,Carry,América,Alejandro Zendejas Saavedra,31.4,1.9,0.0032028435
+3939819,10,38,Foul Committed,Atlético San Luis,Ricardo Chávez Soto,84,78.6,-0.0032028435
+3939819,10,38,Foul Won,América,Alejandro Zendejas Saavedra,36.1,1.5,NA
+3939819,10,50,Pass,América,Alejandro Zendejas Saavedra,35.9,1.7,-0.0017080856
+3939819,10,51,Ball Receipt*,América,Cristian Yonathan Calderón Del Real,30.3,7.2,NA
+3939819,10,51,Carry,América,Cristian Yonathan Calderón Del Real,30.3,7.2,1.45738e-4
+3939819,10,52,Pass,América,Cristian Yonathan Calderón Del Real,30.1,7.4,0.0027041743
+3939819,10,53,Ball Receipt*,América,Álvaro Fidalgo Fernández,41.9,9.1,NA
+3939819,10,53,Carry,América,Álvaro Fidalgo Fernández,41.9,9.1,0
+3939819,10,53,Pass,América,Álvaro Fidalgo Fernández,41.9,9.1,-4.603909e-4
+3939819,10,54,Ball Receipt*,América,Alejandro Zendejas Saavedra,41.6,2.5,NA
+3939819,10,54,Carry,América,Alejandro Zendejas Saavedra,41.6,2.5,-1.553278e-4
+3939819,10,55,Pass,América,Alejandro Zendejas Saavedra,41.3,2.3,-0.001093436
+3939819,10,56,Ball Receipt*,América,Cristian Yonathan Calderón Del Real,36.3,8.1,NA
+3939819,10,56,Carry,América,Cristian Yonathan Calderón Del Real,36.3,8.1,-4.775338e-4
+3939819,10,57,Pass,América,Cristian Yonathan Calderón Del Real,35.8,7.9,-7.00057e-5
+3939819,10,58,Ball Receipt*,América,Jonathan dos Santos Ramírez,26.1,14,NA
+3939819,10,58,Carry,América,Jonathan dos Santos Ramírez,26.1,14,-4.274463e-4
+3939819,11,1,Pass,América,Jonathan dos Santos Ramírez,18.6,22,-0.0038962155
+3939819,11,3,Ball Receipt*,América,Emilio Lara Contreras,31.1,63.8,NA
+3939819,11,3,Pass,América,Emilio Lara Contreras,31.1,63.8,-0.003165429
+3939819,11,6,Ball Receipt*,América,Javairô Dilrosun,51.5,76.1,NA
+3939819,11,6,Ball Recovery,Atlético San Luis,Aldo Jafid Cruz Sánchez,68.4,8.4,NA
+3939819,11,6,Carry,Atlético San Luis,Aldo Jafid Cruz Sánchez,68.4,8.4,1.902957e-4
+3939819,11,8,Pass,Atlético San Luis,Aldo Jafid Cruz Sánchez,63.3,5.5,0.0027713589
+3939819,11,9,Ball Receipt*,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,63.1,15.7,NA
+3939819,11,9,Carry,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,63.1,15.7,-1.38376e-5
+3939819,11,12,Pass,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,58,22.1,-3.161086e-4
+3939819,11,14,Ball Receipt*,Atlético San Luis,Julio César Domínguez Juárez,52.5,50.2,NA
+3939819,11,14,Carry,Atlético San Luis,Julio César Domínguez Juárez,52.5,50.2,3.329292e-4
+3939819,11,19,Pass,Atlético San Luis,Julio César Domínguez Juárez,58,55.9,8.965461e-4
+3939819,11,21,Ball Receipt*,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,58,39.8,NA
+3939819,11,21,Carry,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,58,39.8,0.0012437059
+3939819,11,21,Pass,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,58.4,40.2,-0.0044863392
+3939819,11,23,Ball Receipt*,Atlético San Luis,Aldo Jafid Cruz Sánchez,53.9,20.3,NA
+3939819,11,23,Carry,Atlético San Luis,Aldo Jafid Cruz Sánchez,53.9,20.3,3.96153e-4
+3939819,11,23,Pass,Atlético San Luis,Aldo Jafid Cruz Sánchez,54.2,17.7,9.601424e-4
+3939819,11,24,Pressure,América,Emilio Lara Contreras,52.6,72.8,NA
+3939819,11,25,Ball Receipt*,Atlético San Luis,Juan Manuel Sanabria Magole,65.1,6.2,NA
+3939819,11,25,Pass,Atlético San Luis,Juan Manuel Sanabria Magole,64,7.3,0.0011888593
+3939819,11,26,Ball Receipt*,Atlético San Luis,Mateo Klimowicz,67.3,11.1,NA
+3939819,11,26,Pass,Atlético San Luis,Mateo Klimowicz,67.3,11.1,0.0012310036
+3939819,11,28,Ball Receipt*,Atlético San Luis,Juan Manuel Sanabria Magole,75,3.8,NA
+3939819,11,28,Carry,Atlético San Luis,Juan Manuel Sanabria Magole,75,3.8,3.638351e-4
+3939819,11,29,Pass,Atlético San Luis,Juan Manuel Sanabria Magole,78.1,5.3,-2.96277e-4
+3939819,11,30,Ball Receipt*,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,68.6,16.3,NA
+3939819,11,30,Carry,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,68.6,16.3,1.37091e-5
+3939819,11,32,Pass,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,67.7,21.3,0.0075815441
+3939819,11,35,Ball Receipt*,Atlético San Luis,Ricardo Chávez Soto,104,76.7,NA
+3939819,11,35,Carry,Atlético San Luis,Ricardo Chávez Soto,104,76.7,0.0090040304
+3939819,11,37,Pass,Atlético San Luis,Ricardo Chávez Soto,98,61.5,0.0103877513
+3939819,11,37,Ball Receipt*,Atlético San Luis,Luis Ronaldo Nájera Reyna,98.9,54.1,NA
+3939819,11,37,Carry,Atlético San Luis,Luis Ronaldo Nájera Reyna,98.9,54.1,0.0203592135
+3939819,11,37,Miscontrol,Atlético San Luis,Luis Ronaldo Nájera Reyna,98.9,54.1,NA
+3939819,11,39,Pressure,América,Néstor Alejandro Araújo Razo,19.9,32.1,NA
+3939819,11,40,Ball Recovery,Atlético San Luis,Franck Boli,99.1,44.7,NA
+3939819,11,40,Carry,Atlético San Luis,Franck Boli,99.1,44.7,-0.0111045912
+3939819,11,40,Dribble,Atlético San Luis,Franck Boli,96.9,40,-0.0414479524
+3939819,11,40,Duel,América,Richard Rafael Sánchez Guerrero,23.2,40.1,0.0414479524
+3939819,11,41,Ball Recovery,América,Javairô Dilrosun,24.3,50.7,NA
+3939819,11,41,Carry,América,Javairô Dilrosun,24.3,50.7,-2.018623e-4
+3939819,11,42,Pressure,Atlético San Luis,Mateo Klimowicz,93.6,29.1,NA
+3939819,11,42,Pass,América,Javairô Dilrosun,23.5,50.5,7.937606e-4
+3939819,11,42,Block,Atlético San Luis,Mateo Klimowicz,94.9,29.6,-7.937606e-4
+3939819,11,43,Ball Recovery,América,Rodolfo Cota Robles,2.9,46.3,NA
+3939819,11,43,Carry,América,Rodolfo Cota Robles,2.9,46.3,0.0317352982
+3939819,11,54,Pass,América,Rodolfo Cota Robles,12.4,44.4,-0.0014010509
+3939819,11,56,Ball Receipt*,América,Ramón Juárez Del Castillo,10,21.4,NA
+3939819,11,56,Carry,América,Ramón Juárez Del Castillo,10,21.4,6.88424e-5
+3939819,11,59,Pass,América,Ramón Juárez Del Castillo,13,24,-0.0025367681
+3939819,12,1,Ball Receipt*,América,Rodolfo Cota Robles,3.3,44.7,NA
+3939819,12,1,Carry,América,Rodolfo Cota Robles,3.3,44.7,1.081293e-4
+3939819,12,1,Pressure,Atlético San Luis,Franck Boli,110.1,39.4,NA
+3939819,12,2,Pass,América,Rodolfo Cota Robles,4.2,46.9,0.0058441563
+3939819,12,5,Pass,Atlético San Luis,Juan Manuel Sanabria Magole,71.9,7.1,0.0058586961
+3939819,12,6,Ball Receipt*,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,80.1,14.1,NA
+3939819,12,6,Carry,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,80.1,14.1,-0.0063121594
+3939819,12,6,Pressure,América,Emilio Lara Contreras,37.1,65.8,NA
+3939819,12,7,Miscontrol,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,78.2,15.1,NA
+3939819,12,7,Pass,América,Richard Rafael Sánchez Guerrero,37.1,62.8,0.0155178839
+3939819,12,9,Ball Receipt*,América,Álvaro Fidalgo Fernández,48.1,62.8,NA
+3939819,12,9,Carry,América,Álvaro Fidalgo Fernández,48.1,62.8,5.286532e-4
+3939819,12,11,Pass,América,Álvaro Fidalgo Fernández,42,48.5,-9.730514e-4
+3939819,12,11,Ball Receipt*,América,Alejandro Zendejas Saavedra,48.2,41.6,NA
+3939819,12,11,Carry,América,Alejandro Zendejas Saavedra,48.2,41.6,9.228364e-4
+3939819,12,12,Pass,América,Alejandro Zendejas Saavedra,48.4,44.7,0.001398813
+3939819,12,13,Ball Receipt*,América,Richard Rafael Sánchez Guerrero,49.9,51.8,NA
+3939819,12,13,Carry,América,Richard Rafael Sánchez Guerrero,49.9,51.8,-5.95059e-5
+3939819,12,13,Pass,América,Richard Rafael Sánchez Guerrero,49.7,49.2,-0.0019214982
+3939819,12,15,Ball Receipt*,América,Jonathan dos Santos Ramírez,44.9,40.4,NA
+3939819,12,15,Carry,América,Jonathan dos Santos Ramírez,44.9,40.4,8.166321e-4
+3939819,12,17,Pass,América,Jonathan dos Santos Ramírez,49.3,39.1,0.0012336709
+3939819,12,19,Ball Receipt*,América,Cristian Yonathan Calderón Del Real,63,2.1,NA
+3939819,12,19,Carry,América,Cristian Yonathan Calderón Del Real,63,2.1,7.938137e-4
+3939819,12,24,Pass,América,Cristian Yonathan Calderón Del Real,69.8,7.1,1.455033e-4
+3939819,12,25,Ball Receipt*,América,Alejandro Zendejas Saavedra,73.5,1.7,NA
+3939819,12,25,Carry,América,Alejandro Zendejas Saavedra,73.5,1.7,0
+3939819,12,26,Pass,América,Alejandro Zendejas Saavedra,73.5,1.7,0.007692921
+3939819,12,28,Ball Receipt*,América,Álvaro Fidalgo Fernández,93.3,2.8,NA
+3939819,12,28,Carry,América,Álvaro Fidalgo Fernández,93.3,2.8,-0.001413295
+3939819,12,31,Pass,América,Álvaro Fidalgo Fernández,96.3,1.7,-7.40737e-5
+3939819,12,32,Ball Receipt*,América,Alejandro Zendejas Saavedra,91.9,1,NA
+3939819,12,32,Carry,América,Alejandro Zendejas Saavedra,91.9,1,0
+3939819,12,32,Pass,América,Alejandro Zendejas Saavedra,91.9,1,-0.0012083696
+3939819,12,33,Ball Receipt*,América,Richard Rafael Sánchez Guerrero,85.7,7.6,NA
+3939819,12,33,Carry,América,Richard Rafael Sánchez Guerrero,85.7,7.6,0
+3939819,12,34,Pass,América,Richard Rafael Sánchez Guerrero,85.7,7.6,0.0010705795
+3939819,12,35,Ball Receipt*,América,Alejandro Zendejas Saavedra,88.6,2.8,NA
+3939819,12,35,Carry,América,Alejandro Zendejas Saavedra,88.6,2.8,-3.856411e-4
+3939819,12,37,Pass,América,Alejandro Zendejas Saavedra,85.7,4.8,-0.0048472155
+3939819,12,38,Ball Receipt*,América,Ramón Juárez Del Castillo,75.1,8.7,NA
+3939819,12,38,Carry,América,Ramón Juárez Del Castillo,75.1,8.7,0.005720512
+3939819,12,39,Pressure,Atlético San Luis,Luis Ronaldo Nájera Reyna,41.4,71.8,NA
+3939819,12,40,Pass,América,Ramón Juárez Del Castillo,83.5,12.4,-5.14756e-4
+3939819,12,40,Ball Receipt*,América,Álvaro Fidalgo Fernández,85.9,5,NA
+3939819,12,40,Carry,América,Álvaro Fidalgo Fernández,85.9,5,0
+3939819,12,41,Pass,América,Álvaro Fidalgo Fernández,85.9,5,0.0017787088
+3939819,12,42,Ball Receipt*,América,Alejandro Zendejas Saavedra,95,3,NA
+3939819,12,42,Carry,América,Alejandro Zendejas Saavedra,95,3,9.719608e-4
+3939819,12,45,Pass,América,Alejandro Zendejas Saavedra,95.9,3.9,0.0017301384
+3939819,12,46,Ball Receipt*,América,Jonathan dos Santos Ramírez,92.3,11.8,NA
+3939819,12,46,Carry,América,Jonathan dos Santos Ramírez,92.3,11.8,0
+3939819,12,46,Pass,América,Jonathan dos Santos Ramírez,92.3,11.8,-1.028348e-4
+3939819,12,47,Ball Receipt*,América,Álvaro Fidalgo Fernández,99.2,4.1,NA
+3939819,12,47,Carry,América,Álvaro Fidalgo Fernández,99.2,4.1,-0.0011116592
+3939819,12,50,Pass,América,Álvaro Fidalgo Fernández,99.4,7.4,0.0098188268
+3939819,12,51,Ball Receipt*,América,Jonathan dos Santos Ramírez,100.7,18.7,NA
+3939819,12,51,Carry,América,Jonathan dos Santos Ramírez,100.7,18.7,0
+3939819,12,51,Pass,América,Jonathan dos Santos Ramírez,100.7,18.7,-0.0092607085
+3939819,12,53,Ball Receipt*,América,Cristian Yonathan Calderón Del Real,105.2,4.1,NA
+3939819,12,53,Carry,América,Cristian Yonathan Calderón Del Real,105.2,4.1,0.0021536937
+3939819,12,54,Pass,América,Cristian Yonathan Calderón Del Real,106.7,5.9,-0.0110114198
+3939819,12,54,Block,Atlético San Luis,Ricardo Chávez Soto,13,68.7,0.0110114198
+3939819,13,0,Pass,América,Cristian Yonathan Calderón Del Real,98.6,0.1,0.0060075084
+3939819,13,2,Ball Receipt*,América,Richard Rafael Sánchez Guerrero,89.7,15.8,NA
+3939819,13,2,Carry,América,Richard Rafael Sánchez Guerrero,89.7,15.8,-0.0010116696
+3939819,13,2,Pressure,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,30.9,62.1,NA
+3939819,13,4,Pass,América,Richard Rafael Sánchez Guerrero,88,9.4,-0.002095893
+3939819,13,5,Ball Receipt*,América,Cristian Yonathan Calderón Del Real,83,2.3,NA
+3939819,13,5,Carry,América,Cristian Yonathan Calderón Del Real,83,2.3,-1.929421e-4
+3939819,13,7,Pass,América,Cristian Yonathan Calderón Del Real,79.5,3.6,-0.0036802301
+3939819,13,8,Ball Receipt*,América,Ramón Juárez Del Castillo,68.2,4.3,NA
+3939819,13,8,Carry,América,Ramón Juárez Del Castillo,68.2,4.3,-0.0013434459
+3939819,13,9,Pass,América,Ramón Juárez Del Castillo,67.9,4.5,0.0087351361
+3939819,13,10,Ball Receipt*,América,Álvaro Fidalgo Fernández,79.1,20.9,NA
+3939819,13,10,Carry,América,Álvaro Fidalgo Fernández,79.1,20.9,-4.312e-6
+3939819,13,10,Pass,América,Álvaro Fidalgo Fernández,77.3,23.3,-0.00712517
+3939819,13,13,Ball Receipt*,América,Emilio Lara Contreras,68.3,69.1,NA
+3939819,13,13,Carry,América,Emilio Lara Contreras,68.3,69.1,0.0023339912
+3939819,13,14,Pass,América,Emilio Lara Contreras,70.3,69.5,-0.005704443
+3939819,13,15,Ball Receipt*,América,Javairô Dilrosun,93.2,75.2,NA
+3939819,13,15,Interception,Atlético San Luis,Juan Manuel Sanabria Magole,31.3,5.3,0.005704443
+3939819,13,17,Pressure,Atlético San Luis,Juan Manuel Sanabria Magole,47,4.4,NA
+3939819,13,18,Pass,América,Emilio Lara Contreras,69,75.9,0.0123314448
+3939819,13,19,Ball Receipt*,América,Javairô Dilrosun,85.7,73.2,NA
+3939819,13,19,Carry,América,Javairô Dilrosun,85.7,73.2,0.0440207999
+3939819,13,26,Pass,América,Javairô Dilrosun,114.7,57.6,0.0581115251
+3939819,13,27,Ball Receipt*,América,Alejandro Zendejas Saavedra,117,29.6,NA
+3939819,13,27,Shot,América,Alejandro Zendejas Saavedra,117,29.6,-0.1233296394
+3939819,13,27,Goal Keeper,Atlético San Luis,Andrés Eduardo Sánchez Rodríguez,1.6,38,NA
+3939819,13,56,Pass,Atlético San Luis,Andrés Eduardo Sánchez Rodríguez,6.8,39.8,-4.900242e-4
+3939819,13,57,Ball Receipt*,Atlético San Luis,Aldo Jafid Cruz Sánchez,6.8,27.4,NA
+3939819,13,57,Carry,Atlético San Luis,Aldo Jafid Cruz Sánchez,6.8,27.4,4.541688e-4
+3939819,13,58,Pass,Atlético San Luis,Aldo Jafid Cruz Sánchez,6.5,28.2,0.0010416014
+3939819,13,59,Ball Receipt*,Atlético San Luis,Andrés Eduardo Sánchez Rodríguez,5.8,36.7,NA
+3939819,13,59,Pass,Atlético San Luis,Andrés Eduardo Sánchez Rodríguez,5.8,36.9,-0.0062767062
+3939819,14,0,Ball Receipt*,Atlético San Luis,Aldo Jafid Cruz Sánchez,6.7,24.3,NA
+3939819,14,0,Carry,Atlético San Luis,Aldo Jafid Cruz Sánchez,6.7,24.3,0.0016445024
+3939819,14,2,Pressure,América,Henry Josué Martín Mex,108.1,63.7,NA
+3939819,14,3,Pass,Atlético San Luis,Aldo Jafid Cruz Sánchez,12.9,10.1,1.453841e-4
+3939819,14,5,Ball Receipt*,Atlético San Luis,Franck Boli,63.3,26.5,NA
+3939819,14,5,Pass,América,Néstor Alejandro Araújo Razo,58.3,57.2,-0.0059724106
+3939819,14,9,Ball Recovery,Atlético San Luis,Andrés Eduardo Sánchez Rodríguez,8.8,42.2,NA
+3939819,14,9,Carry,Atlético San Luis,Andrés Eduardo Sánchez Rodríguez,8.8,42.2,0.0105653759
+3939819,14,12,Pass,Atlético San Luis,Andrés Eduardo Sánchez Rodríguez,14.1,49.9,0.0015959982
+3939819,14,13,Ball Receipt*,Atlético San Luis,Rodrigo Dourado Cunha,17.8,40.7,NA
+3939819,14,16,Pass,Atlético San Luis,Rodrigo Dourado Cunha,37.9,41,-0.0132406661
+3939819,14,21,Ball Receipt*,Atlético San Luis,Franck Boli,64.2,41.3,NA
+3939819,14,21,Ball Recovery,América,Alejandro Zendejas Saavedra,58.3,39.9,NA
+3939819,14,21,Carry,América,Alejandro Zendejas Saavedra,58.3,39.9,0.024683835
+3939819,14,25,Pass,América,Alejandro Zendejas Saavedra,85.1,30.6,0.0216621459
+3939819,14,26,Ball Receipt*,América,Henry Josué Martín Mex,95.3,38.3,NA
+3939819,14,26,Pass,América,Henry Josué Martín Mex,95.3,38.3,-0.0099129872
+3939819,14,26,Pressure,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,30.6,43.9,NA
+3939819,14,26,Ball Receipt*,América,Richard Rafael Sánchez Guerrero,89.9,38.8,NA
+3939819,14,26,Pass,América,Richard Rafael Sánchez Guerrero,91.7,38.1,0.0046634376
+3939819,14,30,Ball Receipt*,América,Alejandro Zendejas Saavedra,117.6,21.3,NA
+3939819,14,30,Pass,América,Alejandro Zendejas Saavedra,118.2,21.4,0.0250380924
+3939819,14,31,Ball Receipt*,América,Henry Josué Martín Mex,110.1,38.5,NA
+3939819,14,31,Duel,Atlético San Luis,Rodrigo Dourado Cunha,10,41.6,NA
+3939819,14,31,Shot,América,Henry Josué Martín Mex,110.1,38.5,-0.0705644563
+3939819,14,34,Goal Keeper,Atlético San Luis,Andrés Eduardo Sánchez Rodríguez,1.6,41.5,NA
+3939819,15,13,Pass,Atlético San Luis,Andrés Eduardo Sánchez Rodríguez,7,42.4,0.0043249372
+3939819,15,17,Ball Receipt*,Atlético San Luis,Franck Boli,78.6,66,NA
+3939819,15,17,Duel,Atlético San Luis,Franck Boli,79,61,NA
+3939819,15,17,Pass,América,Ramón Juárez Del Castillo,41.1,19.1,-8.964073e-4
+3939819,15,18,Ball Recovery,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,66.2,47.7,NA
+3939819,15,19,Duel,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,67.3,43.9,NA
+3939819,15,19,Pass,América,Richard Rafael Sánchez Guerrero,52.8,36.2,0.0055501005
+3939819,15,20,Ball Receipt*,América,Henry Josué Martín Mex,58.7,36.4,NA
+3939819,15,20,Pass,América,Henry Josué Martín Mex,58.7,36.4,-0.0048612282
+3939819,15,21,Ball Receipt*,América,Richard Rafael Sánchez Guerrero,56.4,41,NA
+3939819,15,21,Miscontrol,América,Richard Rafael Sánchez Guerrero,57,40.7,NA
+3939819,15,22,Pressure,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,64.4,36.9,NA
+3939819,15,22,Ball Recovery,América,Javairô Dilrosun,55,45.2,NA
+3939819,15,22,Carry,América,Javairô Dilrosun,55,45.2,-2.870094e-4
+3939819,15,22,Dribble,América,Javairô Dilrosun,55,43.6,0.0016859099
+3939819,15,22,Duel,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,65.1,36.5,-0.0016859099
+3939819,15,24,Pressure,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,63.3,34.5,NA
+3939819,15,24,Ball Recovery,América,Henry Josué Martín Mex,57.4,46.7,NA
+3939819,15,24,Carry,América,Henry Josué Martín Mex,57.4,46.7,0.004350611
+3939819,15,25,Pressure,Atlético San Luis,Óscar Uriel Macías Mora,61.1,39.4,NA
+3939819,15,25,Dispossessed,América,Henry Josué Martín Mex,61.2,43,NA
+3939819,15,25,Duel,Atlético San Luis,Óscar Uriel Macías Mora,58.9,37.1,0.011152532
+3939819,15,26,Pressure,América,Henry Josué Martín Mex,63.2,43.4,NA
+3939819,15,26,Pass,Atlético San Luis,Aldo Jafid Cruz Sánchez,55.4,36.9,0.005352661
+3939819,15,26,Ball Receipt*,Atlético San Luis,Óscar Uriel Macías Mora,59.1,37.8,NA
+3939819,15,26,Block,América,Henry Josué Martín Mex,63.4,43.2,-0.005352661
+3939819,15,29,Pass,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,63.3,27.6,0.0200508945
+3939819,15,32,Ball Receipt*,Atlético San Luis,Juan Manuel Sanabria Magole,68.4,6.9,NA
+3939819,15,32,Carry,Atlético San Luis,Juan Manuel Sanabria Magole,68.4,6.9,8.681929e-4
+3939819,15,34,Pass,Atlético San Luis,Juan Manuel Sanabria Magole,70.6,7.1,5.913172e-4
+3939819,15,35,Ball Receipt*,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,67.3,15.4,NA
+3939819,15,35,Carry,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,67.3,15.4,5.96581e-4
+3939819,15,36,Pass,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,67,16.1,0.0012383042
+3939819,15,37,Ball Receipt*,Atlético San Luis,Óscar Uriel Macías Mora,67.3,26.6,NA
+3939819,15,37,Carry,Atlético San Luis,Óscar Uriel Macías Mora,67.3,26.6,0
+3939819,15,37,Pass,Atlético San Luis,Óscar Uriel Macías Mora,67.3,26.6,-0.0033524809
+3939819,15,38,Ball Receipt*,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,65.1,13.9,NA
+3939819,15,38,Carry,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,65.1,13.9,8.179005e-4
+3939819,15,39,Pass,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,63.4,16.4,-0.0023058737
+3939819,15,41,Ball Receipt*,Atlético San Luis,Rodrigo Dourado Cunha,51.1,41.7,NA
+3939819,15,41,Carry,Atlético San Luis,Rodrigo Dourado Cunha,51.1,41.7,5.980264e-4
+3939819,15,42,Pass,Atlético San Luis,Rodrigo Dourado Cunha,52.2,45.5,-7.690135e-4
+3939819,15,44,Ball Receipt*,Atlético San Luis,Ricardo Chávez Soto,68.2,77.5,NA
+3939819,15,44,Carry,Atlético San Luis,Ricardo Chávez Soto,68.2,77.5,-7.146941e-4
+3939819,15,45,Pass,Atlético San Luis,Ricardo Chávez Soto,68.2,78,-0.0056195864
+3939819,15,46,Pressure,América,Néstor Alejandro Araújo Razo,35.1,20.7,NA
+3939819,15,49,Ball Receipt*,Atlético San Luis,Franck Boli,84.7,61.7,NA
+3939819,15,49,Pass,América,Emilio Lara Contreras,25.1,38.4,-0.0012170016
+3939819,15,51,Ball Receipt*,América,Rodolfo Cota Robles,2.7,48.5,NA
+3939819,15,51,Carry,América,Rodolfo Cota Robles,2.7,48.5,0.0028822436
+3939819,15,51,Pressure,Atlético San Luis,Mateo Klimowicz,106.1,34.5,NA
+3939819,15,53,Pass,América,Rodolfo Cota Robles,3.3,45.7,3.960803e-4
+3939819,15,54,Ball Receipt*,América,Emilio Lara Contreras,13,58.8,NA
+3939819,15,54,Carry,América,Emilio Lara Contreras,13,58.8,-6.677033e-4
+3939819,15,56,Pass,América,Emilio Lara Contreras,21,74.4,0.0041789003
+3939819,15,57,Pressure,Atlético San Luis,Juan Manuel Sanabria Magole,75.9,10.4,NA
+3939819,15,57,Ball Receipt*,América,Javairô Dilrosun,42.2,69.7,NA
+3939819,15,57,Pass,América,Javairô Dilrosun,41.9,69.5,-0.0069292383
+3939819,15,59,Pressure,América,Emilio Lara Contreras,41.9,77.6,NA
+3939819,15,59,Pass,Atlético San Luis,Juan Manuel Sanabria Magole,75.7,2,-0.0018238937
+3939819,15,59,Ball Receipt*,Atlético San Luis,Franck Boli,82.1,4,NA
+3939819,15,59,Block,América,Emilio Lara Contreras,42.2,77,0.0087531321
+3939819,16,0,Pass,América,Javairô Dilrosun,40.7,70.6,-0.0097920308
+3939819,16,2,Ball Recovery,Atlético San Luis,Aldo Jafid Cruz Sánchez,61.1,12.1,NA
+3939819,16,2,Carry,Atlético San Luis,Aldo Jafid Cruz Sánchez,61.1,12.1,0.0083970223
+3939819,16,4,Pass,Atlético San Luis,Aldo Jafid Cruz Sánchez,57.1,12.8,-0.0018727332
+3939819,16,5,Ball Receipt*,Atlético San Luis,Rodrigo Dourado Cunha,47.4,29.9,NA
+3939819,16,5,Carry,Atlético San Luis,Rodrigo Dourado Cunha,47.4,29.9,5.43669e-5
+3939819,16,8,Pass,Atlético San Luis,Rodrigo Dourado Cunha,47.9,29.8,0.0044503771
+3939819,16,9,Ball Receipt*,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,59.7,23.9,NA
+3939819,16,9,Carry,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,59.7,23.9,-2.198629e-4
+3939819,16,10,Pass,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,60,23.3,0.0034439042
+3939819,16,11,Ball Receipt*,Atlético San Luis,Mateo Klimowicz,73,21.7,NA
+3939819,16,11,Carry,Atlético San Luis,Mateo Klimowicz,73,21.7,-0.0019335309
+3939819,16,12,Pass,Atlético San Luis,Mateo Klimowicz,70.8,22.1,-0.0017968072
+3939819,16,13,Ball Receipt*,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,60.5,20.1,NA
+3939819,16,13,Carry,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,60.5,20.1,4.516365e-4
+3939819,16,18,Pass,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,62.2,22.9,0.0023958422
+3939819,16,19,Ball Receipt*,Atlético San Luis,Luis Ronaldo Nájera Reyna,77.9,58.1,NA
+3939819,16,19,Carry,Atlético San Luis,Luis Ronaldo Nájera Reyna,77.9,58.1,0.0050991932
+3939819,16,19,Pressure,América,Jonathan dos Santos Ramírez,42.2,23.3,NA
+3939819,16,21,Pass,Atlético San Luis,Luis Ronaldo Nájera Reyna,83.5,59.2,-0.0033232598
+3939819,16,22,Ball Receipt*,Atlético San Luis,Ricardo Chávez Soto,89,75.6,NA
+3939819,16,22,Carry,Atlético San Luis,Ricardo Chávez Soto,89,75.6,0.0016411608
+3939819,16,25,Pass,Atlético San Luis,Ricardo Chávez Soto,89,77.3,0.0041115182
+3939819,16,26,Ball Receipt*,Atlético San Luis,Luis Ronaldo Nájera Reyna,91.4,64.1,NA
+3939819,16,26,Carry,Atlético San Luis,Luis Ronaldo Nájera Reyna,91.4,64.1,-6.2957e-6
+3939819,16,27,Pass,Atlético San Luis,Luis Ronaldo Nájera Reyna,91.3,63.4,-0.0186768984
+3939819,16,28,Ball Receipt*,Atlético San Luis,Franck Boli,98.2,50.8,NA
+3939819,16,28,Interception,América,Ramón Juárez Del Castillo,21.8,26.9,0.0186768984
+3939819,16,28,Carry,América,Ramón Juárez Del Castillo,21.8,26.9,3.421074e-4
+3939819,16,29,Pass,América,Ramón Juárez Del Castillo,23.4,23.3,-0.0022610147
+3939819,16,30,Ball Receipt*,América,Álvaro Fidalgo Fernández,31.3,19.1,NA
+3939819,16,30,Carry,América,Álvaro Fidalgo Fernández,31.3,19.1,0.0070241326
+3939819,16,30,Pressure,Atlético San Luis,Óscar Uriel Macías Mora,85.8,60.5,NA
+3939819,16,33,Pass,América,Álvaro Fidalgo Fernández,44,39.9,6.597573e-4
+3939819,16,33,Ball Receipt*,América,Javairô Dilrosun,41.5,40.1,NA
+3939819,16,33,Carry,América,Javairô Dilrosun,41.5,40.1,-1.362786e-4
+3939819,16,35,Pass,América,Javairô Dilrosun,44.8,37,0.0015119798
+3939819,16,36,Ball Receipt*,América,Jonathan dos Santos Ramírez,51.9,19.8,NA
+3939819,16,36,Carry,América,Jonathan dos Santos Ramírez,51.9,19.8,0.0055326372
+3939819,16,39,Pass,América,Jonathan dos Santos Ramírez,74.2,16.5,0.0233379742
+3939819,16,44,Ball Receipt*,América,Álvaro Fidalgo Fernández,112.3,62.9,NA
+3939819,16,44,Carry,América,Álvaro Fidalgo Fernández,112.3,62.9,0.0033076964
+3939819,16,46,Pass,América,Álvaro Fidalgo Fernández,113.4,63.1,-0.0030509913
+3939819,16,48,Ball Receipt*,América,Javairô Dilrosun,100.1,56.2,NA
+3939819,16,48,Carry,América,Javairô Dilrosun,100.1,56.2,0
+3939819,16,48,Pass,América,Javairô Dilrosun,100.1,56.2,-0.0177136967
+3939819,16,49,Ball Receipt*,América,Emilio Lara Contreras,95.2,72.4,NA
+3939819,16,49,Pass,América,Emilio Lara Contreras,95.3,72.4,0.0022711875
+3939819,16,50,Ball Receipt*,América,Álvaro Fidalgo Fernández,101.4,72,NA
+3939819,16,50,Carry,América,Álvaro Fidalgo Fernández,101.4,72,-0.0012793662
+3939819,16,52,Pass,América,Álvaro Fidalgo Fernández,99.4,72.3,0.0704053063
+3939819,16,53,Ball Receipt*,América,Alejandro Zendejas Saavedra,107.6,51.8,NA
+3939819,16,53,Carry,América,Alejandro Zendejas Saavedra,107.6,51.8,-0.0819255407
+3939819,16,55,Pressure,Atlético San Luis,Rodrigo Dourado Cunha,8.1,29.1,NA
+3939819,16,55,Dispossessed,América,Alejandro Zendejas Saavedra,113,53.5,NA
+3939819,16,55,Duel,Atlético San Luis,Rodrigo Dourado Cunha,7.1,26.6,0.0819255407
+3939819,16,57,Ball Recovery,Atlético San Luis,Juan Manuel Sanabria Magole,2.2,8.8,NA
+3939819,16,57,Carry,Atlético San Luis,Juan Manuel Sanabria Magole,2.2,8.8,-4.935423e-4
+3939819,16,59,Pass,Atlético San Luis,Juan Manuel Sanabria Magole,2.6,2.8,-0.0074781836
+3939819,17,1,Ball Recovery,América,Álvaro Fidalgo Fernández,91.3,71.9,NA
+3939819,17,1,Carry,América,Álvaro Fidalgo Fernández,91.3,71.9,0.0121794739
+3939819,17,2,Pass,América,Álvaro Fidalgo Fernández,95.5,69.1,0.0113083571
+3939819,17,3,Ball Receipt*,América,Javairô Dilrosun,98.8,59.2,NA
+3939819,17,3,Carry,América,Javairô Dilrosun,98.8,59.2,0.0039056651
+3939819,17,5,Pass,América,Javairô Dilrosun,99.5,55.8,0.0267585497
+3939819,17,7,Ball Receipt*,América,Alejandro Zendejas Saavedra,113.6,56.8,NA
+3939819,17,7,Pass,América,Alejandro Zendejas Saavedra,113.6,56.8,-0.0571327331
+3939819,17,8,Clearance,Atlético San Luis,Julio César Domínguez Juárez,5.9,38.5,0.0553437844
+3939819,17,9,Clearance,Atlético San Luis,Óscar Uriel Macías Mora,3.5,32.1,0.0025867652
+3939819,17,14,Ball Recovery,América,Ramón Juárez Del Castillo,46.8,28.6,NA
+3939819,17,14,Carry,América,Ramón Juárez Del Castillo,46.8,28.6,-0.0014177747
+3939819,17,17,Pass,América,Ramón Juárez Del Castillo,49.5,27.6,0.0028186468
+3939819,17,18,Ball Receipt*,América,Cristian Yonathan Calderón Del Real,75.1,3,NA
+3939819,17,18,Carry,América,Cristian Yonathan Calderón Del Real,75.1,3,-1.03795e-4
+3939819,17,20,Pass,América,Cristian Yonathan Calderón Del Real,74.7,3,0.0059137186
+3939819,17,21,Ball Receipt*,América,Richard Rafael Sánchez Guerrero,79.1,17.4,NA
+3939819,17,21,Carry,América,Richard Rafael Sánchez Guerrero,79.1,17.4,-2.344698e-4
+3939819,17,22,Pass,América,Richard Rafael Sánchez Guerrero,78.7,17.3,4.404858e-4
+3939819,17,23,Ball Receipt*,América,Álvaro Fidalgo Fernández,78.4,21.4,NA
+3939819,17,23,Carry,América,Álvaro Fidalgo Fernández,78.4,21.4,0
+3939819,17,23,Pass,América,Álvaro Fidalgo Fernández,78.4,21.4,-6.696964e-4
+3939819,17,24,Ball Receipt*,América,Richard Rafael Sánchez Guerrero,78.2,16,NA
+3939819,17,24,Pass,América,Richard Rafael Sánchez Guerrero,78.2,16,6.696964e-4
+3939819,17,24,Ball Receipt*,América,Álvaro Fidalgo Fernández,78.2,21.4,NA
+3939819,17,24,Carry,América,Álvaro Fidalgo Fernández,78.2,21.4,0.0015182579
+3939819,17,26,Pass,América,Álvaro Fidalgo Fernández,78.7,23.5,0.0035760058
+3939819,17,27,Ball Receipt*,América,Alejandro Zendejas Saavedra,82.6,38.3,NA
+3939819,17,27,Carry,América,Alejandro Zendejas Saavedra,82.6,38.3,-0.0023441333
+3939819,17,29,Pass,América,Alejandro Zendejas Saavedra,78.9,33.2,-0.0028775278
+3939819,17,30,Ball Receipt*,América,Richard Rafael Sánchez Guerrero,81.5,15.4,NA
+3939819,17,30,Carry,América,Richard Rafael Sánchez Guerrero,81.5,15.4,0
+3939819,17,30,Pass,América,Richard Rafael Sánchez Guerrero,81.5,15.4,0.0027902322
+3939819,17,31,Ball Receipt*,América,Álvaro Fidalgo Fernández,86,18.9,NA
+3939819,17,31,Pass,América,Álvaro Fidalgo Fernández,86,18.9,-0.0028954269
+3939819,17,31,Ball Receipt*,América,Richard Rafael Sánchez Guerrero,82.2,15.3,NA
+3939819,17,31,Carry,América,Richard Rafael Sánchez Guerrero,82.2,15.3,0
+3939819,17,32,Pass,América,Richard Rafael Sánchez Guerrero,82.2,15.3,-2.842816e-4
+3939819,17,33,Ball Receipt*,América,Jonathan dos Santos Ramírez,73.2,19.1,NA
+3939819,17,33,Carry,América,Jonathan dos Santos Ramírez,73.2,19.1,-0.001343335
+3939819,17,34,Pass,América,Jonathan dos Santos Ramírez,73.6,19.3,-0.001847107
+3939819,17,35,Ball Receipt*,América,Richard Rafael Sánchez Guerrero,79.3,11.6,NA
+3939819,17,35,Carry,América,Richard Rafael Sánchez Guerrero,79.3,11.6,-0.0025879107
+3939819,17,36,Pressure,Atlético San Luis,Óscar Uriel Macías Mora,40.8,71,NA
+3939819,17,36,Pass,América,Richard Rafael Sánchez Guerrero,78.7,5.8,0.0022388445
+3939819,17,40,Pressure,América,Cristian Yonathan Calderón Del Real,112.3,13.1,NA
+3939819,17,40,Ball Recovery,Atlético San Luis,Ricardo Chávez Soto,3.8,66,NA
+3939819,17,40,Carry,Atlético San Luis,Ricardo Chávez Soto,3.8,66,0.0077894432
+3939819,17,41,Foul Committed,América,Cristian Yonathan Calderón Del Real,117.9,14.5,-0.0100282878
+3939819,17,41,Foul Won,Atlético San Luis,Ricardo Chávez Soto,2.2,65.6,NA
+3939819,17,41,Ball Receipt*,América,Cristian Yonathan Calderón Del Real,94.3,6.6,NA
+3939819,18,24,Pass,Atlético San Luis,Andrés Eduardo Sánchez Rodríguez,26,66.3,0.0132230558
+3939819,18,27,Ball Receipt*,Atlético San Luis,Franck Boli,88.5,67.6,NA
+3939819,18,27,Duel,América,Ramón Juárez Del Castillo,31.3,12.4,NA
+3939819,18,27,Pass,Atlético San Luis,Franck Boli,88.8,67.7,-0.0063910936
+3939819,18,30,Ball Receipt*,Atlético San Luis,Luis Ronaldo Nájera Reyna,92.7,70.5,NA
+3939819,18,44,Pass,América,Cristian Yonathan Calderón Del Real,21.2,0.1,0.0057344981
+3939819,18,46,Pressure,Atlético San Luis,Julio César Domínguez Juárez,77.3,76.7,NA
+3939819,18,46,Ball Receipt*,América,Henry Josué Martín Mex,41.9,3,NA
+3939819,18,46,Carry,América,Henry Josué Martín Mex,41.9,3,-0.0127348108
+3939819,18,46,Pressure,Atlético San Luis,Ricardo Chávez Soto,83.4,78.4,NA
+3939819,18,47,Dispossessed,América,Henry Josué Martín Mex,38.3,5.6,NA
+3939819,18,47,Duel,Atlético San Luis,Julio César Domínguez Juárez,81.8,74.5,0.0127348108
+3939819,18,47,Pressure,América,Henry Josué Martín Mex,35.3,4.5,NA
+3939819,18,48,Ball Recovery,Atlético San Luis,Óscar Uriel Macías Mora,88.1,74.5,NA
+3939819,18,48,Carry,Atlético San Luis,Óscar Uriel Macías Mora,88.1,74.5,0.0150087727
+3939819,18,49,Foul Committed,América,Henry Josué Martín Mex,29.8,6.3,-0.0150087727
+3939819,18,49,Foul Won,Atlético San Luis,Óscar Uriel Macías Mora,90.3,73.8,NA
+3939819,19,42,Pass,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,89.8,72.3,-0.025866406
+3939819,19,43,Clearance,América,Javairô Dilrosun,13.7,32.9,0.025866406
+3939819,19,46,Goal Keeper,América,Rodolfo Cota Robles,10.7,36.6,0
+3939819,19,46,Carry,América,Rodolfo Cota Robles,10.7,36.6,-1.485674e-4
+3939819,20,2,Pass,América,Rodolfo Cota Robles,6.4,43.7,-8.254978e-4
+3939819,20,5,Ball Receipt*,América,Henry Josué Martín Mex,47.3,41.1,NA
+3939819,20,5,Pass,América,Henry Josué Martín Mex,47.3,41.1,0.0030941167
+3939819,20,7,Pass,Atlético San Luis,Rodrigo Dourado Cunha,62,37.8,0.0037673307
+3939819,20,9,Ball Receipt*,Atlético San Luis,Aldo Jafid Cruz Sánchez,52.2,31.8,NA
+3939819,20,9,Carry,Atlético San Luis,Aldo Jafid Cruz Sánchez,52.2,31.8,-6.420296e-4
+3939819,20,10,Pass,Atlético San Luis,Aldo Jafid Cruz Sánchez,51.8,28.7,-1.900792e-4
+3939819,20,11,Ball Receipt*,Atlético San Luis,Juan Manuel Sanabria Magole,57.2,11.8,NA
+3939819,20,11,Carry,Atlético San Luis,Juan Manuel Sanabria Magole,57.2,11.8,0
+3939819,20,12,Pass,Atlético San Luis,Juan Manuel Sanabria Magole,57.2,11.8,-0.001724002
+3939819,20,14,Ball Receipt*,Atlético San Luis,Aldo Jafid Cruz Sánchez,46.9,19,NA
+3939819,20,14,Carry,Atlético San Luis,Aldo Jafid Cruz Sánchez,46.9,19,3.06927e-5
+3939819,20,15,Pass,Atlético San Luis,Aldo Jafid Cruz Sánchez,47.6,22.1,-0.0020562839
+3939819,20,16,Ball Receipt*,Atlético San Luis,Rodrigo Dourado Cunha,37.4,41.7,NA
+3939819,20,16,Carry,Atlético San Luis,Rodrigo Dourado Cunha,37.4,41.7,4.422283e-4
+3939819,20,18,Pass,Atlético San Luis,Rodrigo Dourado Cunha,36.6,47.2,-0.0018192753
+3939819,20,19,Ball Receipt*,Atlético San Luis,Julio César Domínguez Juárez,35.7,67.6,NA
+3939819,20,19,Carry,Atlético San Luis,Julio César Domínguez Juárez,35.7,67.6,-3.084792e-4
+3939819,20,20,Pass,Atlético San Luis,Julio César Domínguez Juárez,35.9,68.5,-0.0018202132
+3939819,20,22,Ball Receipt*,Atlético San Luis,Ricardo Chávez Soto,46.3,78,NA
+3939819,20,22,Carry,Atlético San Luis,Ricardo Chávez Soto,46.3,78,-0.017363294
+3939819,20,22,Pressure,América,Cristian Yonathan Calderón Del Real,75.2,2.6,NA
+3939819,20,25,Dispossessed,Atlético San Luis,Ricardo Chávez Soto,36.3,75.1,NA
+3939819,20,25,Duel,América,Cristian Yonathan Calderón Del Real,83.8,5,0.017363294
+3939819,20,26,Ball Recovery,América,Álvaro Fidalgo Fernández,90.8,13.8,NA
+3939819,20,26,Carry,América,Álvaro Fidalgo Fernández,90.8,13.8,0.0042056357
+3939819,20,31,Pass,América,Álvaro Fidalgo Fernández,104.5,11.8,-0.0115904277
+3939819,20,32,Ball Receipt*,América,Jonathan dos Santos Ramírez,89.2,8.1,NA
+3939819,20,32,Carry,América,Jonathan dos Santos Ramírez,89.2,8.1,0.0053610662
+3939819,20,34,Pressure,Atlético San Luis,Óscar Uriel Macías Mora,24.4,70.2,NA
+3939819,20,34,Pass,América,Jonathan dos Santos Ramírez,95,10.5,-0.0016751029
+3939819,20,35,Ball Receipt*,América,Cristian Yonathan Calderón Del Real,99.5,4.5,NA
+3939819,20,35,Carry,América,Cristian Yonathan Calderón Del Real,99.5,4.5,-0.0041013574
+3939819,20,36,Pressure,Atlético San Luis,Luis Ronaldo Nájera Reyna,18.9,75.6,NA
+3939819,20,37,Dispossessed,América,Cristian Yonathan Calderón Del Real,106.3,6.1,NA
+3939819,20,37,Duel,Atlético San Luis,Luis Ronaldo Nájera Reyna,13.8,74,0.0038421913
+3939819,20,39,Clearance,Atlético San Luis,Ricardo Chávez Soto,2.5,73.3,-0.0029971404
+3939819,20,58,Pass,América,Cristian Yonathan Calderón Del Real,107.4,0.1,0.0047907187
+3939819,21,0,Ball Receipt*,América,Alejandro Zendejas Saavedra,94.1,2.8,NA
+3939819,21,0,Carry,América,Alejandro Zendejas Saavedra,94.1,2.8,-0.0012043174
+3939819,21,2,Pass,América,Alejandro Zendejas Saavedra,89.5,3.4,-0.0033989027
+3939819,21,3,Ball Receipt*,América,Ramón Juárez Del Castillo,76.7,3.9,NA
+3939819,21,3,Carry,América,Ramón Juárez Del Castillo,76.7,3.9,-9.462666e-4
+3939819,21,3,Pass,América,Ramón Juárez Del Castillo,75.6,4.5,0.0039719669
+3939819,21,4,Ball Receipt*,América,Richard Rafael Sánchez Guerrero,80.5,14.1,NA
+3939819,21,4,Carry,América,Richard Rafael Sánchez Guerrero,80.5,14.1,1.005428e-4
+3939819,21,5,Pass,América,Richard Rafael Sánchez Guerrero,80,14,0.0011684895
+3939819,21,6,Pressure,Atlético San Luis,Julio César Domínguez Juárez,26.8,67.6,NA
+3939819,21,6,Ball Receipt*,América,Álvaro Fidalgo Fernández,90.6,12.7,NA
+3939819,21,6,Pass,América,Álvaro Fidalgo Fernández,90.8,12,-0.0011589807
+3939819,21,7,Ball Receipt*,América,Richard Rafael Sánchez Guerrero,80.2,12.1,NA
+3939819,21,7,Carry,América,Richard Rafael Sánchez Guerrero,80.2,12.1,-4.6062e-4
+3939819,21,9,Pass,América,Richard Rafael Sánchez Guerrero,77.7,12.7,-0.0064895973
+3939819,21,10,Ball Receipt*,América,Ramón Juárez Del Castillo,57.7,14.5,NA
+3939819,21,10,Carry,América,Ramón Juárez Del Castillo,57.7,14.5,1.276573e-4
+3939819,21,11,Pass,América,Ramón Juárez Del Castillo,57.4,15.4,1.47903e-5
+3939819,21,12,Ball Receipt*,América,Jonathan dos Santos Ramírez,63.2,7.1,NA
+3939819,21,12,Carry,América,Jonathan dos Santos Ramírez,63.2,7.1,0.002413122
+3939819,21,15,Pass,América,Jonathan dos Santos Ramírez,61.6,20.6,-0.0039984314
+3939819,21,17,Ball Receipt*,América,Néstor Alejandro Araújo Razo,47.1,37.7,NA
+3939819,21,17,Carry,América,Néstor Alejandro Araújo Razo,47.1,37.7,1.851348e-4
+3939819,21,17,Pass,América,Néstor Alejandro Araújo Razo,46.2,38.3,-0.0047643688
+3939819,21,19,Ball Receipt*,América,Emilio Lara Contreras,50.8,70,NA
+3939819,21,19,Carry,América,Emilio Lara Contreras,50.8,70,0.0017052991
+3939819,21,22,Pressure,Atlético San Luis,Juan Manuel Sanabria Magole,67.5,9.5,NA
+3939819,21,22,Pass,América,Emilio Lara Contreras,52.8,67.3,0.003450538
+3939819,21,22,Ball Receipt*,América,Richard Rafael Sánchez Guerrero,54.4,64.2,NA
+3939819,21,22,Pass,América,Richard Rafael Sánchez Guerrero,54.4,64.2,-1.926729e-4
+3939819,21,24,Ball Receipt*,América,Javairô Dilrosun,64.7,76.8,NA
+3939819,21,24,Carry,América,Javairô Dilrosun,64.7,76.8,0
+3939819,21,24,Pass,América,Javairô Dilrosun,64.7,76.8,0.0018355846
+3939819,21,25,Ball Receipt*,América,Henry Josué Martín Mex,71.8,64,NA
+3939819,21,25,Duel,Atlético San Luis,Rodrigo Dourado Cunha,48.3,16.1,NA
+3939819,21,25,Pass,América,Henry Josué Martín Mex,71.8,64,-0.0088467589
+3939819,21,25,Foul Committed,Atlético San Luis,Rodrigo Dourado Cunha,48.6,17.7,0.0088467589
+3939819,21,25,Foul Won,América,Henry Josué Martín Mex,71.5,62.4,NA
+3939819,21,27,Ball Receipt*,América,Álvaro Fidalgo Fernández,62.5,53.2,NA
+3939819,21,27,Pass,América,Álvaro Fidalgo Fernández,61.9,51.2,0.0098034134
+3939819,21,28,Ball Receipt*,América,Richard Rafael Sánchez Guerrero,58.1,55.5,NA
+3939819,21,28,Carry,América,Richard Rafael Sánchez Guerrero,58.1,55.5,0.0024417462
+3939819,21,31,Pass,América,Richard Rafael Sánchez Guerrero,64.1,48.7,0.0044439584
+3939819,21,32,Ball Receipt*,América,Alejandro Zendejas Saavedra,78.5,22.2,NA
+3939819,21,32,Carry,América,Alejandro Zendejas Saavedra,78.5,22.2,-6.797845e-4
+3939819,21,33,Pass,América,Alejandro Zendejas Saavedra,80,18.1,-3.823675e-4
+3939819,21,34,Ball Receipt*,América,Cristian Yonathan Calderón Del Real,91.5,3.6,NA
+3939819,21,34,Carry,América,Cristian Yonathan Calderón Del Real,91.5,3.6,0.0011343611
+3939819,21,36,Pass,América,Cristian Yonathan Calderón Del Real,93.3,4.1,-0.0035552308
+3939819,21,38,Ball Receipt*,América,Alejandro Zendejas Saavedra,82.7,4.5,NA
+3939819,21,38,Carry,América,Alejandro Zendejas Saavedra,82.7,4.5,-4.142011e-4
+3939819,21,38,Pass,América,Alejandro Zendejas Saavedra,83.5,4.8,4.166001e-4
+3939819,21,39,Ball Receipt*,América,Richard Rafael Sánchez Guerrero,83.7,14.9,NA
+3939819,21,39,Carry,América,Richard Rafael Sánchez Guerrero,83.7,14.9,-2.827393e-4
+3939819,21,41,Pressure,Atlético San Luis,Óscar Uriel Macías Mora,31.3,68.3,NA
+3939819,21,42,Pass,América,Richard Rafael Sánchez Guerrero,89.5,7.2,0.0038885204
+3939819,21,43,Ball Receipt*,América,Cristian Yonathan Calderón Del Real,97.8,1.6,NA
+3939819,21,43,Carry,América,Cristian Yonathan Calderón Del Real,97.8,1.6,0
+3939819,21,45,Pass,América,Cristian Yonathan Calderón Del Real,97.8,1.6,0.0034730164
+3939819,21,46,Ball Receipt*,América,Alejandro Zendejas Saavedra,95.3,10.8,NA
+3939819,21,46,Pass,América,Alejandro Zendejas Saavedra,95.3,10.7,-0.0180190755
+3939819,21,48,Ball Receipt*,América,Richard Rafael Sánchez Guerrero,104.8,3,NA
+3939819,22,1,Pass,Atlético San Luis,Julio César Domínguez Juárez,22.2,70.3,-0.0017699404
+3939819,22,3,Ball Receipt*,Atlético San Luis,Rodrigo Dourado Cunha,16.1,41,NA
+3939819,22,5,Pass,Atlético San Luis,Rodrigo Dourado Cunha,15.3,40.2,8.57356e-4
+3939819,22,7,Ball Receipt*,Atlético San Luis,Aldo Jafid Cruz Sánchez,16,26.3,NA
+3939819,22,7,Carry,Atlético San Luis,Aldo Jafid Cruz Sánchez,16,26.3,-1.944611e-4
+3939819,22,8,Pass,Atlético San Luis,Aldo Jafid Cruz Sánchez,18.3,25.9,0.001938018
+3939819,22,9,Ball Receipt*,Atlético San Luis,Mateo Klimowicz,37,24.6,NA
+3939819,22,9,Carry,Atlético San Luis,Mateo Klimowicz,37,24.6,0.0010872968
+3939819,22,9,Pressure,América,Emilio Lara Contreras,79.7,55.8,NA
+3939819,22,10,Pressure,América,Richard Rafael Sánchez Guerrero,79.5,57.1,NA
+3939819,22,12,Pressure,América,Javairô Dilrosun,72.9,64.2,NA
+3939819,22,12,Dribble,Atlético San Luis,Mateo Klimowicz,46.9,17.7,-0.0110179074
+3939819,22,12,Duel,América,Javairô Dilrosun,73.2,62.4,0.0110179074
+3939819,22,13,Pass,América,Ramón Juárez Del Castillo,56.7,39.4,0.0026217988
+3939819,22,15,Ball Receipt*,América,Jonathan dos Santos Ramírez,67,45.2,NA
+3939819,22,15,Carry,América,Jonathan dos Santos Ramírez,67,45.2,0.0030515045
+3939819,22,17,Pass,América,Jonathan dos Santos Ramírez,75.2,38.7,-0.0012943549
+3939819,22,18,Ball Receipt*,América,Alejandro Zendejas Saavedra,74.9,25.5,NA
+3939819,22,18,Carry,América,Alejandro Zendejas Saavedra,74.9,25.5,5.173897e-4
+3939819,22,20,Pass,América,Alejandro Zendejas Saavedra,73.5,35.9,0.0014176471
+3939819,22,21,Ball Receipt*,América,Álvaro Fidalgo Fernández,80.7,44.3,NA
+3939819,22,21,Carry,América,Álvaro Fidalgo Fernández,80.7,44.3,0.0093635665
+3939819,22,22,Pressure,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,37,27.9,NA
+3939819,22,26,Pass,América,Álvaro Fidalgo Fernández,96.5,61.1,-0.0069271531
+3939819,22,26,Ball Receipt*,América,Javairô Dilrosun,96.8,71.1,NA
+3939819,22,26,Carry,América,Javairô Dilrosun,96.8,71.1,1.974516e-4
+3939819,22,27,Pass,América,Javairô Dilrosun,96.6,70.4,0.0033619013
+3939819,22,29,Ball Receipt*,América,Jonathan dos Santos Ramírez,89.5,57.6,NA
+3939819,22,29,Carry,América,Jonathan dos Santos Ramírez,89.5,57.6,3.496483e-4
+3939819,22,30,Pass,América,Jonathan dos Santos Ramírez,89.3,57.5,0.0048306026
+3939819,22,31,Ball Receipt*,América,Richard Rafael Sánchez Guerrero,88.4,45.4,NA
+3939819,22,31,Carry,América,Richard Rafael Sánchez Guerrero,88.4,45.4,-4.890366e-4
+3939819,22,32,Pass,América,Richard Rafael Sánchez Guerrero,88.8,45.2,-0.0063835653
+3939819,22,33,Ball Receipt*,América,Jonathan dos Santos Ramírez,84.4,54.7,NA
+3939819,22,33,Carry,América,Jonathan dos Santos Ramírez,84.4,54.7,-0.0011020685
+3939819,22,33,Pass,América,Jonathan dos Santos Ramírez,83.8,53.9,-0.0028662961
+3939819,22,34,Ball Receipt*,América,Javairô Dilrosun,84.7,63.8,NA
+3939819,22,34,Carry,América,Javairô Dilrosun,84.7,63.8,0.0040143095
+3939819,22,37,Pass,América,Javairô Dilrosun,90,62.2,0.0010519987
+3939819,22,38,Ball Receipt*,América,Álvaro Fidalgo Fernández,98.5,68.4,NA
+3939819,22,38,Carry,América,Álvaro Fidalgo Fernández,98.5,68.4,0.0022172723
+3939819,22,40,Pass,América,Álvaro Fidalgo Fernández,95,61.5,0.0073104044
+3939819,22,41,Pressure,Atlético San Luis,Óscar Uriel Macías Mora,25.1,32.9,NA
+3939819,22,41,Ball Receipt*,América,Richard Rafael Sánchez Guerrero,93.9,46.3,NA
+3939819,22,41,Pass,América,Richard Rafael Sánchez Guerrero,92.8,47.2,-0.0045921663
+3939819,22,42,Ball Receipt*,América,Álvaro Fidalgo Fernández,89.7,50,NA
+3939819,22,42,Carry,América,Álvaro Fidalgo Fernández,89.7,50,-0.001834074
+3939819,22,42,Pressure,Atlético San Luis,Óscar Uriel Macías Mora,28.4,30.3,NA
+3939819,22,42,Dribble,América,Álvaro Fidalgo Fernández,89,47.2,-0.025750624
+3939819,22,42,Duel,Atlético San Luis,Óscar Uriel Macías Mora,31.1,32.9,0.025750624
+3939819,22,44,Pass,Atlético San Luis,Juan Manuel Sanabria Magole,27.8,28.3,-0.0206636814
+3939819,22,44,Ball Receipt*,Atlético San Luis,Mateo Klimowicz,32.2,19.3,NA
+3939819,22,44,Ball Recovery,América,Jonathan dos Santos Ramírez,88,58.2,NA
+3939819,22,44,Carry,América,Jonathan dos Santos Ramírez,88,58.2,0.0221906183
+3939819,22,48,Pass,América,Jonathan dos Santos Ramírez,84.2,42,-0.0038187392
+3939819,22,50,Ball Receipt*,América,Cristian Yonathan Calderón Del Real,96.5,4.8,NA
+3939819,22,50,Carry,América,Cristian Yonathan Calderón Del Real,96.5,4.8,9.291507e-4
+3939819,22,51,Pass,América,Cristian Yonathan Calderón Del Real,99,4.1,0.0015284996
+3939819,22,52,Ball Receipt*,América,Alejandro Zendejas Saavedra,96.3,14.7,NA
+3939819,22,52,Carry,América,Alejandro Zendejas Saavedra,96.3,14.7,-0.0044916077
+3939819,22,55,Pass,América,Alejandro Zendejas Saavedra,86.4,14.9,0.0016561691
+3939819,22,56,Ball Receipt*,América,Jonathan dos Santos Ramírez,83.8,21.3,NA
+3939819,22,56,Pass,América,Jonathan dos Santos Ramírez,84.2,20.7,-0.0067434702
+3939819,22,57,Ball Receipt*,América,Ramón Juárez Del Castillo,74.7,9.2,NA
+3939819,22,57,Carry,América,Ramón Juárez Del Castillo,74.7,9.2,-3.176406e-4
+3939819,22,58,Pass,América,Ramón Juárez Del Castillo,73.6,8.8,5.918862e-4
+3939819,22,59,Ball Receipt*,América,Jonathan dos Santos Ramírez,81,12.5,NA
+3939819,22,59,Carry,América,Jonathan dos Santos Ramírez,81,12.5,-3.383709e-4
+3939819,23,2,Pressure,Atlético San Luis,Luis Ronaldo Nájera Reyna,42.4,68,NA
+3939819,23,4,Pass,América,Jonathan dos Santos Ramírez,73.1,7.6,-6.353082e-4
+3939819,23,5,Ball Receipt*,América,Cristian Yonathan Calderón Del Real,80,2.1,NA
+3939819,23,5,Carry,América,Cristian Yonathan Calderón Del Real,80,2.1,0
+3939819,23,6,Pass,América,Cristian Yonathan Calderón Del Real,80,2.1,0.0011023972
+3939819,23,6,Pressure,Atlético San Luis,Julio César Domínguez Juárez,39.1,70.2,NA
+3939819,23,6,Ball Receipt*,América,Alejandro Zendejas Saavedra,79.5,10.1,NA
+3939819,23,6,Carry,América,Alejandro Zendejas Saavedra,79.5,10.1,-0.0028004311
+3939819,23,6,Foul Committed,Atlético San Luis,Julio César Domínguez Juárez,41.2,72.2,0.0028004311
+3939819,23,6,Foul Won,América,Alejandro Zendejas Saavedra,78.9,7.9,NA
+3939819,24,3,Pass,América,Richard Rafael Sánchez Guerrero,78.7,4.5,0.0038849507
+3939819,24,4,Ball Receipt*,América,Jonathan dos Santos Ramírez,75.5,13.4,NA
+3939819,24,4,Carry,América,Jonathan dos Santos Ramírez,75.5,13.4,1.397394e-4
+3939819,24,6,Pass,América,Jonathan dos Santos Ramírez,75.6,13.2,0.0022282032
+3939819,24,7,Ball Receipt*,América,Alejandro Zendejas Saavedra,95.7,4.5,NA
+3939819,24,7,Carry,América,Alejandro Zendejas Saavedra,95.7,4.5,0.0011823019
+3939819,24,10,Pressure,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,22.2,74.2,NA
+3939819,24,10,Dispossessed,América,Alejandro Zendejas Saavedra,99.4,3.9,NA
+3939819,24,10,Duel,Atlético San Luis,Sébastien Antoine Luc Salles Lamonge,20.7,76.2,-0.0011823019
+3939819,24,12,Pass,América,Alejandro Zendejas Saavedra,95.7,2.6,0.0056258072
+3939819,24,13,Ball Receipt*,América,Jonathan dos Santos Ramírez,84.2,3.8,NA
+3939819,24,13,Carry,América,Jonathan dos Santos Ramírez,84.2,3.8,-4.475052e-4
+3939819,24,14,Pass,América,Jonathan dos Santos Ramírez,79.7,3,-0.0025562411
+3939819,24,16,Ball Receipt*,América,Ramón Juárez Del Castillo,61.9,12,NA
+3939819,24,16,Carry,América,Ramón Juárez Del Castillo,61.9,12,3.949935e-4
+3939819,24,19,Pass,América,Ramón Juárez Del Castillo,61.9,10.7,-0.0036462517
+3939819,24,20,Ball Receipt*,América,Jonathan dos Santos Ramírez,68.3,3.4,NA
+3939819,24,20,Carry,América,Jonathan dos Santos Ramírez,68.3,3.4,0.0060746586
+3939819,24,24,Pressure,Atlético San Luis,Óscar Uriel Macías Mora,37,69,NA
+3939819,24,24,Pass,América,Jonathan dos Santos Ramírez,81.5,10.7,2.174461e-4
+3939819,24,25,Ball Receipt*,América,Cristian Yonathan Calderón Del Real,86.7,1.7,NA
+3939819,24,25,Carry,América,Cristian Yonathan Calderón Del Real,86.7,1.7,0
+3939819,24,26,Pass,América,Cristian Yonathan Calderón Del Real,86.7,1.7,0.005496175
+3939819,24,29,Ball Receipt*,América,Alejandro Zendejas Saavedra,105.6,3.4,NA
+3939819,24,29,Carry,América,Alejandro Zendejas Saavedra,105.6,3.4,0.0037201587
+3939819,24,30,Pass,América,Alejandro Zendejas Saavedra,115.9,4.1,0.0660693822
+3939819,24,32,Duel,Atlético San Luis,Aldo Jafid Cruz Sánchez,9.2,39.5,NA
+3939819,24,32,Shot,América,Henry Josué Martín Mex,110.9,40.6,-0.0937906504
+3939819,24,32,Ball Receipt*,América,Henry Josué Martín Mex,110.9,40.6,NA
+3939819,24,34,Goal Keeper,Atlético San Luis,Andrés Eduardo Sánchez Rodríguez,0.8,41.2,NA
+3939819,27,28,Pass,Atlético San Luis,Andrés Eduardo Sánchez Rodríguez,6.8,40.7,-0.0058059632
