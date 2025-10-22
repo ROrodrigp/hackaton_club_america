@@ -9,6 +9,7 @@
 # Input:
 #   - data/processed/player_metrics_2024_2025.parquet
 #   - data/processed/team_aggregates_2024_2025.json
+#   - data/processed/liga_mx_benchmarks_p85.json (optional - for real benchmarks)
 #
 # Output:
 #   - data/processed/america_dna_profile.json
@@ -46,6 +47,40 @@ cat(sprintf("   ✓ Player metrics loaded: %d players\n", nrow(player_metrics)))
 team_agg <- read_json("data/processed/team_aggregates_2024_2025.json")
 cat(sprintf("   ✓ Team aggregates loaded\n"))
 
+# Load Liga MX benchmarks (percentile 85) if available
+benchmarks_file <- "data/processed/liga_mx_benchmarks_p85.json"
+
+if (file.exists(benchmarks_file)) {
+  cat("\n📊 Loading real Liga MX benchmarks (Percentile 85)...\n")
+  benchmarks <- read_json(benchmarks_file)
+  cat("   ✓ Real benchmarks loaded from 5 teams\n")
+  use_real_benchmarks <- TRUE
+} else {
+  cat("\n⚠️  Liga MX benchmarks not found\n")
+  cat("   Using estimated benchmarks instead\n")
+  cat("   Run 02b_calculate_team_aggregates_scouting.R to generate real benchmarks\n")
+  use_real_benchmarks <- FALSE
+
+  # Fallback to estimated benchmarks
+  benchmarks <- list(
+    progressive_passes_p90 = 15,
+    progressive_carries_p90 = 4,
+    xA_p90 = 0.10,
+    shot_assists_p90 = 1.0,
+    key_passes_p90 = 0.8,
+    xG_p90 = 0.15,
+    shots_p90 = 2.5,
+    pressures_p90 = 14,
+    tackles_p90 = 1.5,
+    interceptions_p90 = 0.8,
+    pass_completion_pct = 85,
+    touches_att_third_p90 = 40,
+    dribbles_p90 = 2.0,
+    dribbles_successful_p90 = 1.2,
+    dribble_success_pct = 65
+  )
+}
+
 # ==============================================================================
 # DIMENSION 1: PROGRESSION
 # ==============================================================================
@@ -61,11 +96,11 @@ progression_metrics <- list(
 )
 
 # Normalize to 0-100 scale (based on Liga MX benchmarks)
-# High progression teams: 15+ progressive passes, 4+ carries, 40+ touches
+# Using real benchmarks from percentile 85 of Liga MX teams
 progression_score <- (
-  min(progression_metrics$progressive_passes_p90 / 15, 1) * 40 +
-  min(progression_metrics$progressive_carries_p90 / 4, 1) * 30 +
-  min(progression_metrics$touches_att_third_p90 / 40, 1) * 30
+  min(progression_metrics$progressive_passes_p90 / benchmarks$progressive_passes_p90, 1) * 40 +
+  min(progression_metrics$progressive_carries_p90 / benchmarks$progressive_carries_p90, 1) * 30 +
+  min(progression_metrics$touches_att_third_p90 / benchmarks$touches_att_third_p90, 1) * 30
 )  # Score already in 0-100 scale (weights sum to 100)
 
 # Classify strength
@@ -97,11 +132,11 @@ creation_metrics <- list(
 )
 
 # Normalize to 0-100 scale
-# Top creative teams: 0.10+ xA, 1.0+ shot assists, 0.8+ key passes
+# Using real benchmarks from percentile 85 of Liga MX teams
 creation_score <- (
-  min(creation_metrics$xA_p90 / 0.10, 1) * 50 +
-  min(creation_metrics$shot_assists_p90 / 1.0, 1) * 30 +
-  min(creation_metrics$key_passes_p90 / 0.8, 1) * 20
+  min(creation_metrics$xA_p90 / benchmarks$xA_p90, 1) * 50 +
+  min(creation_metrics$shot_assists_p90 / benchmarks$shot_assists_p90, 1) * 30 +
+  min(creation_metrics$key_passes_p90 / benchmarks$key_passes_p90, 1) * 20
 )  # Score already in 0-100 scale (weights sum to 100)
 
 creation_strength <- case_when(
@@ -134,9 +169,10 @@ finishing_metrics <- list(
 shot_quality <- finishing_metrics$xG_p90 / finishing_metrics$shots_p90
 
 # Normalize to 0-100 scale
-# Elite finishers: 0.15+ xG p90, 0.12+ xG per shot
+# Using real benchmarks from percentile 85 of Liga MX teams
+# For shot quality, use 0.12 as reasonable benchmark (xG/shot ratio)
 finishing_score <- (
-  min(finishing_metrics$xG_p90 / 0.15, 1) * 60 +
+  min(finishing_metrics$xG_p90 / benchmarks$xG_p90, 1) * 60 +
   min(shot_quality / 0.12, 1) * 40
 )  # Score already in 0-100 scale (weights sum to 100)
 
@@ -168,11 +204,11 @@ pressing_metrics <- list(
 )
 
 # Normalize to 0-100 scale
-# High pressing teams: 14+ pressures, 1.5+ tackles, 0.8+ interceptions
+# Using real benchmarks from percentile 85 of Liga MX teams
 pressing_score <- (
-  min(pressing_metrics$pressures_p90 / 14, 1) * 60 +
-  min(pressing_metrics$tackles_p90 / 1.5, 1) * 20 +
-  min(pressing_metrics$interceptions_p90 / 0.8, 1) * 20
+  min(pressing_metrics$pressures_p90 / benchmarks$pressures_p90, 1) * 60 +
+  min(pressing_metrics$tackles_p90 / benchmarks$tackles_p90, 1) * 20 +
+  min(pressing_metrics$interceptions_p90 / benchmarks$interceptions_p90, 1) * 20
 )  # Score already in 0-100 scale (weights sum to 100)
 
 pressing_strength <- case_when(
@@ -202,10 +238,10 @@ possession_metrics <- list(
 )
 
 # Normalize to 0-100 scale
-# Top possession teams: 85%+ completion, 40+ touches in att third
+# Using real benchmarks from percentile 85 of Liga MX teams
 possession_score <- (
-  min(possession_metrics$pass_completion_pct / 85, 1) * 60 +
-  min(possession_metrics$touches_att_third_p90 / 40, 1) * 40
+  min(possession_metrics$pass_completion_pct / benchmarks$pass_completion_pct, 1) * 60 +
+  min(possession_metrics$touches_att_third_p90 / benchmarks$touches_att_third_p90, 1) * 40
 )  # Score already in 0-100 scale (weights sum to 100)
 
 possession_strength <- case_when(
@@ -235,11 +271,11 @@ dribbling_metrics <- list(
 )
 
 # Normalize to 0-100 scale
-# Dribble-heavy teams: 2.0+ dribbles, 1.2+ successful, 65%+ success rate
+# Using real benchmarks from percentile 85 of Liga MX teams
 dribbling_score <- (
-  min(dribbling_metrics$dribbles_p90 / 2.0, 1) * 40 +
-  min(dribbling_metrics$dribbles_successful_p90 / 1.2, 1) * 35 +
-  min(dribbling_metrics$dribble_success_pct / 65, 1) * 25
+  min(dribbling_metrics$dribbles_p90 / benchmarks$dribbles_p90, 1) * 40 +
+  min(dribbling_metrics$dribbles_successful_p90 / benchmarks$dribbles_successful_p90, 1) * 35 +
+  min(dribbling_metrics$dribble_success_pct / benchmarks$dribble_success_pct, 1) * 25
 )  # Score already in 0-100 scale (weights sum to 100)
 
 dribbling_strength <- case_when(
@@ -416,9 +452,13 @@ dna_profile <- list(
     nice_to_have = nice_to_have
   ),
 
+  benchmarks_used = benchmarks,
+
   metadata = list(
     total_players_analyzed = team_agg$total_players,
     total_matches = team_agg$total_matches,
+    benchmarks_source = if(use_real_benchmarks) "Real Liga MX data (Percentile 85)" else "Estimated",
+    benchmarks_teams = if(use_real_benchmarks) 5 else NA,
     generated_at = Sys.time()
   )
 )

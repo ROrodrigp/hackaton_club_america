@@ -1,0 +1,22 @@
+{
+  "team_name": "Toluca",
+  "season": "2024/2025",
+  "avg_progressive_passes_p90": 14.5392,
+  "avg_progressive_carries_p90": 3.1653,
+  "avg_shot_assists_p90": 0.6805,
+  "avg_key_passes_p90": 0.6315,
+  "avg_xA_p90": 0.0533,
+  "avg_shots_p90": 1.0096,
+  "avg_xG_p90": 0.1058,
+  "avg_tackles_p90": 1.521,
+  "avg_interceptions_p90": 0.6574,
+  "avg_pressures_p90": 13.6146,
+  "avg_pass_completion_pct": 82.4785,
+  "avg_touches_att_third_p90": 32.1176,
+  "avg_dribbles_p90": 1.0738,
+  "avg_dribbles_successful_p90": 0.5851,
+  "avg_dribble_success_pct": 55.0325,
+  "total_players": 25,
+  "total_minutes": 45523.9765,
+  "total_matches": 626
+}

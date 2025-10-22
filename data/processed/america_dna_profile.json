@@ -1,0 +1,78 @@
+{
+  "team": "Club América",
+  "season": "2024/2025",
+  "overall_score": 83.37,
+  "tactical_identity": "High-pressing possession team with strong vertical progression",
+  "dimensions": {
+    "progression": {
+      "score": 92.04,
+      "strength": "Elite",
+      "metrics": {
+        "progressive_passes_p90": 13.1634,
+        "progressive_carries_p90": 3.7192,
+        "touches_att_third_p90": 38.7199
+      },
+      "description": "Vertical ball progression towards opponent's goal"
+    },
+    "creation": {
+      "score": 69.05,
+      "strength": "Above Average",
+      "metrics": {
+        "xA_p90": 0.0587,
+        "shot_assists_p90": 0.7364,
+        "key_passes_p90": 0.7043
+      },
+      "description": "Ability to create goal-scoring opportunities"
+    },
+    "finishing": {
+      "score": 87.35,
+      "strength": "Elite",
+      "metrics": {
+        "xG_p90": 0.1236,
+        "shots_p90": 1.0868,
+        "shot_quality": 0.1137
+      },
+      "description": "Quality and volume of shooting opportunities"
+    },
+    "pressing": {
+      "score": 86.79,
+      "strength": "Elite",
+      "metrics": {
+        "pressures_p90": 12.4891,
+        "tackles_p90": 1.3421,
+        "interceptions_p90": 0.6148
+      },
+      "description": "Defensive intensity and ball recovery"
+    },
+    "possession": {
+      "score": 97.42,
+      "strength": "Elite",
+      "metrics": {
+        "pass_completion_pct": 83.1592,
+        "touches_att_third_p90": 38.7199
+      },
+      "description": "Ball control and circulation quality"
+    },
+    "dribbling": {
+      "score": 67.58,
+      "strength": "Above Average",
+      "metrics": {
+        "dribbles_p90": 1.3441,
+        "dribbles_successful_p90": 0.6678,
+        "dribble_success_pct": 55.1694
+      },
+      "description": "1v1 take-on ability and success"
+    }
+  },
+  "strengths": ["Possession", "Progression", "Finishing"],
+  "weaknesses": ["Dribbling", "Creation"],
+  "ideal_player_profile": {
+    "must_have": ["High pass completion rate (>80%)", "Ability to progress the ball vertically"],
+    "nice_to_have": ["High xA - Creative passing ability", "1v1 dribbling ability (>60% success)"]
+  },
+  "metadata": {
+    "total_players_analyzed": 24,
+    "total_matches": 47,
+    "generated_at": "2025-10-22 12:40:24"
+  }
+}

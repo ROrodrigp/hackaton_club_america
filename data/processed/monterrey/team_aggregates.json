@@ -1,0 +1,22 @@
+{
+  "team_name": "Monterrey",
+  "season": "2024/2025",
+  "avg_progressive_passes_p90": 14.6072,
+  "avg_progressive_carries_p90": 3.0869,
+  "avg_shot_assists_p90": 0.7448,
+  "avg_key_passes_p90": 0.6889,
+  "avg_xA_p90": 0.0482,
+  "avg_shots_p90": 1.2513,
+  "avg_xG_p90": 0.1166,
+  "avg_tackles_p90": 1.6183,
+  "avg_interceptions_p90": 0.6754,
+  "avg_pressures_p90": 13.1292,
+  "avg_pass_completion_pct": 81.9816,
+  "avg_touches_att_third_p90": 44.6119,
+  "avg_dribbles_p90": 1.4342,
+  "avg_dribbles_successful_p90": 0.7253,
+  "avg_dribble_success_pct": 53.6831,
+  "total_players": 26,
+  "total_minutes": 48585.7081,
+  "total_matches": 666
+}

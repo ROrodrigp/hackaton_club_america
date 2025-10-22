@@ -1,0 +1,22 @@
+{
+  "team_name": "Guadalajara",
+  "season": "2024/2025",
+  "avg_progressive_passes_p90": 11.7367,
+  "avg_progressive_carries_p90": 3.4382,
+  "avg_shot_assists_p90": 0.7418,
+  "avg_key_passes_p90": 0.6944,
+  "avg_xA_p90": 0.0558,
+  "avg_shots_p90": 1.2875,
+  "avg_xG_p90": 0.1291,
+  "avg_tackles_p90": 1.7099,
+  "avg_interceptions_p90": 0.4751,
+  "avg_pressures_p90": 14.8235,
+  "avg_pass_completion_pct": 78.8451,
+  "avg_touches_att_third_p90": 37.7279,
+  "avg_dribbles_p90": 1.2429,
+  "avg_dribbles_successful_p90": 0.6152,
+  "avg_dribble_success_pct": 55.1302,
+  "total_players": 27,
+  "total_minutes": 38636.9873,
+  "total_matches": 517
+}

@@ -1,0 +1,22 @@
+{
+  "team_name": "Mazatlán",
+  "season": "2024/2025",
+  "avg_progressive_passes_p90": 11.5495,
+  "avg_progressive_carries_p90": 3.1425,
+  "avg_shot_assists_p90": 0.6593,
+  "avg_key_passes_p90": 0.6296,
+  "avg_xA_p90": 0.0496,
+  "avg_shots_p90": 1.0445,
+  "avg_xG_p90": 0.0931,
+  "avg_tackles_p90": 1.5017,
+  "avg_interceptions_p90": 0.5495,
+  "avg_pressures_p90": 14.2566,
+  "avg_pass_completion_pct": 78.4763,
+  "avg_touches_att_third_p90": 35.5875,
+  "avg_dribbles_p90": 1.1223,
+  "avg_dribbles_successful_p90": 0.5245,
+  "avg_dribble_success_pct": 54.0683,
+  "total_players": 28,
+  "total_minutes": 37967.8209,
+  "total_matches": 521
+}
