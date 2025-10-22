@@ -3,7 +3,7 @@
 # CALCULATE SCOUTING PLAYER METRICS - 2024/2025
 # ==============================================================================
 #
-# Propósito: Calcular métricas individuales por jugador de 4 equipos de scouting
+# Propósito: Calcular métricas individuales por jugador de 9 equipos de scouting
 #            Lee datos PARTICIONADOS por equipo y genera métricas
 #
 # Input (partitioned by team):
@@ -54,7 +54,17 @@ normalize_team_name <- function(team_name) {
 print_section("SCOUTING PLAYER METRICS CALCULATOR")
 
 # Teams to process (same as script 01)
-scouting_teams <- c("Toluca", "Guadalajara", "Monterrey", "Mazatlán")
+scouting_teams <- c(
+  "Toluca",
+  "Guadalajara",
+  "Monterrey",
+  "Mazatlán",
+  "Cruz Azul",
+  "Tigres",
+  "León",
+  "Atlas",
+  "Puebla"
+)
 
 cat("🎯 Teams to process:\n")
 for (team in scouting_teams) {

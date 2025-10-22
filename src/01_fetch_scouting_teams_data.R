@@ -3,8 +3,9 @@
 # FETCH SCOUTING TEAMS DATA - TEMPORADA 2024/2025
 # ==============================================================================
 #
-# Propósito: Obtener datos de 4 equipos de Liga MX para scouting (SIN América)
+# Propósito: Obtener datos de 9 equipos de Liga MX para scouting (SIN América)
 #            - Toluca, Guadalajara, Monterrey, Mazatlán
+#            - Cruz Azul, Tigres, León, Atlas, Puebla
 #            Los datos se guardan PARTICIONADOS por equipo
 #
 # Output structure:
@@ -57,7 +58,13 @@ normalize_team_name <- function(team_name) {
 print_section("SCOUTING TEAMS DATA PIPELINE - TEMPORADA 2024/2025")
 
 # Teams to fetch (SIN América - ya procesado anteriormente)
-scouting_teams <- c("Toluca", "Guadalajara", "Monterrey", "Mazatlán")
+scouting_teams <- c(
+  "Cruz Azul",
+  "Tigres",
+  "León",
+  "Atlas",
+  "Puebla"
+)
 
 cat("🎯 Equipos de scouting:\n")
 for (i in seq_along(scouting_teams)) {

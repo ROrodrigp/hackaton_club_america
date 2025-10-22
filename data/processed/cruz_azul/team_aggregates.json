@@ -1,0 +1,22 @@
+{
+  "team_name": "Cruz Azul",
+  "season": "2024/2025",
+  "avg_progressive_passes_p90": 12.3068,
+  "avg_progressive_carries_p90": 3.4942,
+  "avg_shot_assists_p90": 0.8724,
+  "avg_key_passes_p90": 0.8403,
+  "avg_xA_p90": 0.0598,
+  "avg_shots_p90": 1.5589,
+  "avg_xG_p90": 0.1552,
+  "avg_tackles_p90": 1.7243,
+  "avg_interceptions_p90": 0.5503,
+  "avg_pressures_p90": 14.8515,
+  "avg_pass_completion_pct": 80.357,
+  "avg_touches_att_third_p90": 43.6603,
+  "avg_dribbles_p90": 1.1692,
+  "avg_dribbles_successful_p90": 0.5622,
+  "avg_dribble_success_pct": 53.0049,
+  "total_players": 20,
+  "total_minutes": 45353.9264,
+  "total_matches": 605
+}

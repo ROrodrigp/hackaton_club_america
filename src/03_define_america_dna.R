@@ -47,13 +47,22 @@ cat(sprintf("   ✓ Player metrics loaded: %d players\n", nrow(player_metrics)))
 team_agg <- read_json("data/processed/team_aggregates_2024_2025.json")
 cat(sprintf("   ✓ Team aggregates loaded\n"))
 
-# Load Liga MX benchmarks (percentile 85) if available
-benchmarks_file <- "data/processed/liga_mx_benchmarks_p85.json"
+# Load Liga MX benchmarks (percentile 90) if available
+benchmarks_file <- "data/processed/liga_mx_benchmarks_p90.json"
 
 if (file.exists(benchmarks_file)) {
-  cat("\n📊 Loading real Liga MX benchmarks (Percentile 85)...\n")
+  cat("\n📊 Loading real Liga MX benchmarks (Percentile 90)...\n")
   benchmarks <- read_json(benchmarks_file)
-  cat("   ✓ Real benchmarks loaded from 5 teams\n")
+
+  # Count how many teams were used for benchmarks
+  all_teams_file <- "data/processed/all_teams_aggregates.json"
+  if (file.exists(all_teams_file)) {
+    all_teams <- read_json(all_teams_file)
+    num_teams <- length(all_teams$teams)
+    cat(sprintf("   ✓ Real benchmarks loaded from %d teams\n", num_teams))
+  } else {
+    cat("   ✓ Real benchmarks loaded\n")
+  }
   use_real_benchmarks <- TRUE
 } else {
   cat("\n⚠️  Liga MX benchmarks not found\n")
@@ -452,13 +461,9 @@ dna_profile <- list(
     nice_to_have = nice_to_have
   ),
 
-  benchmarks_used = benchmarks,
-
   metadata = list(
     total_players_analyzed = team_agg$total_players,
     total_matches = team_agg$total_matches,
-    benchmarks_source = if(use_real_benchmarks) "Real Liga MX data (Percentile 85)" else "Estimated",
-    benchmarks_teams = if(use_real_benchmarks) 5 else NA,
     generated_at = Sys.time()
   )
 )

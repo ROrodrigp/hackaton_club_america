@@ -4,7 +4,7 @@
 # ==============================================================================
 #
 # Propósito: Calcular agregados por equipo (promedios de métricas)
-#            para los 4 equipos de scouting
+#            para los 9 equipos de scouting
 #
 # Input:
 #   - data/processed/scouting_pool_all_metrics.parquet
@@ -14,7 +14,12 @@
 #   - data/processed/guadalajara/team_aggregates.json
 #   - data/processed/monterrey/team_aggregates.json
 #   - data/processed/mazatlan/team_aggregates.json
-#   - data/processed/all_teams_aggregates.json (los 5 equipos combinados)
+#   - data/processed/cruz_azul/team_aggregates.json
+#   - data/processed/tigres/team_aggregates.json
+#   - data/processed/leon/team_aggregates.json
+#   - data/processed/atlas/team_aggregates.json
+#   - data/processed/puebla/team_aggregates.json
+#   - data/processed/all_teams_aggregates.json (los 10 equipos combinados)
 #
 # ==============================================================================
 
@@ -237,41 +242,41 @@ cat(sprintf("\n   💾 Combined file saved to: %s\n", combined_file))
 # CALCULATE BENCHMARKS (PERCENTILES)
 # ==============================================================================
 
-print_section("CALCULATE BENCHMARKS (PERCENTILE 85)")
+print_section("CALCULATE BENCHMARKS (PERCENTILE 90)")
 
-cat("📊 Calculating percentile 85 for each metric...\n\n")
+cat("📊 Calculating percentile 90 for each metric...\n\n")
 
-# Calculate percentile 85 for all metrics
+# Calculate percentile 90 for all metrics (more strict than P85)
 benchmarks <- list(
   # Progression
-  progressive_passes_p90 = quantile(all_teams_df$avg_progressive_passes_p90, 0.85, na.rm = TRUE),
-  progressive_carries_p90 = quantile(all_teams_df$avg_progressive_carries_p90, 0.85, na.rm = TRUE),
+  progressive_passes_p90 = quantile(all_teams_df$avg_progressive_passes_p90, 0.90, na.rm = TRUE),
+  progressive_carries_p90 = quantile(all_teams_df$avg_progressive_carries_p90, 0.90, na.rm = TRUE),
 
   # Creation
-  xA_p90 = quantile(all_teams_df$avg_xA_p90, 0.85, na.rm = TRUE),
-  shot_assists_p90 = quantile(all_teams_df$avg_shot_assists_p90, 0.85, na.rm = TRUE),
-  key_passes_p90 = quantile(all_teams_df$avg_key_passes_p90, 0.85, na.rm = TRUE),
+  xA_p90 = quantile(all_teams_df$avg_xA_p90, 0.90, na.rm = TRUE),
+  shot_assists_p90 = quantile(all_teams_df$avg_shot_assists_p90, 0.90, na.rm = TRUE),
+  key_passes_p90 = quantile(all_teams_df$avg_key_passes_p90, 0.90, na.rm = TRUE),
 
   # Finishing
-  xG_p90 = quantile(all_teams_df$avg_xG_p90, 0.85, na.rm = TRUE),
-  shots_p90 = quantile(all_teams_df$avg_shots_p90, 0.85, na.rm = TRUE),
+  xG_p90 = quantile(all_teams_df$avg_xG_p90, 0.90, na.rm = TRUE),
+  shots_p90 = quantile(all_teams_df$avg_shots_p90, 0.90, na.rm = TRUE),
 
   # Defense
-  pressures_p90 = quantile(all_teams_df$avg_pressures_p90, 0.85, na.rm = TRUE),
-  tackles_p90 = quantile(all_teams_df$avg_tackles_p90, 0.85, na.rm = TRUE),
-  interceptions_p90 = quantile(all_teams_df$avg_interceptions_p90, 0.85, na.rm = TRUE),
+  pressures_p90 = quantile(all_teams_df$avg_pressures_p90, 0.90, na.rm = TRUE),
+  tackles_p90 = quantile(all_teams_df$avg_tackles_p90, 0.90, na.rm = TRUE),
+  interceptions_p90 = quantile(all_teams_df$avg_interceptions_p90, 0.90, na.rm = TRUE),
 
   # Possession
-  pass_completion_pct = quantile(all_teams_df$avg_pass_completion_pct, 0.85, na.rm = TRUE),
-  touches_att_third_p90 = quantile(all_teams_df$avg_touches_att_third_p90, 0.85, na.rm = TRUE),
+  pass_completion_pct = quantile(all_teams_df$avg_pass_completion_pct, 0.90, na.rm = TRUE),
+  touches_att_third_p90 = quantile(all_teams_df$avg_touches_att_third_p90, 0.90, na.rm = TRUE),
 
   # Dribbling
-  dribbles_p90 = quantile(all_teams_df$avg_dribbles_p90, 0.85, na.rm = TRUE),
-  dribbles_successful_p90 = quantile(all_teams_df$avg_dribbles_successful_p90, 0.85, na.rm = TRUE),
-  dribble_success_pct = quantile(all_teams_df$avg_dribble_success_pct, 0.85, na.rm = TRUE)
+  dribbles_p90 = quantile(all_teams_df$avg_dribbles_p90, 0.90, na.rm = TRUE),
+  dribbles_successful_p90 = quantile(all_teams_df$avg_dribbles_successful_p90, 0.90, na.rm = TRUE),
+  dribble_success_pct = quantile(all_teams_df$avg_dribble_success_pct, 0.90, na.rm = TRUE)
 )
 
-cat("   Calculated benchmarks (Percentile 85):\n\n")
+cat("   Calculated benchmarks (Percentile 90):\n\n")
 cat("   Progression:\n")
 cat(sprintf("      • Progressive passes p90: %.2f\n", benchmarks$progressive_passes_p90))
 cat(sprintf("      • Progressive carries p90: %.2f\n", benchmarks$progressive_carries_p90))
@@ -295,7 +300,7 @@ cat(sprintf("      • Successful dribbles p90: %.2f\n", benchmarks$dribbles_suc
 cat(sprintf("      • Dribble success: %.2f%%\n", benchmarks$dribble_success_pct))
 
 # Save benchmarks
-benchmarks_file <- "data/processed/liga_mx_benchmarks_p85.json"
+benchmarks_file <- "data/processed/liga_mx_benchmarks_p90.json"
 write_json(benchmarks, benchmarks_file, pretty = TRUE, auto_unbox = TRUE)
 
 cat(sprintf("\n   💾 Benchmarks saved to: %s\n", benchmarks_file))

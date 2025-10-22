@@ -1,0 +1,22 @@
+{
+  "team_name": "Atlas",
+  "season": "2024/2025",
+  "avg_progressive_passes_p90": 10.5712,
+  "avg_progressive_carries_p90": 2.5594,
+  "avg_shot_assists_p90": 0.706,
+  "avg_key_passes_p90": 0.6876,
+  "avg_xA_p90": 0.0429,
+  "avg_shots_p90": 1.0308,
+  "avg_xG_p90": 0.0818,
+  "avg_tackles_p90": 1.596,
+  "avg_interceptions_p90": 0.6303,
+  "avg_pressures_p90": 16.0293,
+  "avg_pass_completion_pct": 75.6034,
+  "avg_touches_att_third_p90": 35.9905,
+  "avg_dribbles_p90": 1.2782,
+  "avg_dribbles_successful_p90": 0.5472,
+  "avg_dribble_success_pct": 45.6986,
+  "total_players": 28,
+  "total_minutes": 40425.8924,
+  "total_matches": 556
+}
