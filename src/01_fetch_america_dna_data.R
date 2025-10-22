@@ -39,9 +39,32 @@ print_section("CLUB AMÉRICA DNA DATA PIPELINE - TEMPORADA 2024/2025")
 
 # Credentials
 cat("🔐 Setting up authentication...\n")
-username <- "itam_hackathon@hudl.com"
-password <- "pGwIprel"
-cat("   ✓ Credentials loaded\n")
+
+# Load credentials from external file
+credentials_file <- ".statsbomb_credentials"
+
+if (!file.exists(credentials_file)) {
+  stop(paste0(
+    "❌ Credentials file not found: ", credentials_file, "\n",
+    "   Please create it using .statsbomb_credentials.example as template\n",
+    "   Instructions:\n",
+    "   1. Copy .statsbomb_credentials.example to .statsbomb_credentials\n",
+    "   2. Add your real credentials\n"
+  ))
+}
+
+# Read credentials
+cred_lines <- readLines(credentials_file)
+cred_lines <- cred_lines[!grepl("^#", cred_lines) & nchar(trimws(cred_lines)) > 0]
+
+username <- sub("username=", "", cred_lines[grepl("^username=", cred_lines)])
+password <- sub("password=", "", cred_lines[grepl("^password=", cred_lines)])
+
+if (length(username) == 0 || length(password) == 0) {
+  stop("❌ Invalid credentials file format. Check .statsbomb_credentials.example")
+}
+
+cat("   ✓ Credentials loaded from file\n")
 
 # Create directories
 cat("\n📁 Creating output directories...\n")

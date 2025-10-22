@@ -1,98 +1,384 @@
-🚀 POC PARA HACKATHON: "FitScore - AI Scout Assistant" 🎯 CONCEPTO CENTRAL (El "Hook") "¿Y si pudieras ver exactamente cómo jugaría Messi en el Club América ANTES de ficharlo?" Un sistema que en 3 clicks:
+# 🚀 PLAN ACTUALIZADO - FitScore para Club América
 
-Seleccionas un jugador candidato Ves su "transformación" al estilo América Obtienes una recomendación clara: ✅ FICHAR o ❌ PASAR
+## 📅 Estado del Proyecto: EN PROGRESO
 
-⚡ ESTRUCTURA DEL HACKATHON (24-48 hrs) HORA 0-4: SETUP Y DATA PREP Mientras otros duermen, tú preparas Data Pipeline Express: 1. Cargar eventos del Club América (última temporada) 2. Cargar eventos de \~100 jugadores potenciales (Liga MX) 3. Pre-calcular métricas agregadas por jugador 4. Guardar en formato pickle/parquet para velocidad Métricas Core (10-12 métricas clave): pythonPor Jugador: ✅ Progresión: Progressive Passes per 90, Progressive Carries per 90 ✅ Creación: Shot-Creating Actions per 90, xA per 90 ✅ Finalización: xG per 90, Shots per 90 ✅ Defensiva: Tackles per 90, Interceptions per 90 ✅ Posesión: Pass Completion %, Touches in Box ✅ Físico: Duels Won %, Aerial Duels Won % Output: data/processed/player_metrics.csv + america_profile.json
+**Fecha de inicio**: Octubre 2025
+**Deadline hackathon**: 22 de octubre, 2025
+**Presentación final**: 6 de noviembre, 2025
 
-HORA 4-12: CORE DEL MODELO (Lo Mínimo Viable) Componente 1: "América DNA" (1 hora) pythondef get_america_dna(): """ Perfil del Club América en 6 dimensiones """ america_players = get_team_metrics("Club América")
+---
 
-```         
-dna = {
-    'possession_style': america_players['pass_completion'].mean(),
-    'attacking_intensity': america_players['final_third_entries'].mean(),
-    'pressing_height': america_players['defensive_actions_height'].mean(),
-    'directness': america_players['progressive_distance'].mean(),
-    'width_usage': america_players['wide_actions_pct'].mean(),
-    'tempo': america_players['passes_per_possession'].mean()
-}
-return dna
+## ✅ PROGRESO COMPLETADO
+
+### ✅ FASE 1: INFRAESTRUCTURA DE DATOS (COMPLETADO)
+
+#### Script 01: `01_fetch_multi_team_data.R` ✅
+- **Estado**: Completado y listo para ejecutar
+- **Propósito**: Descarga datos de 5 equipos (América + 4 equipos de scouting)
+- **Equipos incluidos**:
+  - 🦅 **Club América** (para definir ADN)
+  - 🔴 **Toluca** (pool de scouting)
+  - 🔵 **Guadalajara (Chivas)** (pool de scouting)
+  - ⚪ **Monterrey** (pool de scouting)
+  - 🟣 **Mazatlán** (pool de scouting)
+- **Output esperado**:
+  - `multi_team_events_2024_2025.parquet` (~50,000+ eventos)
+  - `multi_team_matches_2024_2025.csv` (metadatos)
+  - `multi_team_lineups_2024_2025.parquet` (alineaciones)
+  - `multi_team_minutes_played.parquet` (minutos por jugador-partido)
+  - `multi_team_player_minutes_summary.parquet` (totales por jugador)
+- **Tiempo de ejecución**: ~15-25 minutos
+- **Ejecutar**: `Rscript src/01_fetch_multi_team_data.R`
+
+#### Script 02: `02_calculate_multi_team_metrics.R` ✅
+- **Estado**: Completado y listo para ejecutar
+- **Propósito**: Calcula métricas avanzadas por jugador (todos los equipos)
+- **Métricas implementadas** (todas per 90 min):
+  - 🏃 **Progresión**: Progressive passes, Progressive carries
+  - 🎨 **Creación**: Shot assists, Key passes, xA (Expected Assists)
+  - ⚽ **Finalización**: Shots, Goals, xG
+  - 🛡️ **Defensa**: Tackles, Interceptions, Pressures, Recoveries
+  - 🎯 **Posesión**: Pass completion %, Touches in attacking third, Touches in box
+  - 🎪 **Dribbling**: Dribbles, Success rate
+- **Output esperado**:
+  - `multi_team_player_metrics.parquet` (todos los jugadores)
+  - `america_player_metrics.parquet` (solo América)
+  - `scouting_player_metrics.parquet` (pool de 4 equipos)
+- **Tiempo de ejecución**: ~3-5 minutos
+- **Ejecutar**: `Rscript src/02_calculate_multi_team_metrics.R`
+
+#### Script 03: `03_define_america_dna.R` ✅
+- **Estado**: Completado (de proyecto anterior, compatible)
+- **Propósito**: Define el "ADN táctico" del Club América
+- **6 Dimensiones del ADN**:
+  1. Estilo de Posesión
+  2. Intensidad Ofensiva
+  3. Altura de Presión
+  4. Directness (directitud)
+  5. Uso de Bandas
+  6. Creación
+- **Output esperado**:
+  - `america_dna_profile.json`
+  - `america_benchmarks_by_position.json`
+  - `america_style_vectors.json`
+- **Tiempo de ejecución**: ~1-2 minutos
+- **Ejecutar**: `Rscript src/03_define_america_dna.R`
+
+---
+
+## 🔄 PRÓXIMOS PASOS INMEDIATOS
+
+### 🎯 FASE 2: MODELO DE FITSCORE (EN DESARROLLO)
+
+#### Script 04: `04_calculate_fitscore.R` ⏳
+- **Estado**: Por desarrollar
+- **Prioridad**: 🔴 ALTA
+- **Propósito**: Calcular FitScore (0-100) para cada jugador del pool de scouting
+
+**Algoritmo FitScore** (estructura planificada):
+
+```r
+FitScore (0-100) =
+  + Technical Fit (40 puntos)
+      • Comparar métricas del jugador vs benchmark de su posición en América
+      • Métricas clave según posición:
+        - Delanteros: xG, shots, touches in box, dribbles
+        - Mediocampistas: progressive passes, xA, pass completion
+        - Defensas: tackles, interceptions, pressures, clearances
+
+  + Style Fit (30 puntos)
+      • Distancia euclidiana entre perfil del jugador y ADN América
+      • Vectores de estilo en 6 dimensiones
+
+  + Consistency (15 puntos)
+      • Varianza de performance entre partidos
+      • Jugadores consistentes = mayor FitScore
+
+  + Form (15 puntos)
+      • Tendencia últimos 5 partidos
+      • Jugadores en forma ascendente = mayor FitScore
 ```
 
-Visualización: Hexágono/radar del "ADN América"
+**Modelo de Transformación Contextual** (predice cambios en métricas):
+```r
+predict_metrics_in_america <- function(player, current_team, america_dna) {
+  # Calcular diferencias de estilo entre equipos
+  style_deltas <- calculate_style_differences(current_team, america_dna)
 
-Componente 2: Compatibility Score (2 horas) El algoritmo simple pero efectivo: pythondef calculate_fit_score(player_metrics, america_dna): """ Score 0-100 de compatibilidad """
+  # Reglas de ajuste por métrica:
+  # 1. Si América tiene más posesión → aumentan pases progresivos
+  # 2. Si América presiona más alto → aumentan pressures, disminuyen duels
+  # 3. Si América es más directo → aumentan carries, disminuyen pases cortos
 
-```         
-# 1. TECHNICAL FIT (40 puntos)
-# Comparar métricas del jugador vs promedio de su posición en América
-position_benchmark = get_position_benchmark(player.position, "América")
-technical_score = 0
+  predictions <- apply_transformation_rules(player_metrics, style_deltas)
 
-for metric in KEY_METRICS:
-    player_val = normalize(player_metrics[metric])
-    benchmark_val = normalize(position_benchmark[metric])
-    similarity = 1 - abs(player_val - benchmark_val)
-    technical_score += similarity * WEIGHTS[metric]
-
-# 2. STYLE FIT (30 puntos)
-# Distancia euclidiana en espacio de estilo
-player_style = get_player_style_vector(player_metrics)
-america_style = america_dna_to_vector(america_dna)
-style_distance = euclidean_distance(player_style, america_style)
-style_score = 30 * (1 - normalize(style_distance))
-
-# 3. CONSISTENCY (15 puntos)
-# Varianza de performance match-to-match
-consistency = 15 * (1 - player_metrics['performance_variance'])
-
-# 4. FORM (15 puntos)
-# Tendencia últimos 10 partidos
-recent_form = calculate_trend(player_metrics['last_10_games'])
-form_score = 15 * sigmoid(recent_form)
-
-total_score = technical_score + style_score + consistency + form_score
-
-return {
-    'total': round(total_score, 1),
-    'technical': round(technical_score, 1),
-    'style': round(style_score, 1),
-    'consistency': round(consistency, 1),
-    'form': round(form_score, 1)
+  return(list(
+    original_metrics = player_metrics,
+    predicted_metrics = predictions,
+    change_pct = (predictions - player_metrics) / player_metrics * 100
+  ))
 }
 ```
 
-Componente 3: Context Adjustment Model (3 horas) El "truco" del hackathon - Simple pero impresionante: pythondef predict_metrics_in_america(player, current_team): """ Predice cómo cambiarán las métricas del jugador Basado en diferencias de estilo entre equipos """
+**Output esperado**:
+- `fitscore_rankings.parquet` (jugadores rankeados por FitScore)
+- `predicted_transformations.parquet` (métricas antes/después)
+- `recommendations_by_position.json` (Top 5 por posición)
 
-```         
-# Obtener factores de ajuste pre-calculados
-adjustment_factors = {
-    'possession_delta': (america.possession - current_team.possession) / 100,
-    'tempo_delta': (america.tempo - current_team.tempo) / 10,
-    'pressing_delta': (america.pressing - current_team.pressing) / 5
-}
+---
 
-# Reglas simples pero efectivas (basadas en análisis previo)
-predictions = {}
+### 🎨 FASE 3: VISUALIZACIÓN Y DEMO (PENDIENTE)
 
-# EJEMPLO: Pases progresivos
-possession_effect = adjustment_factors['possession_delta'] * 0.15
-predictions['progressive_passes'] = player.progressive_passes * (1 + possession_effect)
+#### App Streamlit: `app/streamlit_app.py` 📱
+- **Estado**: Por desarrollar
+- **Prioridad**: 🟡 MEDIA
 
-# EJEMPLO: Duelos
-pressing_effect = adjustment_factors['pressing_delta'] * -0.20
-predictions['duels_won'] = player.duels_won * (1 + pressing_effect)
+**3 Páginas Principales**:
 
-# Aplicar reglas para todas las métricas clave
-# ...
+1. **Scout Dashboard** 🔍
+   - Selector de jugador
+   - FitScore prominente (0-100)
+   - Semáforo visual (✅ >80, ⚠️ 65-80, ❌ <65)
+   - Info básica (edad, posición, equipo, minutos)
 
-return predictions, adjustment_factors
+2. **Transformation View** 📊 ⭐ LA JOYA
+   - Tabla comparativa: Métricas Actuales | Predichas en América | % Cambio
+   - Radar chart: ANTES (azul) vs DESPUÉS (amarillo)
+   - Explicación automática de cambios esperados
+   - Nivel de confianza de la predicción
+
+3. **Head-to-Head Comparison** ⚔️
+   - Comparar 2 jugadores lado a lado
+   - Recomendación automática ("Fichar a X porque...")
+   - Gráficos de comparación directa
+
+**Elementos Interactivos**:
+- Filtros por posición, equipo, edad
+- Ordenamiento por FitScore, xG, xA, etc.
+- Tooltips explicando cada métrica
+- Descarga de reportes en PDF
+
+---
+
+### 📹 FASE 4: PRESENTACIÓN (PENDIENTE)
+
+#### Video Demo (5 min máximo) 🎬
+- [ ] Problema: ¿Por qué fallan los fichajes? (30 seg)
+- [ ] Solución: FitScore en acción (2 min)
+- [ ] Tecnología: StatsBomb 360 + modelo contextual (1 min)
+- [ ] Impacto: Casos de uso reales (1 min)
+- [ ] Visión: Escalabilidad futura (30 seg)
+
+#### Pitch Deck (PDF) 📑
+- [ ] Slide 1: El problema (datos de fichajes fallidos)
+- [ ] Slide 2: La solución (FitScore overview)
+- [ ] Slide 3: Demo en vivo
+- [ ] Slide 4: Metodología (datos + algoritmo)
+- [ ] Slide 5: Casos de estudio (Top 3 recomendaciones)
+- [ ] Slide 6: ROI y próximos pasos
+
+#### Casos de Estudio (2-3 ejemplos) 📚
+- **"El Revelado"**: Jugador con FitScore alto pero bajo perfil
+- **"La Estrella que No Encaja"**: Jugador famoso con FitScore bajo
+- **"El Versátil"**: Jugador que mejora en múltiples dimensiones
+
+---
+
+## 📋 CHECKLIST PRE-PRESENTACIÓN
+
+### Datos ✅
+- [x] Script 01 completado (fetch data)
+- [x] Script 02 completado (calculate metrics)
+- [x] Script 03 completado (define DNA)
+- [ ] Script 04 en desarrollo (FitScore model)
+
+### Código 🔧
+- [x] Código documentado y limpio
+- [x] README.md completo
+- [ ] Notebooks de exploración
+- [ ] Tests básicos de funciones críticas
+
+### Demo 🎮
+- [ ] App Streamlit funcional
+- [ ] Datos pre-cargados (no depende de API en vivo)
+- [ ] Visualizaciones pulidas
+- [ ] Casos de uso preparados
+
+### Presentación 🎤
+- [ ] Video grabado y editado
+- [ ] Pitch practicado 10+ veces
+- [ ] Slides con visuales impactantes
+- [ ] Plan B si falla demo en vivo
+
+---
+
+## ⏱️ TIMELINE SUGERIDO
+
+| Día | Tarea | Tiempo estimado |
+|-----|-------|-----------------|
+| **Día 1** | Ejecutar scripts 01-03 + validar datos | 2-3 horas |
+| **Día 2** | Desarrollar script 04 (FitScore) | 4-6 horas |
+| **Día 3** | Crear app Streamlit básica | 4-6 horas |
+| **Día 4** | Pulir visualizaciones + casos de estudio | 3-4 horas |
+| **Día 5** | Crear video demo + pitch deck | 3-4 horas |
+| **Día 6** | Practicar presentación + ajustes finales | 2-3 horas |
+
+**Total estimado**: 18-26 horas de trabajo efectivo
+
+---
+
+## 🎯 CRITERIOS DE ÉXITO
+
+### Para el Hackathon
+- ✅ Sistema funcional end-to-end (datos → métricas → FitScore → visualización)
+- ✅ Al menos 3 casos de estudio convincentes
+- ✅ Demo que se ejecuta sin errores
+- ✅ Presentación clara y concisa (<5 min)
+- ✅ Código bien documentado y reproducible
+
+### Puntos Diferenciales
+- 🌟 **Innovación**: Modelo de transformación contextual (único)
+- 🌟 **Precisión**: Basado en StatsBomb 360 + métricas validadas
+- 🌟 **Aplicabilidad**: Responde directamente pregunta del hackathon
+- 🌟 **Visualización**: Transformación "antes/después" impactante
+- 🌟 **Escalabilidad**: Fácil de extender a otros equipos/ligas
+
+---
+
+## 🚀 INSTRUCCIONES DE EJECUCIÓN
+
+### Paso 1: Descargar Datos (Primera vez)
+```bash
+# Navegar al directorio del proyecto
+cd hackaton_club_america/
+
+# Ejecutar script de descarga (15-25 minutos)
+Rscript src/01_fetch_multi_team_data.R
 ```
 
-Clave: No necesitas un modelo ML complejo. Usa heurísticas basadas en análisis + reglas simples.
+### Paso 2: Calcular Métricas
+```bash
+# Calcular métricas por jugador (3-5 minutos)
+Rscript src/02_calculate_multi_team_metrics.R
+```
 
-HORA 12-20: FRONTEND/DEMO (El Wow Factor) App Streamlit - 3 Páginas Simples: Página 1: "Scout Dashboard" pythonimport streamlit as st import plotly.graph_objects as go
+### Paso 3: Definir ADN del América
+```bash
+# Calcular perfil táctico (1-2 minutos)
+Rscript src/03_define_america_dna.R
+```
 
-st.title("🔍 FitScore - AI Scout Assistant")
+### Paso 4: Calcular FitScore (Próximamente)
+```bash
+# Cuando esté listo el script 04:
+# Rscript src/04_calculate_fitscore.R
+```
+
+### Verificar Outputs
+```r
+library(arrow)
+library(tidyverse)
+
+# Verificar que los archivos existen
+list.files("data/processed/", pattern = "parquet|csv|json")
+
+# Cargar métricas
+america <- read_parquet("data/processed/america_player_metrics.parquet")
+scouting <- read_parquet("data/processed/scouting_player_metrics.parquet")
+
+# Ver top 10 por xG
+scouting %>%
+  arrange(desc(xG_p90)) %>%
+  select(player_name, team.name, primary_position, xG_p90, shots_p90) %>%
+  head(10)
+```
+
+---
+
+## 💡 TIPS Y MEJORES PRÁCTICAS
+
+### Durante el Desarrollo
+1. **Commits frecuentes**: Guardar progreso cada feature completado
+2. **Tests básicos**: Validar que métricas suman correctamente
+3. **Backup de datos**: Guardar `.parquet` en múltiples lugares
+4. **Documentación inline**: Comentar funciones complejas
+
+### Para la Demo
+1. **Pre-cargar datos**: No depender de API en vivo
+2. **Casos preparados**: Tener 3-5 jugadores interesantes listos
+3. **Plan B**: Screenshots por si falla Streamlit
+4. **Timing**: Practicar para mantenerse <5 minutos
+
+### Para la Presentación
+1. **Storytelling**: Empezar con problema real, terminar con impacto
+2. **Visuales**: Más gráficos, menos texto
+3. **Confianza**: Practicar 10+ veces
+4. **Preguntas anticipadas**: Preparar respuestas a posibles dudas
+
+---
+
+## 📚 RECURSOS ADICIONALES
+
+### Documentación Técnica
+- 📖 [StatsBombR GitHub](https://github.com/statsbomb/StatsBombR)
+- 🐍 [statsbombpy (Python)](https://github.com/statsbomb/statsbombpy)
+- 📊 [Event Data Spec](https://statsbomb.com/what-we-do/soccer-data/)
+- 🎯 [360 Data Spec](https://statsbomb.com/what-we-do/soccer-data/360-frame/)
+
+### Inspiración y Referencias
+- 🏆 [Friends of Tracking (YouTube)](https://www.youtube.com/@friendsoftracking4873)
+- 📈 [McKay Johns - Soccer Analytics](https://mckayjohns.github.io/)
+- 📊 [Soccermatics](https://soccermatics.readthedocs.io/)
+
+### Herramientas Útiles
+- 🎨 [Plotly (visualizaciones interactivas)](https://plotly.com/r/)
+- 🌐 [Streamlit (web apps rápidas)](https://streamlit.io/)
+- 📦 [Arrow/Parquet (formato eficiente)](https://arrow.apache.org/)
+
+---
+
+## ❓ FAQ
+
+### ¿Por qué 5 equipos y no más?
+Balance entre:
+- **Tiempo de descarga** (~20 min con 5 equipos)
+- **Calidad del pool** (equipos diversos tácticamente)
+- **Manejabilidad** (análisis más profundo vs más jugadores)
+
+### ¿Por qué Parquet en lugar de CSV?
+- ✅ **Compresión**: 10x más pequeño que CSV
+- ✅ **Velocidad**: 5-10x más rápido de leer
+- ✅ **Tipos**: Preserva tipos de datos (int, float, string)
+- ✅ **Compatible**: Funciona en R y Python sin conversión
+
+### ¿Qué pasa si no hay datos 360?
+El análisis funciona sin datos 360. Los datos 360 son un plus para:
+- Posicionamiento táctico
+- Passing networks
+- Freeze frames de tiros
+
+Pero las métricas core (xG, xA, progressive passes, etc.) están en los eventos normales.
+
+### ¿Cómo validar el modelo?
+Opciones:
+1. **Transfers reales**: Analizar jugadores que ya ficharon al América
+2. **Cross-validation**: Dividir temporada en train/test
+3. **Expert review**: Validar con scout profesional
+4. **Casos conocidos**: Comparar con fichajes exitosos/fallidos
+
+---
+
+## 🎊 MENSAJE FINAL
+
+> **"No estamos construyendo el sistema perfecto. Estamos construyando el demo perfecto."**
+
+### Enfoque para Ganar
+- ✅ **Funcionalidad** > Perfección
+- ✅ **Storytelling** > Features
+- ✅ **Simplicidad** > Complejidad
+- ✅ **Demo ensayado** > Código perfecto
+
+**¡Mucha suerte en el hackathon! 🦅⚽**
 
 # Selector de jugador
 

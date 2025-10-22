@@ -1,4 +1,36 @@
+# Archivos de configuración de Claude
 CLAUDE.md
-credenciales.txt
-venv/
 2025-10-21-modifica-el-script-de-01initialedar-para-que-se.txt
+
+# Credenciales (NUNCA COMMITEAR)
+credenciales.txt
+.statsbomb_credentials
+
+# Entornos virtuales
+venv/
+.venv/
+env/
+
+# # Datos (muy pesados para git)
+# data/raw/
+# data/processed/*.parquet
+# data/processed/*.csv
+# data/processed/*/
+
+# Archivos temporales de R
+.Rhistory
+.RData
+.Rproj.user
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# MacOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
