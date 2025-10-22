@@ -499,7 +499,7 @@ player_metrics <- player_metrics %>%
 cat("   ✓ Normalized all count metrics to per-90 rates\n")
 
 # Filter players with minimum minutes (e.g., 270 minutes = 3 full games)
-min_minutes <- 270
+min_minutes <- 900
 
 player_metrics_filtered <- player_metrics %>%
   filter(total_minutes >= min_minutes) %>%

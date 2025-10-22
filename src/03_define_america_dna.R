@@ -66,7 +66,7 @@ progression_score <- (
   min(progression_metrics$progressive_passes_p90 / 15, 1) * 40 +
   min(progression_metrics$progressive_carries_p90 / 4, 1) * 30 +
   min(progression_metrics$touches_att_third_p90 / 40, 1) * 30
-) * 100
+)  # Score already in 0-100 scale (weights sum to 100)
 
 # Classify strength
 progression_strength <- case_when(
@@ -102,7 +102,7 @@ creation_score <- (
   min(creation_metrics$xA_p90 / 0.10, 1) * 50 +
   min(creation_metrics$shot_assists_p90 / 1.0, 1) * 30 +
   min(creation_metrics$key_passes_p90 / 0.8, 1) * 20
-) * 100
+)  # Score already in 0-100 scale (weights sum to 100)
 
 creation_strength <- case_when(
   creation_score >= 85 ~ "Elite",
@@ -138,7 +138,7 @@ shot_quality <- finishing_metrics$xG_p90 / finishing_metrics$shots_p90
 finishing_score <- (
   min(finishing_metrics$xG_p90 / 0.15, 1) * 60 +
   min(shot_quality / 0.12, 1) * 40
-) * 100
+)  # Score already in 0-100 scale (weights sum to 100)
 
 finishing_strength <- case_when(
   finishing_score >= 85 ~ "Elite",
@@ -173,7 +173,7 @@ pressing_score <- (
   min(pressing_metrics$pressures_p90 / 14, 1) * 60 +
   min(pressing_metrics$tackles_p90 / 1.5, 1) * 20 +
   min(pressing_metrics$interceptions_p90 / 0.8, 1) * 20
-) * 100
+)  # Score already in 0-100 scale (weights sum to 100)
 
 pressing_strength <- case_when(
   pressing_score >= 85 ~ "Elite",
@@ -206,7 +206,7 @@ possession_metrics <- list(
 possession_score <- (
   min(possession_metrics$pass_completion_pct / 85, 1) * 60 +
   min(possession_metrics$touches_att_third_p90 / 40, 1) * 40
-) * 100
+)  # Score already in 0-100 scale (weights sum to 100)
 
 possession_strength <- case_when(
   possession_score >= 85 ~ "Elite",
@@ -240,7 +240,7 @@ dribbling_score <- (
   min(dribbling_metrics$dribbles_p90 / 2.0, 1) * 40 +
   min(dribbling_metrics$dribbles_successful_p90 / 1.2, 1) * 35 +
   min(dribbling_metrics$dribble_success_pct / 65, 1) * 25
-) * 100
+)  # Score already in 0-100 scale (weights sum to 100)
 
 dribbling_strength <- case_when(
   dribbling_score >= 85 ~ "Elite",
