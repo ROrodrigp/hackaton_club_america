@@ -23,7 +23,12 @@ st.set_page_config(
     page_title="Club América - DNA Analysis & Scouting",
     page_icon="🦅",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="expanded",
+    menu_items={
+        'Get Help': None,
+        'Report a bug': None,
+        'About': None
+    }
 )
 
 # Apply custom CSS
@@ -41,16 +46,6 @@ with st.sidebar:
     st.markdown("---")
     st.markdown("**Temporada:** 2024/2025")
     st.markdown("**Liga:** Liga MX")
-    st.markdown("---")
-    st.markdown("""
-    ### 📊 Navegación
-
-    **🏠 Home** - Overview general
-
-    **🧬 DNA Club América** - Análisis del perfil táctico
-
-    **⚽ Recomendaciones** - Top 20 jugadores
-    """)
 
 # ============================================================================
 # MAIN CONTENT

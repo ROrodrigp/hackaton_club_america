@@ -27,6 +27,8 @@ def get_custom_css():
         background-color: #f8f9fa;
     }}
 
+    /* Keep the navigation - it's not actually duplicate, it's the only working nav */
+
     /* Headers */
     h1 {{
         color: {CLUB_AMERICA_COLORS['primary']};
