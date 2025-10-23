@@ -39,8 +39,13 @@ st.markdown(get_custom_css(), unsafe_allow_html=True)
 # ============================================================================
 
 with st.sidebar:
-    # Logo (using emoji instead of external image)
-    st.markdown("# 🦅")
+    # Logo - try local image first, fallback to emoji
+    logo_path = Path(__file__).parent / "assets" / "club_america_logo.png"
+    if logo_path.exists():
+        st.image(str(logo_path), width=150)
+    else:
+        st.markdown("# 🦅")
+
     st.title("Club América")
     st.markdown("### Scouting System")
     st.markdown("---")
