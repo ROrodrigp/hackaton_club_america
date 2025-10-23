@@ -65,7 +65,7 @@ scouting_teams <- c(
   "Monterrey",
   "Mazatlán",
   "Cruz Azul",
-  "Tigres",
+  "Tigres UANL",
   "León",
   "Atlas",
   "Puebla",

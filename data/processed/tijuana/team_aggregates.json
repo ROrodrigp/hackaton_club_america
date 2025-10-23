@@ -1,0 +1,22 @@
+{
+  "team_name": "Tijuana",
+  "season": "2024/2025",
+  "avg_progressive_passes_p90": 12.2838,
+  "avg_progressive_carries_p90": 3.1992,
+  "avg_shot_assists_p90": 0.776,
+  "avg_key_passes_p90": 0.7394,
+  "avg_xA_p90": 0.0578,
+  "avg_shots_p90": 1.0893,
+  "avg_xG_p90": 0.111,
+  "avg_tackles_p90": 1.8277,
+  "avg_interceptions_p90": 0.6893,
+  "avg_pressures_p90": 14.9287,
+  "avg_pass_completion_pct": 82.2804,
+  "avg_touches_att_third_p90": 43.2661,
+  "avg_dribbles_p90": 1.4712,
+  "avg_dribbles_successful_p90": 0.7357,
+  "avg_dribble_success_pct": 54.1303,
+  "total_players": 28,
+  "total_minutes": 38422.9566,
+  "total_matches": 548
+}

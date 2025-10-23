@@ -1,0 +1,22 @@
+{
+  "team_name": "Santos Laguna",
+  "season": "2024/2025",
+  "avg_progressive_passes_p90": 11.7692,
+  "avg_progressive_carries_p90": 2.7151,
+  "avg_shot_assists_p90": 0.6369,
+  "avg_key_passes_p90": 0.5922,
+  "avg_xA_p90": 0.0462,
+  "avg_shots_p90": 1.1529,
+  "avg_xG_p90": 0.0953,
+  "avg_tackles_p90": 1.6459,
+  "avg_interceptions_p90": 0.7499,
+  "avg_pressures_p90": 16.2326,
+  "avg_pass_completion_pct": 79.7271,
+  "avg_touches_att_third_p90": 31.18,
+  "avg_dribbles_p90": 1.3363,
+  "avg_dribbles_successful_p90": 0.6409,
+  "avg_dribble_success_pct": 47.8518,
+  "total_players": 26,
+  "total_minutes": 33351.8194,
+  "total_matches": 465
+}

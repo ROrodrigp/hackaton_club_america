@@ -3,7 +3,7 @@
 # CALCULATE SCOUTING PLAYER METRICS - 2024/2025
 # ==============================================================================
 #
-# Propósito: Calcular métricas individuales por jugador de 9 equipos de scouting
+# Propósito: Calcular métricas individuales por jugador de 18 equipos de scouting
 #            Lee datos PARTICIONADOS por equipo y genera métricas
 #
 # IMPORTANTE: Porteros excluidos del análisis táctico
@@ -59,16 +59,27 @@ normalize_team_name <- function(team_name) {
 print_section("SCOUTING PLAYER METRICS CALCULATOR")
 
 # Teams to process (same as script 01)
+# Los 18 equipos de Liga MX Apertura 2024 excepto Club América
 scouting_teams <- c(
+  # Equipos ya procesados anteriormente
   "Toluca",
   "Guadalajara",
   "Monterrey",
   "Mazatlán",
   "Cruz Azul",
-  "Tigres",
+  "Tigres UANL",
   "León",
   "Atlas",
-  "Puebla"
+  "Puebla",
+  # 8 equipos nuevos
+  "Atlético San Luis",
+  "Juárez",
+  "Necaxa",
+  "Pachuca",
+  "Pumas UNAM",
+  "Querétaro",
+  "Santos Laguna",
+  "Tijuana"
 )
 
 cat("🎯 Teams to process:\n")

@@ -1,0 +1,22 @@
+{
+  "team_name": "Querétaro",
+  "season": "2024/2025",
+  "avg_progressive_passes_p90": 9.7666,
+  "avg_progressive_carries_p90": 2.386,
+  "avg_shot_assists_p90": 0.6045,
+  "avg_key_passes_p90": 0.5688,
+  "avg_xA_p90": 0.0364,
+  "avg_shots_p90": 1.0182,
+  "avg_xG_p90": 0.0905,
+  "avg_tackles_p90": 1.4887,
+  "avg_interceptions_p90": 0.8063,
+  "avg_pressures_p90": 16.2344,
+  "avg_pass_completion_pct": 76.2268,
+  "avg_touches_att_third_p90": 31.4201,
+  "avg_dribbles_p90": 1.1608,
+  "avg_dribbles_successful_p90": 0.5113,
+  "avg_dribble_success_pct": 40.1337,
+  "total_players": 27,
+  "total_minutes": 32708.0788,
+  "total_matches": 465
+}

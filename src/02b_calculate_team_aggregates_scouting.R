@@ -4,7 +4,7 @@
 # ==============================================================================
 #
 # Propósito: Calcular agregados por equipo (promedios de métricas)
-#            para los 9 equipos de scouting
+#            para los 18 equipos de scouting
 #
 # IMPORTANTE: Porteros excluidos del análisis táctico
 #             Team aggregates y benchmarks calculados solo con jugadores de campo
@@ -22,7 +22,7 @@
 #   - data/processed/leon/team_aggregates.json
 #   - data/processed/atlas/team_aggregates.json
 #   - data/processed/puebla/team_aggregates.json
-#   - data/processed/all_teams_aggregates.json (los 10 equipos combinados)
+#   - data/processed/all_teams_aggregates.json (los 19 equipos combinados: 18 + América)
 #
 # ==============================================================================
 
