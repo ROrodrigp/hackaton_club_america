@@ -177,12 +177,14 @@ finishing_metrics <- list(
 # Calculate shot quality (xG per shot)
 shot_quality <- finishing_metrics$xG_p90 / finishing_metrics$shots_p90
 
+# Calculate benchmark shot quality dynamically
+benchmark_shot_quality <- benchmarks$xG_p90 / benchmarks$shots_p90
+
 # Normalize to 0-100 scale
-# Using real benchmarks from percentile 85 of Liga MX teams
-# For shot quality, use 0.12 as reasonable benchmark (xG/shot ratio)
+# Using real benchmarks from percentile 90 of Liga MX teams
 finishing_score <- (
   min(finishing_metrics$xG_p90 / benchmarks$xG_p90, 1) * 60 +
-  min(shot_quality / 0.12, 1) * 40
+  min(shot_quality / benchmark_shot_quality, 1) * 40
 )  # Score already in 0-100 scale (weights sum to 100)
 
 finishing_strength <- case_when(
@@ -196,7 +198,7 @@ finishing_strength <- case_when(
 cat(sprintf("   Finishing Score: %.1f/100 (%s)\n", finishing_score, finishing_strength))
 cat(sprintf("   • Expected Goals (xG) p90: %.4f\n", finishing_metrics$xG_p90))
 cat(sprintf("   • Shots p90: %.2f\n", finishing_metrics$shots_p90))
-cat(sprintf("   • Shot quality (xG/shot): %.4f\n", shot_quality))
+cat(sprintf("   • Shot quality (xG/shot): %.4f (benchmark: %.4f)\n", shot_quality, benchmark_shot_quality))
 
 # ==============================================================================
 # DIMENSION 4: PRESSING

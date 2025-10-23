@@ -1,78 +1,78 @@
 {
   "team": "Club América",
   "season": "2024/2025",
-  "overall_score": 83.37,
+  "overall_score": 95.14,
   "tactical_identity": "High-pressing possession team with strong vertical progression",
   "dimensions": {
     "progression": {
-      "score": 92.04,
+      "score": 93.31,
       "strength": "Elite",
       "metrics": {
-        "progressive_passes_p90": 13.1634,
-        "progressive_carries_p90": 3.7192,
-        "touches_att_third_p90": 38.7199
+        "progressive_passes_p90": 13.097,
+        "progressive_carries_p90": 3.7584,
+        "touches_att_third_p90": 39.8054
       },
       "description": "Vertical ball progression towards opponent's goal"
     },
     "creation": {
-      "score": 69.05,
-      "strength": "Above Average",
+      "score": 99.15,
+      "strength": "Elite",
       "metrics": {
-        "xA_p90": 0.0587,
-        "shot_assists_p90": 0.7364,
-        "key_passes_p90": 0.7043
+        "xA_p90": 0.0621,
+        "shot_assists_p90": 0.7464,
+        "key_passes_p90": 0.7114
       },
       "description": "Ability to create goal-scoring opportunities"
     },
     "finishing": {
-      "score": 87.35,
+      "score": 98.72,
       "strength": "Elite",
       "metrics": {
-        "xG_p90": 0.1236,
-        "shots_p90": 1.0868,
-        "shot_quality": 0.1137
+        "xG_p90": 0.1289,
+        "shots_p90": 1.1401,
+        "shot_quality": 0.1131
       },
       "description": "Quality and volume of shooting opportunities"
     },
     "pressing": {
-      "score": 86.79,
-      "strength": "Elite",
+      "score": 84.33,
+      "strength": "High",
       "metrics": {
-        "pressures_p90": 12.4891,
-        "tackles_p90": 1.3421,
-        "interceptions_p90": 0.6148
+        "pressures_p90": 12.7909,
+        "tackles_p90": 1.4186,
+        "interceptions_p90": 0.6593
       },
       "description": "Defensive intensity and ball recovery"
     },
     "possession": {
-      "score": 97.42,
+      "score": 96.39,
       "strength": "Elite",
       "metrics": {
-        "pass_completion_pct": 83.1592,
-        "touches_att_third_p90": 38.7199
+        "pass_completion_pct": 82.9219,
+        "touches_att_third_p90": 39.8054
       },
       "description": "Ball control and circulation quality"
     },
     "dribbling": {
-      "score": 67.58,
-      "strength": "Above Average",
+      "score": 98.92,
+      "strength": "Elite",
       "metrics": {
-        "dribbles_p90": 1.3441,
-        "dribbles_successful_p90": 0.6678,
-        "dribble_success_pct": 55.1694
+        "dribbles_p90": 1.3298,
+        "dribbles_successful_p90": 0.6375,
+        "dribble_success_pct": 54.5946
       },
       "description": "1v1 take-on ability and success"
     }
   },
-  "strengths": ["Possession", "Progression", "Finishing"],
-  "weaknesses": ["Dribbling", "Creation"],
+  "strengths": ["Creation", "Dribbling", "Finishing"],
+  "weaknesses": ["Pressing", "Progression"],
   "ideal_player_profile": {
-    "must_have": ["High pass completion rate (>80%)", "Ability to progress the ball vertically"],
-    "nice_to_have": ["High xA - Creative passing ability", "1v1 dribbling ability (>60% success)"]
+    "must_have": {},
+    "nice_to_have": {}
   },
   "metadata": {
-    "total_players_analyzed": 24,
+    "total_players_analyzed": 22,
     "total_matches": 47,
-    "generated_at": "2025-10-22 12:40:24"
+    "generated_at": "2025-10-22 20:17:30"
   }
 }
