@@ -51,7 +51,9 @@ DNA_DIMENSIONS = [
 ]
 
 # Minimum score threshold to consider a dimension as a "weakness"
-WEAKNESS_THRESHOLD = 90.0
+# 95.0 = Identifies Pressing + Progression as areas to improve
+# 90.0 = Only identifies Pressing
+WEAKNESS_THRESHOLD = 95.0
 
 # Number of top recommendations to generate
 TOP_N = 20
@@ -340,6 +342,38 @@ def generate_recommendation_text(player, scores, america_dna, weaknesses):
     return "; ".join(reasons)
 
 
+def generate_why_avoid(player):
+    """
+    Generate explanation of why a player is a poor fit
+
+    Returns: string
+    """
+    reasons = []
+
+    # Check DNA mismatch
+    if player['dna_match_score'] < 70:
+        reasons.append("Poor tactical compatibility")
+
+    # Check which dimensions are weak
+    weak_dims = []
+    for dimension in DNA_DIMENSIONS:
+        if player['player_dna'][dimension] < 50:
+            weak_dims.append(dimension.capitalize())
+
+    if weak_dims:
+        dims_str = ", ".join(weak_dims[:3])
+        reasons.append(f"Weak in: {dims_str}")
+
+    # Check if doesn't fill gaps
+    if player['gap_filling_score'] < 30:
+        reasons.append("Doesn't address team weaknesses")
+
+    if not reasons:
+        reasons.append("Below-average across multiple dimensions")
+
+    return "; ".join(reasons)
+
+
 # ==============================================================================
 # MAIN PIPELINE
 # ==============================================================================
@@ -359,9 +393,19 @@ def main():
     print(f"   ✓ Tactical identity: {america_dna['tactical_identity']}")
 
     print("\n📂 Loading scouting pool players...")
-    players_df = pd.read_parquet("data/processed/scouting_pool_all_metrics.parquet")
+    # Try parquet first, fallback to CSV if pyarrow has compatibility issues
+    try:
+        players_df = pd.read_parquet("data/processed/scouting_pool_all_metrics.parquet")
+    except Exception as e:
+        print(f"   ⚠️  Parquet read failed ({type(e).__name__}), using CSV fallback...")
+        players_df = pd.read_csv("data/processed/scouting_pool_all_metrics.csv")
+
     print(f"   ✓ Loaded {len(players_df)} players from scouting pool")
     print(f"   ✓ Teams: {players_df['team.name'].nunique()}")
+
+    # Fill NA values with 0 (defensive handling)
+    players_df = players_df.fillna(0)
+    print(f"   ✓ Cleaned NA values")
 
     print("\n📂 Loading Liga MX benchmarks (P90)...")
     benchmarks = load_benchmarks("data/processed/liga_mx_benchmarks_p90.json")
@@ -421,7 +465,7 @@ def main():
 
         # Compile result
         result = {
-            'player_name': player['player_name'],
+            'player_name': player['player.name'],
             'team': player['team.name'],
             'position': player.get('primary_position', 'N/A'),
             'total_minutes': player['total_minutes'],
@@ -459,6 +503,54 @@ def main():
               f"DNA Match: {player['dna_match_score']:5.2f} | "
               f"Gap Fill: {player['gap_filling_score']:5.2f}")
         print(f"     → {player['why_good_fit']}")
+        print()
+
+    # -------------------------------------------------------------------------
+    # STEP 5B: WORST FIT PLAYERS (AVOID THESE)
+    # -------------------------------------------------------------------------
+
+    print_section("STEP 5B: WORST FIT PLAYERS (AVOID)")
+
+    # Get bottom N (worst fits)
+    worst_recommendations = results_sorted[-TOP_N:]
+    worst_recommendations.reverse()  # Show worst first
+
+    print(f"⚠️  Bottom {TOP_N} Players (Poorest Tactical Fit):\n")
+    print("These players should be AVOIDED - they don't match América's style\n")
+
+    for i, player in enumerate(worst_recommendations, 1):
+        print(f"{i:2d}. {player['player_name']:25s} ({player['team']:15s}) - "
+              f"FitScore: {player['fit_score']:5.2f}")
+        print(f"     Position: {player['position']:10s} | "
+              f"DNA Match: {player['dna_match_score']:5.2f} | "
+              f"Gap Fill: {player['gap_filling_score']:5.2f}")
+
+        # Generate "why bad fit" explanation
+        reasons = []
+
+        # Check DNA mismatch
+        if player['dna_match_score'] < 70:
+            reasons.append("Poor tactical compatibility")
+
+        # Check which dimensions are weak
+        weak_dims = []
+        for dimension in DNA_DIMENSIONS:
+            if player['player_dna'][dimension] < 50:
+                weak_dims.append(dimension.capitalize())
+
+        if weak_dims:
+            dims_str = ", ".join(weak_dims[:3])
+            reasons.append(f"Weak in: {dims_str}")
+
+        # Check if doesn't fill gaps
+        if player['gap_filling_score'] < 30:
+            reasons.append("Doesn't address team weaknesses")
+
+        if not reasons:
+            reasons.append("Below-average across multiple dimensions")
+
+        why_bad = "; ".join(reasons)
+        print(f"     ⚠️  Why avoid: {why_bad}")
         print()
 
     # -------------------------------------------------------------------------
@@ -511,6 +603,28 @@ def main():
 
     print(f"💾 Saved top {TOP_N} recommendations to: {output_csv_path}")
 
+    # Save worst recommendations as CSV
+    worst_df = pd.DataFrame([
+        {
+            'rank': i + 1,
+            'player_name': p['player_name'],
+            'team': p['team'],
+            'position': p['position'],
+            'fit_score': p['fit_score'],
+            'dna_match': p['dna_match_score'],
+            'gap_filling': p['gap_filling_score'],
+            'minutes': p['total_minutes'],
+            'matches': p['matches_played'],
+            'why_avoid': generate_why_avoid(p)
+        }
+        for i, p in enumerate(worst_recommendations)
+    ])
+
+    output_worst_csv_path = "data/processed/worst_recommendations.csv"
+    worst_df.to_csv(output_worst_csv_path, index=False)
+
+    print(f"💾 Saved worst {TOP_N} fits to: {output_worst_csv_path}")
+
     # -------------------------------------------------------------------------
     # SUMMARY
     # -------------------------------------------------------------------------
@@ -521,8 +635,10 @@ def main():
 
     print(f"📊 Statistics:")
     print(f"   • Total players analyzed: {len(results)}")
-    print(f"   • Top recommendation: {top_recommendations[0]['player_name']} "
+    print(f"   • Best fit: {top_recommendations[0]['player_name']} "
           f"({top_recommendations[0]['fit_score']:.2f})")
+    print(f"   • Worst fit: {worst_recommendations[0]['player_name']} "
+          f"({worst_recommendations[0]['fit_score']:.2f})")
     print(f"   • Average FitScore: {np.mean([r['fit_score'] for r in results]):.2f}")
     print(f"   • Score range: {min(r['fit_score'] for r in results):.2f} - "
           f"{max(r['fit_score'] for r in results):.2f}")
@@ -530,6 +646,7 @@ def main():
     print(f"\n📁 Files created:")
     print(f"   ✓ {output_json_path} (complete results)")
     print(f"   ✓ {output_csv_path} (top {TOP_N} recommendations)")
+    print(f"   ✓ {output_worst_csv_path} (worst {TOP_N} fits - AVOID)")
 
     print(f"\n🎯 Next Steps:")
     print(f"   1. Review top recommendations in CSV")

@@ -336,9 +336,15 @@ for (team_name in scouting_teams) {
                     goal_assists, key_passes, shots, goals, tackles,
                     interceptions, pressures, ball_recoveries, passes,
                     touches_att_third, touches_in_box, dribbles,
-                    dribbles_successful, dribbles_failed),
+                    dribbles_successful, dribbles_failed, shots_on_target,
+                    tackles_won),
                   ~replace_na(., 0))) %>%
-    mutate(xA = replace_na(xA, 0), xG = replace_na(xG, 0))
+    mutate(
+      xA = replace_na(xA, 0),
+      xG = replace_na(xG, 0),
+      dribble_success_pct = replace_na(dribble_success_pct, 0),
+      pass_completion_pct = replace_na(pass_completion_pct, 0)
+    )
 
   # Normalize to per 90
   cat("\n   📈 Normalizing to per 90 minutes...\n")
