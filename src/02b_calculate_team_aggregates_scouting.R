@@ -6,8 +6,11 @@
 # Propósito: Calcular agregados por equipo (promedios de métricas)
 #            para los 9 equipos de scouting
 #
+# IMPORTANTE: Porteros excluidos del análisis táctico
+#             Team aggregates y benchmarks calculados solo con jugadores de campo
+#
 # Input:
-#   - data/processed/scouting_pool_all_metrics.parquet
+#   - data/processed/scouting_pool_all_metrics.parquet (field players only)
 #
 # Output:
 #   - data/processed/toluca/team_aggregates.json
@@ -62,6 +65,16 @@ cat("📂 Loading scouting pool data...\n")
 # Load scouting pool
 scouting_pool <- read_parquet("data/processed/scouting_pool_all_metrics.parquet")
 cat(sprintf("   ✓ Loaded %d players from scouting pool\n", nrow(scouting_pool)))
+
+# Verify no goalkeepers (should be filtered in script 02)
+gk_count <- sum(scouting_pool$primary_position == "Goalkeeper", na.rm = TRUE)
+if (gk_count > 0) {
+  cat(sprintf("   ⚠️  Filtering out %d goalkeeper(s) from analysis\n", gk_count))
+  scouting_pool <- scouting_pool %>% filter(primary_position != "Goalkeeper")
+  cat(sprintf("   ✓ Field players after filtering: %d\n", nrow(scouting_pool)))
+} else {
+  cat(sprintf("   ✓ Confirmed: No goalkeepers in dataset (field players only)\n"))
+}
 
 # Get unique teams
 teams <- unique(scouting_pool$team.name)

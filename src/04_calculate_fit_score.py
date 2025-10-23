@@ -7,14 +7,20 @@ CALCULATE PLAYER FIT SCORE - CLUB AMÉRICA
 Propósito: Calcular qué tan bien encaja cada jugador del scouting pool
            con el perfil táctico (DNA) de Club América
 
+IMPORTANTE: Porteros excluidos del análisis táctico
+            Las 6 dimensiones DNA (Progression, Creation, Finishing,
+            Pressing, Possession, Dribbling) no aplican a porteros.
+            Solo se analizan jugadores de campo.
+
 Input:
-  - data/processed/america_dna.json
-  - data/processed/scouting_pool_all_metrics.parquet
+  - data/processed/america_dna_profile.json
+  - data/processed/scouting_pool_all_metrics.parquet (field players only)
   - data/processed/liga_mx_benchmarks_p90.json
 
 Output:
   - data/processed/player_fit_scores.json
-  - data/processed/top_recommendations.csv
+  - data/processed/top_recommendations.csv (field players only)
+  - data/processed/worst_recommendations.csv (field players only)
 
 Methodology:
   FitScore = (DNA Match × 0.60) + (Gap Filling × 0.30) + (Role Fit × 0.10)
@@ -406,6 +412,15 @@ def main():
     # Fill NA values with 0 (defensive handling)
     players_df = players_df.fillna(0)
     print(f"   ✓ Cleaned NA values")
+
+    # Verify no goalkeepers (should be filtered in script 02)
+    gk_count = (players_df['primary_position'] == 'Goalkeeper').sum()
+    if gk_count > 0:
+        print(f"   ⚠️  Excluding {gk_count} goalkeeper(s) from tactical fit analysis")
+        players_df = players_df[players_df['primary_position'] != 'Goalkeeper']
+        print(f"   ✓ Field players after filtering: {len(players_df)}")
+    else:
+        print(f"   ✓ Confirmed: No goalkeepers in dataset (field players only)")
 
     print("\n📂 Loading Liga MX benchmarks (P90)...")
     benchmarks = load_benchmarks("data/processed/liga_mx_benchmarks_p90.json")

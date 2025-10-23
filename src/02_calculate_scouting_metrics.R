@@ -6,16 +6,21 @@
 # Propósito: Calcular métricas individuales por jugador de 9 equipos de scouting
 #            Lee datos PARTICIONADOS por equipo y genera métricas
 #
+# IMPORTANTE: Porteros excluidos del análisis táctico
+#             Las 6 dimensiones DNA (Progression, Creation, Finishing,
+#             Pressing, Possession, Dribbling) no aplican a porteros.
+#             Solo se analizan jugadores de campo.
+#
 # Input (partitioned by team):
 #   data/processed/{team}/events.parquet
 #   data/processed/{team}/lineups.parquet
 #   data/processed/{team}/minutes_played.parquet
 #
 # Output (partitioned by team):
-#   data/processed/{team}/player_metrics.parquet
+#   data/processed/{team}/player_metrics.parquet (field players only)
 #
 # Output (aggregated):
-#   data/processed/scouting_pool_all_metrics.parquet
+#   data/processed/scouting_pool_all_metrics.parquet (field players only)
 #
 # ==============================================================================
 
@@ -170,6 +175,16 @@ for (team_name in scouting_teams) {
     left_join(primary_positions, by = c("player.name", "team.name"))
 
   cat(sprintf("      ✓ Primary positions for %d players\n", nrow(player_minutes)))
+
+  # Exclude goalkeepers from tactical analysis
+  gk_count <- sum(player_minutes$primary_position == "Goalkeeper", na.rm = TRUE)
+  if (gk_count > 0) {
+    cat(sprintf("      🚫 Excluding %d goalkeeper(s) from tactical analysis\n", gk_count))
+    player_minutes <- player_minutes %>%
+      filter(primary_position != "Goalkeeper")
+  }
+
+  cat(sprintf("      ✓ Field players to analyze: %d\n", nrow(player_minutes)))
 
   # Calculate metrics
   cat("\n   📊 Calculating metrics...\n")
@@ -407,11 +422,18 @@ scouting_pool %>%
     cat(sprintf("      • %s: %d players\n", team.name, n))
   })
 
-# Save aggregated pool
+# Save aggregated pool as Parquet
 output_file <- "data/processed/scouting_pool_all_metrics.parquet"
 write_parquet(scouting_pool, output_file)
-cat(sprintf("\n   💾 Saved aggregated pool: %s\n", output_file))
+cat(sprintf("\n   💾 Saved aggregated pool (Parquet): %s\n", output_file))
 cat(sprintf("      File size: %.1f KB\n", file.info(output_file)$size / 1024))
+
+# Also save as CSV for Python compatibility (avoids pyarrow issues)
+output_csv <- "data/processed/scouting_pool_all_metrics.csv"
+write.csv(scouting_pool, output_csv, row.names = FALSE)
+cat(sprintf("\n   💾 Saved aggregated pool (CSV): %s\n", output_csv))
+cat(sprintf("      File size: %.1f KB\n", file.info(output_csv)$size / 1024))
+cat(sprintf("      ℹ️  CSV format ensures Python compatibility\n"))
 
 # ==============================================================================
 # SUMMARY
@@ -449,6 +471,8 @@ for (team in scouting_teams) {
 
 cat(sprintf("\n   ✓ scouting_pool_all_metrics.parquet (%.1f KB)\n",
             file.info(output_file)$size / 1024))
+cat(sprintf("   ✓ scouting_pool_all_metrics.csv (%.1f KB) [Python-compatible]\n",
+            file.info(output_csv)$size / 1024))
 
 cat("\n🎯 Next Steps:\n")
 cat("   1. Compare with América DNA (from script 03)\n")

@@ -6,14 +6,19 @@
 # Propósito: Calcular métricas individuales por jugador del Club América
 #            para definir el "ADN" del equipo y perfiles de jugadores
 #
+# IMPORTANTE: Porteros excluidos del análisis táctico
+#             Las 6 dimensiones DNA (Progression, Creation, Finishing,
+#             Pressing, Possession, Dribbling) no aplican a porteros.
+#             Solo se analizan jugadores de campo.
+#
 # Input:
 #   - data/processed/america_events_2024_2025.parquet
 #   - data/processed/america_matches_2024_2025.csv
 #   - data/processed/america_lineups_2024_2025.parquet
 #
 # Output:
-#   - data/processed/player_metrics_2024_2025.parquet
-#   - data/processed/team_aggregates_2024_2025.json
+#   - data/processed/player_metrics_2024_2025.parquet (field players only)
+#   - data/processed/team_aggregates_2024_2025.json (field players only)
 #
 # ==============================================================================
 
@@ -136,6 +141,16 @@ player_minutes <- player_minutes_raw %>%
   arrange(desc(total_minutes))
 
 cat(sprintf("   ✓ Enriched with positions\n"))
+
+# Exclude goalkeepers from tactical analysis
+gk_count <- sum(player_minutes$primary_position == "Goalkeeper", na.rm = TRUE)
+if (gk_count > 0) {
+  cat(sprintf("   🚫 Excluding %d goalkeeper(s) from tactical analysis\n", gk_count))
+  player_minutes <- player_minutes %>%
+    filter(primary_position != "Goalkeeper")
+}
+
+cat(sprintf("   ✓ Field players to analyze: %d\n", nrow(player_minutes)))
 
 cat("\n   🏆 Top 10 players by total minutes:\n")
 player_minutes %>%
