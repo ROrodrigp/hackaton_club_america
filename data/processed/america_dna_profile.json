@@ -1,11 +1,11 @@
 {
   "team": "Club América",
   "season": "2024/2025",
-  "overall_score": 94.49,
-  "tactical_identity": "High-pressing possession team with strong vertical progression",
+  "overall_score": 92.88,
+  "tactical_identity": "Possession-dominant creative team",
   "dimensions": {
     "progression": {
-      "score": 95.01,
+      "score": 96.38,
       "strength": "Elite",
       "metrics": {
         "progressive_passes_p90": 12.7356,
@@ -15,7 +15,7 @@
       "description": "Vertical ball progression towards opponent's goal"
     },
     "creation": {
-      "score": 96.4,
+      "score": 92.09,
       "strength": "Elite",
       "metrics": {
         "xA_p90": 0.0646,
@@ -25,7 +25,7 @@
       "description": "Ability to create goal-scoring opportunities"
     },
     "finishing": {
-      "score": 98.78,
+      "score": 99.04,
       "strength": "Elite",
       "metrics": {
         "xG_p90": 0.1351,
@@ -35,7 +35,7 @@
       "description": "Quality and volume of shooting opportunities"
     },
     "pressing": {
-      "score": 81.83,
+      "score": 79.74,
       "strength": "High",
       "metrics": {
         "pressures_p90": 13.3969,
@@ -45,7 +45,7 @@
       "description": "Defensive intensity and ball recovery"
     },
     "possession": {
-      "score": 96.09,
+      "score": 96.96,
       "strength": "Elite",
       "metrics": {
         "pass_completion_pct": 83.265,
@@ -54,7 +54,7 @@
       "description": "Ball control and circulation quality"
     },
     "dribbling": {
-      "score": 98.82,
+      "score": 93.09,
       "strength": "Elite",
       "metrics": {
         "dribbles_p90": 1.3921,
@@ -64,15 +64,15 @@
       "description": "1v1 take-on ability and success"
     }
   },
-  "strengths": ["Dribbling", "Finishing", "Creation"],
-  "weaknesses": ["Pressing", "Progression"],
+  "strengths": ["Finishing", "Possession", "Progression"],
+  "weaknesses": ["Pressing", "Creation"],
   "ideal_player_profile": {
-    "must_have": {},
-    "nice_to_have": {}
+    "must_have": ["High pass completion rate (>80%)", "Ability to progress the ball vertically"],
+    "nice_to_have": "High xA - Creative passing ability"
   },
   "metadata": {
     "total_players_analyzed": 21,
     "total_matches": 47,
-    "generated_at": "2025-10-23 09:10:34"
+    "generated_at": "2025-10-23 11:12:02"
   }
 }
