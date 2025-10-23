@@ -39,10 +39,10 @@ st.markdown(get_custom_css(), unsafe_allow_html=True)
 # ============================================================================
 
 with st.sidebar:
-    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Club_America_logo.svg/200px-Club_America_logo.svg.png",
-             width=150)
+    # Logo (using emoji instead of external image)
+    st.markdown("# 🦅")
     st.title("Club América")
-    st.markdown("### 🦅 Scouting System")
+    st.markdown("### Scouting System")
     st.markdown("---")
     st.markdown("**Temporada:** 2024/2025")
     st.markdown("**Liga:** Liga MX")

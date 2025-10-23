@@ -29,6 +29,15 @@ def get_custom_css():
 
     /* Keep the navigation - it's not actually duplicate, it's the only working nav */
 
+    /* Hide any stray numbers or empty elements in sidebar */
+    [data-testid="stSidebar"] p:empty {{
+        display: none;
+    }}
+
+    [data-testid="stSidebar"] > div > div:empty {{
+        display: none;
+    }}
+
     /* Headers */
     h1 {{
         color: {CLUB_AMERICA_COLORS['primary']};

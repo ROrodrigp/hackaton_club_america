@@ -86,3 +86,8 @@ def load_america_players():
         root = get_project_root()
         file_path = root / 'data/processed/player_metrics_2024_2025.parquet'
         return pd.read_parquet(file_path)
+
+
+def load_player_fit_scores():
+    """Load detailed player fit scores with DNA profiles"""
+    return load_json('data/processed/player_fit_scores.json')

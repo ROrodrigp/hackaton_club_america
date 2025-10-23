@@ -286,7 +286,11 @@ benchmarks <- list(
   # Dribbling
   dribbles_p90 = quantile(all_teams_df$avg_dribbles_p90, 0.90, na.rm = TRUE),
   dribbles_successful_p90 = quantile(all_teams_df$avg_dribbles_successful_p90, 0.90, na.rm = TRUE),
-  dribble_success_pct = quantile(all_teams_df$avg_dribble_success_pct, 0.90, na.rm = TRUE)
+  dribble_success_pct = quantile(all_teams_df$avg_dribble_success_pct, 0.90, na.rm = TRUE),
+
+  # Shot quality (calculated metric: xG / shots)
+  shot_quality = quantile(all_teams_df$avg_xG_p90, 0.90, na.rm = TRUE) /
+                 quantile(all_teams_df$avg_shots_p90, 0.90, na.rm = TRUE)
 )
 
 cat("   Calculated benchmarks (Percentile 90):\n\n")
@@ -300,6 +304,7 @@ cat(sprintf("      • Key passes p90: %.2f\n", benchmarks$key_passes_p90))
 cat("\n   Finishing:\n")
 cat(sprintf("      • xG p90: %.4f\n", benchmarks$xG_p90))
 cat(sprintf("      • Shots p90: %.2f\n", benchmarks$shots_p90))
+cat(sprintf("      • Shot quality: %.4f\n", benchmarks$shot_quality))
 cat("\n   Defense:\n")
 cat(sprintf("      • Pressures p90: %.2f\n", benchmarks$pressures_p90))
 cat(sprintf("      • Tackles p90: %.2f\n", benchmarks$tackles_p90))
