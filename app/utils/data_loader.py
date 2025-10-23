@@ -62,12 +62,12 @@ def load_benchmarks():
 
 def load_top_recommendations():
     """Load top 20 player recommendations"""
-    return load_json('outputs/top_20_recommendations.json')
+    return load_csv('data/processed/top_recommendations.csv')
 
 
 def load_worst_recommendations():
     """Load worst 20 player recommendations"""
-    return load_json('outputs/worst_20_recommendations.json')
+    return load_csv('data/processed/worst_recommendations.csv')
 
 
 def load_scouting_pool():
