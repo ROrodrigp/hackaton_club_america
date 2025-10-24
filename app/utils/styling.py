@@ -246,19 +246,15 @@ def get_custom_css():
         font-size: 0.85rem;
     }}
 
-    /* Dataframe rows */
-    .dataframe tbody tr:nth-child(even) {{
-        background-color: {CLUB_AMERICA_COLORS['accent_gray']};
-    }}
-
+    /* Dataframe rows hover effect */
     .dataframe tbody tr:hover {{
         background-color: {CLUB_AMERICA_COLORS['secondary_light']} !important;
         transition: background-color 0.2s ease;
     }}
 
-    /* Dataframe cell text */
+    /* Dataframe cell text - ensure it's visible */
     .dataframe tbody td {{
-        color: #212529 !important;
+        color: {CLUB_AMERICA_COLORS['primary']} !important;
         font-weight: 500;
     }}
 
