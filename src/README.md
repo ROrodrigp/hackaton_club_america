@@ -1,220 +1,284 @@
 # src/ - Pipeline de Datos para FitScore
 
-Este directorio contiene los scripts R para obtener, procesar y analizar los datos del Club América.
+Scripts R para obtener, procesar y analizar datos del Club América y calcular FitScore de jugadores.
 
-## 📋 Pipeline Order
+---
 
-### 1. `01_fetch_america_dna_data.R` ⭐ START HERE
-**Propósito**: Descarga TODOS los datos necesarios para el análisis del Club América (temporada 2024/2025 únicamente)
+## 📋 Pipeline Completo
 
-**Output**:
+### 1. `01_initial_edar.R` ⭐ START HERE
+**Propósito**: Descarga datos del Club América (temporada 2024/2025)
+
+**Inputs**:
+- Credenciales StatsBomb (`.statsbomb_credentials`)
+- Liga MX Apertura 2024/2025
+
+**Outputs**:
 ```
-data/processed/
-├── america_matches_2024_2025.csv                    # Partidos del América
-├── america_events_2024_2025.parquet                 # TODOS los eventos (limpiados) ⭐
-├── america_events_2024_2025_sample.csv              # Sample para inspección
-├── america_lineups_2024_2025.parquet                # Alineaciones ⭐
-├── america_minutes_played_2024_2025.parquet         # Minutos por jugador-partido ⭐ NEW
-├── america_player_minutes_summary.parquet           # Minutos totales por jugador ⭐ NEW
-└── america_events_360_sample.parquet                # Datos 360 (muestra) ⭐
-```
-
-**Formato Parquet**: Compatible con R y Python, comprimido, rápido. ¡Perfecto para análisis multi-lenguaje!
-
-**⚠️ IMPORTANTE**: Este script ahora también calcula los **minutos jugados** usando `get.minutesplayed()` ANTES de guardar a Parquet. Esto es necesario porque la función requiere estructura de datos frescos de StatsBomb y no funciona correctamente después de la conversión a Parquet.
-
-**Tiempo estimado**: 5-10 minutos
-
-**Cómo ejecutar**:
-```r
-source("src/01_fetch_america_dna_data.R")
+data/teams/America/
+├── matches_2024_2025.csv
+├── lineups_2024_2025.parquet
+├── events_2024_2025.parquet
+└── minutes_played_2024_2025.parquet
 ```
 
-O desde terminal:
+**Ejecución**:
 ```bash
-Rscript src/01_fetch_america_dna_data.R
+Rscript src/01_initial_edar.R
 ```
+
+**Tiempo**: ~5-10 minutos
 
 ---
 
-### 2. `02_calculate_player_metrics.R` ✅
-**Propósito**: Calcular métricas avanzadas por jugador (Progressive Passes, xG, Tackles, etc.)
+### 2a. `02a_calculate_team_aggregates.R`
+**Propósito**: Calcular métricas agregadas de equipos y crear benchmarks P90
 
-**Input**:
-- `america_events_2024_2025.parquet` (eventos)
-- `america_player_minutes_summary.parquet` (minutos pre-calculados) ⭐
-- `america_lineups_2024_2025.parquet` (posiciones)
+**Inputs**:
+- Datos de 19 equipos en `data/teams/`
+- Cada equipo debe tener: `events.parquet`, `lineups.parquet`, `minutes_played.parquet`
 
-**Output**:
-```
-data/processed/
-├── player_metrics_2024_2025.parquet       # Métricas por jugador (12 métricas clave)
-└── team_aggregates_2024_2025.json         # Estadísticas agregadas del equipo
-```
-
-**Nota**: Los minutos jugados ya vienen calculados del script 01, evitando problemas con Parquet.
-
----
-
-### 3. `03_define_america_dna.R` (Por crear)
-**Propósito**: Definir el "ADN" del Club América en 6 dimensiones tácticas
-
-**Output**:
+**Outputs**:
 ```
 data/processed/
-└── america_dna_profile.json               # Perfil táctico del América
+├── america_dna_profile.json      # DNA táctico del América
+└── liga_mx_benchmarks_p90.json   # Percentil 90 de 19 equipos
 ```
 
----
+**Métricas calculadas**:
+- Progressive passes, carries
+- xA, key passes, shot assists
+- xG, shots, goals
+- Tackles, interceptions, pressures
+- Pass completion %, touches
+- Dribbles successful
 
-### 4. `04_fitscore_model.R` (Por crear)
-**Propósito**: Modelo de compatibilidad de jugadores con el América
+**Ejecución**:
+```bash
+Rscript src/02a_calculate_team_aggregates.R
+```
 
----
-
-## 🎯 Datos Obtenidos
-
-### Eventos (`america_events_2024_2025.parquet`)
-Todos los eventos de todos los partidos del América en 2024/2025:
-- Pases (con xA, probabilidad de éxito, etc.)
-- Tiros (con xG)
-- Duelos, intercepciones, tackles
-- Carries (conducciones)
-- **OBV** (On-Ball Value) - Valor agregado por acción
-- **Formato**: Parquet (R + Python compatible)
-
-### Matches (`america_matches_2024_2025.csv`)
-Información de cada partido:
-- Resultado, goles
-- Rival, estadio
-- Árbitro
-- Estado de datos 360
-- **Formato**: CSV (universal)
-
-### Lineups (`america_lineups_2024_2025.parquet`)
-Alineaciones de cada partido:
-- Jugadores titulares y suplentes
-- Posiciones
-- Minutos jugados
-- **Formato**: Parquet (R + Python compatible)
-
-### 360 Data (`america_events_360_sample.parquet`)
-Posiciones de todos los jugadores en cada evento:
-- Coordenadas X, Y de cada jugador
-- ¿Es compañero/rival/portero?
-- Contexto táctico completo
-- **Formato**: Parquet (R + Python compatible)
+**Tiempo**: ~3-5 minutos
 
 ---
 
-## 💡 Carga Rápida de Datos
+### 2b. `02b_calculate_scouting_pool.R`
+**Propósito**: Calcular métricas individuales de jugadores de los 18 equipos de scouting
 
-### En R:
+**Inputs**:
+- Datos de 18 equipos en `data/teams/` (excluye América)
+
+**Outputs**:
+```
+data/processed/
+└── scouting_pool_all_metrics.csv  # Métricas de todos los jugadores (18 equipos)
+```
+
+**Filtros aplicados**:
+- Mínimo 270 minutos jugados
+- Excluye porteros
+- Solo jugadores con posición primaria definida
+
+**Métricas per 90** (p90):
+- progressive_passes_p90, progressive_carries_p90
+- xA_p90, key_passes_p90, shot_assists_p90
+- xG_p90, shots_p90, goals_p90
+- tackles_p90, interceptions_p90, pressures_p90
+- pass_completion_pct, touches_att_third_p90
+- dribbles_successful_p90, dribbles_p90
+
+**Ejecución**:
+```bash
+Rscript src/02b_calculate_scouting_pool.R
+```
+
+**Tiempo**: ~5-8 minutos
+
+---
+
+### 3. `03_define_america_dna.R`
+**Propósito**: Definir DNA táctico del Club América en 6 dimensiones
+
+**Inputs**:
+- `data/processed/america_dna_profile.json` (creado por 02a)
+- `data/processed/liga_mx_benchmarks_p90.json` (creado por 02a)
+
+**Outputs**:
+- Actualiza `america_dna_profile.json` con:
+  - Scores por dimensión (0-100)
+  - Overall DNA score
+  - Tactical identity
+  - Strengths y weaknesses
+
+**6 Dimensiones**:
+1. **Progression** (pases/carries progresivos)
+2. **Creation** (xA, pases clave)
+3. **Finishing** (xG, tiros, goles)
+4. **Pressing** (presiones p90)
+5. **Possession** (% pases, toques)
+6. **Dribbling** (regates exitosos)
+
+**Cálculo de Score**:
 ```r
-library(arrow)
-library(tidyverse)
-
-# Cargar todos los datos procesados
-events <- read_parquet("data/processed/america_events_2024_2025.parquet")
-matches <- read_csv("data/processed/america_matches_2024_2025.csv")
-lineups <- read_parquet("data/processed/america_lineups_2024_2025.parquet")
-minutes <- read_parquet("data/processed/america_player_minutes_summary.parquet")
-
-# Ver estructura
-glimpse(events)
-glimpse(matches)
-glimpse(lineups)
-glimpse(minutes)
+Score = (Métrica del América / Benchmark P90) × 100
 ```
 
-### En Python:
-```python
-import pandas as pd
-
-# Cargar todos los datos procesados
-events = pd.read_parquet("data/processed/america_events_2024_2025.parquet")
-matches = pd.read_csv("data/processed/america_matches_2024_2025.csv")
-lineups = pd.read_parquet("data/processed/america_lineups_2024_2025.parquet")
-minutes = pd.read_parquet("data/processed/america_player_minutes_summary.parquet")
-
-# Ver estructura
-print(events.info())
-print(matches.info())
-print(lineups.info())
-print(minutes.info())
-
-# Nota: Las columnas que eran listas en R están como JSON strings
-# Para usarlas en Python:
-import json
-events['location_parsed'] = events['location'].apply(lambda x: json.loads(x) if pd.notna(x) else None)
+**Ejecución**:
+```bash
+Rscript src/03_define_america_dna.R
 ```
 
----
-
-## 🔑 Columnas Clave en Events
-
-### Identificación
-- `match_id`: ID del partido
-- `id`: ID único del evento
-- `index`: Orden en el partido
-
-### Temporal
-- `minute`, `second`: Tiempo del evento
-- `ElapsedTime`: Tiempo transcurrido (added by allclean)
-
-### Espacial
-- `location.x`, `location.y`: Coordenadas (0-120, 0-80)
-- `pass.end_location.x`, `pass.end_location.y`: Fin del pase
-
-### Táctico
-- `type.name`: Tipo de evento ("Pass", "Shot", "Carry", etc.)
-- `player.name`, `team.name`: Quién y qué equipo
-- `position.name`: Posición del jugador
-- `under_pressure`: Si estaba presionado
-
-### Métricas Avanzadas
-- `obv_total_net`: On-Ball Value (⭐ IMPORTANTE)
-- `pass.pass_success_probability`: Dificultad del pase
-- `shot.statsbomb_xg`: Expected Goals
-- `pass.goal_assist`, `pass.shot_assist`: Asistencias
+**Tiempo**: < 1 minuto
 
 ---
 
-## ⚠️ Notas Importantes
+### 4. `04_calculate_fit_score.R` ✅ FINAL STEP
+**Propósito**: Calcular FitScore para cada jugador del pool de scouting
 
-1. **Formato Parquet**: Todos los archivos principales usan Parquet para compatibilidad R/Python. Las columnas tipo lista se convierten a JSON strings.
+**Inputs**:
+- `data/processed/america_dna_profile.json`
+- `data/processed/scouting_pool_all_metrics.csv`
+- `data/processed/liga_mx_benchmarks_p90.json`
 
-2. **Minutos Jugados**: Se calculan en el script 01 usando `get.minutesplayed()` ANTES de guardar a Parquet. Esto es crítico porque la función requiere estructura de datos frescos de StatsBomb. El script 02 usa estos minutos pre-calculados.
+**Outputs**:
+```
+data/processed/
+├── player_fit_scores.json         # FitScores detallados
+├── top_recommendations.csv        # Top 20 jugadores
+└── worst_recommendations.csv      # Worst 20 jugadores
+```
 
-3. **Datos 360**: Por defecto solo descarga una muestra. Para obtener TODOS los datos 360, descomenta el loop al final del script 01.
+**Algoritmo FitScore**:
+```
+FitScore = (60% × DNA Match) + (30% × Gap Filling) + (10% × Role Fit)
+```
 
-4. **Parallel Processing**: En Windows, puedes usar `parallel = TRUE` en `allevents()` y `alllineups()` para acelerar.
+Componentes:
+1. **DNA Match**: Similitud coseno entre DNA del jugador y América
+2. **Gap Filling**: Cuánto fortalece áreas débiles del equipo
+3. **Role Fit**: Compatibilidad posicional
 
-5. **Tiempo de ejecución**: La primera vez toma ~10 minutos. Los datos se guardan localmente para reutilización.
+**Ejecución**:
+```bash
+Rscript src/04_calculate_fit_score.R
+```
 
-6. **Tamaño de archivos** (Parquet comprimido):
-   - Events: ~20-40 MB (vs ~50-100 MB en RDS)
-   - Lineups: ~1-2 MB
-   - Minutes: ~50-100 KB ⭐ NEW
-   - 360 data completo: ~200-400 MB (vs ~500 MB - 1 GB en RDS)
-
-7. **Dependencias**: Asegúrate de tener instalado el paquete `arrow`:
-   ```r
-   install.packages("arrow")
-   ```
-   En Python:
-   ```bash
-   pip install pyarrow pandas
-   ```
+**Tiempo**: ~2-3 minutos
 
 ---
 
-## 🚀 Siguiente Paso
+## 🚀 Ejecución Completa del Pipeline
 
-Una vez que hayas ejecutado `01_fetch_america_dna_data.R`, continúa con:
+```bash
+# Paso 1: Descargar datos de América
+Rscript src/01_initial_edar.R
+
+# Paso 2a: Calcular agregados de equipos y benchmarks
+Rscript src/02a_calculate_team_aggregates.R
+
+# Paso 2b: Calcular métricas del scouting pool
+Rscript src/02b_calculate_scouting_pool.R
+
+# Paso 3: Definir DNA del América
+Rscript src/03_define_america_dna.R
+
+# Paso 4: Calcular FitScore
+Rscript src/04_calculate_fit_score.R
+```
+
+**Tiempo total**: ~20-30 minutos
+
+---
+
+## 📦 Dependencias R
 
 ```r
-source("src/02_calculate_player_metrics.R")
+# Instalar paquetes necesarios
+install.packages(c(
+  "tidyverse",    # Manipulación de datos
+  "arrow",        # Formato Parquet
+  "jsonlite",     # JSON I/O
+  "lubridate"     # Fechas
+))
+
+# StatsBombR (desde GitHub)
+devtools::install_github("statsbomb/StatsBombR")
 ```
 
-¿Listo para comenzar? 🦅
+---
+
+## 🔐 Configuración de Credenciales
+
+Antes de ejecutar, configurar credenciales de StatsBomb:
+
+```bash
+# 1. Copiar archivo de ejemplo
+cp .statsbomb_credentials.example .statsbomb_credentials
+
+# 2. Editar con credenciales reales
+# Formato:
+# username=tu_usuario@email.com
+# password=tu_password
+```
+
+⚠️ **Este archivo está en `.gitignore` y NUNCA se commitea.**
+
+---
+
+## 📊 Flujo de Datos
+
+```
+StatsBomb API
+     ↓
+01_initial_edar.R → data/teams/America/
+     ↓
+02a_calculate_team_aggregates.R → america_dna_profile.json
+                                 → liga_mx_benchmarks_p90.json
+     ↓
+02b_calculate_scouting_pool.R → scouting_pool_all_metrics.csv
+     ↓
+03_define_america_dna.R → america_dna_profile.json (actualizado)
+     ↓
+04_calculate_fit_score.R → player_fit_scores.json
+                         → top_recommendations.csv
+                         → worst_recommendations.csv
+     ↓
+Streamlit App (app/)
+```
+
+---
+
+## 🛠️ Troubleshooting
+
+### Error de autenticación StatsBomb
+- Verifica que `.statsbomb_credentials` existe
+- Confirma username y password correctos
+- Sin espacios extra en el archivo
+
+### Parquet no se puede leer
+- Instala `arrow`: `install.packages("arrow")`
+- Verifica versión compatible de R (>= 4.0)
+
+### Métricas faltantes
+- Asegúrate de que todos los equipos tienen datos completos
+- Verifica filtro de minutos mínimos (270)
+- Revisa exclusión de porteros
+
+### Script se detiene
+- Revisa que existan todos los inputs requeridos
+- Verifica que los directorios `data/teams/` existen
+- Checa permisos de escritura en `data/processed/`
+
+---
+
+## 📝 Notas
+
+- Los scripts usan **Parquet** para eficiencia (compatible con Python)
+- Todas las métricas están **normalizadas per 90 minutos**
+- **Mínimo 270 minutos** para métricas confiables
+- **Porteros excluidos** del análisis de FitScore
+- Los benchmarks P90 representan el **nivel elite** de Liga MX
+
+---
+
+Para más información, ver el [README principal](../README.md) del proyecto.
