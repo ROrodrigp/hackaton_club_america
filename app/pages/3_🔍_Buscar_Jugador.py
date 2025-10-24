@@ -87,24 +87,48 @@ st.markdown("---")
 st.markdown("## 🎯 Buscar Jugador")
 
 # Search options
-col1, col2 = st.columns([2, 1])
+col1, col2, col3 = st.columns([3, 1.5, 1.5])
 
 with col2:
-    # Filter by team (FIRST - to filter player list)
+    # Filter by team
     all_teams = ['Todos'] + sorted(scouting_pool['team.name'].unique().tolist())
     selected_team = st.selectbox(
-        "Filtrar por equipo",
+        "🏟️ Filtrar por equipo",
         options=all_teams,
         help="Filtra jugadores por equipo"
     )
 
-# Apply team filter to player list
+with col3:
+    # Filter by position
+    all_positions = ['Todas'] + sorted(scouting_pool['primary_position'].unique().tolist())
+    selected_position = st.selectbox(
+        "📍 Filtrar por posición",
+        options=all_positions,
+        help="Filtra jugadores por posición"
+    )
+
+# Apply filters to player list
+filtered_pool = scouting_pool.copy()
+
+# Apply team filter
 if selected_team != 'Todos':
-    filtered_pool = scouting_pool[scouting_pool['team.name'] == selected_team]
-    available_players = sorted(filtered_pool['player.name'].unique().tolist())
-    st.info(f"📊 {len(available_players)} jugadores disponibles en {selected_team}")
-else:
-    available_players = sorted(scouting_pool['player.name'].unique().tolist())
+    filtered_pool = filtered_pool[filtered_pool['team.name'] == selected_team]
+
+# Apply position filter
+if selected_position != 'Todas':
+    filtered_pool = filtered_pool[filtered_pool['primary_position'] == selected_position]
+
+# Get available players after filters
+available_players = sorted(filtered_pool['player.name'].unique().tolist())
+
+# Show filter info
+if selected_team != 'Todos' or selected_position != 'Todas':
+    filter_msg = f"📊 {len(available_players)} jugadores disponibles"
+    if selected_team != 'Todos':
+        filter_msg += f" en {selected_team}"
+    if selected_position != 'Todas':
+        filter_msg += f" ({selected_position})"
+    st.info(filter_msg)
 
 with col1:
     # Search by name (uses filtered list)

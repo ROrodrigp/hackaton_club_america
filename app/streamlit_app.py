@@ -259,8 +259,9 @@ st.info("""
 
 1. **🧬 DNA Club América** - Análisis detallado del perfil táctico del equipo
 2. **⚽ Recomendaciones** - Top 20 fichajes recomendados y jugadores a evitar
+3. **🔍 Buscar Jugador** - Búsqueda y análisis detallado de cualquier jugador del pool
 
-Cada página incluye visualizaciones interactivas y análisis detallado.
+Cada página incluye visualizaciones interactivas, análisis táctico y métricas de rendimiento.
 """)
 
 # Footer
