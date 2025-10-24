@@ -228,9 +228,8 @@ with tab1:
             with col1:
                 # Player info card
                 st.markdown(f"""
-                <div style='padding: 20px; background-color: {CLUB_AMERICA_COLORS['primary']};
-                            border-radius: 10px; color: white;'>
-                    <h2 style='color: {CLUB_AMERICA_COLORS['secondary']}; margin: 0;'>
+                <div class='dark-card' style='padding: 20px; border-radius: 10px;'>
+                    <h2 class='gold-text' style='margin: 0;'>
                         {player_data['player_name']}
                     </h2>
                     <p style='font-size: 1.1rem; margin: 10px 0;'>
@@ -240,7 +239,7 @@ with tab1:
                         🎮 {player_data['matches']:.0f} partidos
                     </p>
                     <hr style='border-color: {CLUB_AMERICA_COLORS['secondary']};'>
-                    <h1 style='color: {CLUB_AMERICA_COLORS['secondary']}; text-align: center; margin: 10px 0;'>
+                    <h1 class='gold-text' style='text-align: center; margin: 10px 0;'>
                         {player_data['fit_score']:.1f}
                     </h1>
                     <p style='text-align: center; font-size: 1.2rem; margin: 0;'>FitScore</p>
@@ -561,9 +560,8 @@ with tab2:
             with col1:
                 # Player info card (red theme)
                 st.markdown(f"""
-                <div style='padding: 20px; background-color: #dc3545;
-                            border-radius: 10px; color: white;'>
-                    <h2 style='color: white; margin: 0;'>
+                <div class='danger-card' style='padding: 20px; border-radius: 10px;'>
+                    <h2 style='margin: 0;'>
                         {player_data_worst['player_name']}
                     </h2>
                     <p style='font-size: 1.1rem; margin: 10px 0;'>
@@ -573,7 +571,7 @@ with tab2:
                         🎮 {player_data_worst['matches']:.0f} partidos
                     </p>
                     <hr style='border-color: white;'>
-                    <h1 style='color: white; text-align: center; margin: 10px 0;'>
+                    <h1 style='text-align: center; margin: 10px 0;'>
                         {player_data_worst['fit_score']:.1f}
                     </h1>
                     <p style='text-align: center; font-size: 1.2rem; margin: 0;'>FitScore</p>

@@ -58,13 +58,12 @@ with col2:
     score_color = get_score_color(overall_score, thresholds={'high': 95, 'medium': 90})
 
     st.markdown(f"""
-    <div style='text-align: center; padding: 20px; background-color: {CLUB_AMERICA_COLORS['primary']};
-                border-radius: 10px; margin-bottom: 20px;'>
-        <h1 style='color: {CLUB_AMERICA_COLORS['secondary']}; margin: 0; font-size: 4rem;'>
+    <div class='dark-card' style='text-align: center; padding: 20px; border-radius: 10px; margin-bottom: 20px;'>
+        <h1 class='gold-text' style='margin: 0; font-size: 4rem;'>
             {overall_score:.1f}
         </h1>
-        <h3 style='color: white; margin: 5px 0;'>DNA Score Global</h3>
-        <p style='color: {CLUB_AMERICA_COLORS['secondary']}; margin: 5px 0; font-size: 1.2rem;'>
+        <h3>DNA Score Global</h3>
+        <p class='gold-text' style='margin: 5px 0; font-size: 1.2rem;'>
             {dna_data.get('tactical_identity', 'Elite tactical profile')}
         </p>
     </div>

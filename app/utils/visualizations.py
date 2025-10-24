@@ -140,10 +140,14 @@ def create_horizontal_bar_chart(dimensions_data, title="DNA Scores by Dimension"
     ))
 
     # Add threshold lines
-    fig.add_vline(x=95, line_dash="dash", line_color="gray",
-                  annotation_text="Elite (95)", annotation_position="top")
-    fig.add_vline(x=90, line_dash="dot", line_color="lightgray",
-                  annotation_text="Strong (90)", annotation_position="top")
+    fig.add_vline(x=95, line_dash="dash", line_color=CLUB_AMERICA_COLORS['primary'],
+                  line_width=2,
+                  annotation_text="Elite (95)", annotation_position="top",
+                  annotation=dict(font_size=12, font_color=CLUB_AMERICA_COLORS['primary']))
+    fig.add_vline(x=90, line_dash="dot", line_color=CLUB_AMERICA_COLORS['primary'],
+                  line_width=2,
+                  annotation_text="Strong (90)", annotation_position="top",
+                  annotation=dict(font_size=12, font_color=CLUB_AMERICA_COLORS['primary']))
 
     # Update layout
     fig.update_layout(
@@ -154,19 +158,25 @@ def create_horizontal_bar_chart(dimensions_data, title="DNA Scores by Dimension"
             xanchor='center'
         ),
         xaxis=dict(
-            title="Score",
+            title=dict(
+                text="Score",
+                font=dict(size=14, color=CLUB_AMERICA_COLORS['primary'])
+            ),
             range=[0, 105],
             showgrid=True,
             gridcolor='lightgray',
+            tickfont=dict(size=12, color=CLUB_AMERICA_COLORS['primary']),
         ),
         yaxis=dict(
             title="",
             categoryorder='total ascending',
+            tickfont=dict(size=14, color=CLUB_AMERICA_COLORS['primary'], family='Arial Black'),
         ),
         height=400,
         paper_bgcolor='white',
         plot_bgcolor='white',
         showlegend=False,
+        margin=dict(l=120, r=40, t=80, b=40),  # Increase left margin for labels
     )
 
     return fig
@@ -229,7 +239,16 @@ def create_comparison_radar(player_dna, team_dna, player_name):
             radialaxis=dict(
                 visible=True,
                 range=[0, 110],
-            )
+                showticklabels=True,
+                ticks='outside',
+                tickfont=dict(size=11),
+                gridcolor='lightgray',
+            ),
+            angularaxis=dict(
+                showticklabels=True,
+                tickfont=dict(size=13, color=CLUB_AMERICA_COLORS['primary']),
+            ),
+            bgcolor='white',
         ),
         showlegend=True,
         legend=dict(
@@ -242,9 +261,12 @@ def create_comparison_radar(player_dna, team_dna, player_name):
         height=400,
         title=dict(
             text=f"DNA Match: {player_name} vs Club América",
+            font=dict(size=18, color=CLUB_AMERICA_COLORS['primary']),
             x=0.5,
             xanchor='center'
-        )
+        ),
+        paper_bgcolor='white',
+        plot_bgcolor='white',
     )
 
     return fig
