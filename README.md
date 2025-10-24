@@ -4,6 +4,20 @@
 
 ---
 
+## 🚀 Aplicación en Vivo
+
+<div align="center">
+
+### 👉 [**VER APLICACIÓN INTERACTIVA**](https://hackatonclubamerica-h6my7qwtxbf7nf6gvbgem3.streamlit.app/Buscar_Jugador) 👈
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://hackatonclubamerica-h6my7qwtxbf7nf6gvbgem3.streamlit.app/Buscar_Jugador)
+
+**Explora el sistema completo de análisis táctico y recomendaciones de jugadores**
+
+</div>
+
+---
+
 ## 📋 Resumen Ejecutivo
 
 Sistema de análisis y recomendación de jugadores que prioriza la **compatibilidad táctica** sobre estadísticas individuales, respondiendo: **"¿Qué jugador encaja mejor en el equipo y por qué?"**
